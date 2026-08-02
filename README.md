@@ -1,5 +1,7 @@
 # nabu-lects
 
+**Project site: [arvicco.github.io/nabu-lects](https://arvicco.github.io/nabu-lects)** — the case, the grammar, and an integration guide.
+
 A small, curated registry of **lects** — language varieties identified by
 genealogical anchor × historical stage × variety × orthography — with a
 universal mapping from standard language codes (ISO 639, Wiktionary) onto

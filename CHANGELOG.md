@@ -4,7 +4,9 @@
 
 Initial registry:
 
-- `lects.yml` — 38 anchors, 50 stages, 8 varieties, 2 orthographies:
+- Project site (GitHub Pages from `docs/`): the case, the identifier
+  grammar, and an integration guide for external tools.
+- `lects.yml` — 39 anchors, 50 stages, 8 varieties, 2 orthographies:
   the Indo-European family spine with its reconstructed proto stages;
   the full Latin stage ladder with the Vulgar and Ecclesiastical
   registers; Greek (Homeric through Byzantine); Chinese (two stages and

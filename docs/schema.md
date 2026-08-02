@@ -1,3 +1,7 @@
+---
+title: "Schema — lects.yml and codemap.yml, field by field"
+---
+
 # Schema — lects.yml and codemap.yml, field by field
 
 ## The identifier grammar
