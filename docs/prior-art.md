@@ -1,3 +1,7 @@
+---
+title: "Why another language classification? Prior art and the case for lects"
+---
+
 # Why another language classification? Prior art and the case for lects
 
 Every text in a digital library carries a language tag. This document explains why the
