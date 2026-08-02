@@ -315,9 +315,17 @@ anchors:
       kyu: {name: Kyūjitai (pre-reform character forms),
             note: "Han-script-scoped; pre-1946 printings"}
 
+  non:
+    name: Old Norse
+    band: [800, 1350]
+    band_note: "conventional Norse philology, approximate"
+    parent: gmq:run
+    note: "parent is the ATTESTED runic stage, per the most-specific-ancestor
+           rule (attested lect preferred over gmq:pro)"
+
   isl:
     name: Icelandic
-    parent: gmq
+    parent: non
     stages:
       old: {name: Old Icelandic,    band: [1100, 1350], ord: 10,
             band_note: "conventional Icelandic philology, approximate"}
