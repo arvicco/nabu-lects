@@ -1,0 +1,196 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Validates lects.yml and codemap.yml against the registry schema
+# (docs/schema.md). Standard library only; exits 1 on any violation.
+
+require "yaml"
+
+ROOT = File.expand_path("..", __dir__)
+
+ANCHOR_RE = /\A[a-z]{2,3}(?:-[a-z]{2,4})*\z/
+CODE_RE   = /\A[a-z][a-z0-9-]{1,14}\z/
+GLOTTO_RE = /\A[a-z]{4}[0-9]{4}\z/
+LECT_RE   = %r{\A([a-z]{2,3}(?:-[a-z]{2,4})*)(?::([a-z]{2,5}))?(?:/([a-z]{2,5}))?(?:@([a-z][a-z0-9]{1,7}))?\z}
+KINDS     = %w[register sociolect recension dialect].freeze
+MODES     = %w[attested reconstructed].freeze
+
+@errors = []
+
+def err(msg)
+  @errors << msg
+end
+
+def load_yaml(name)
+  YAML.safe_load(File.read(File.join(ROOT, name)), aliases: false)
+rescue Psych::SyntaxError => e
+  err("#{name}: YAML parse error — #{e.message}")
+  nil
+end
+
+def parse_lect(id)
+  m = LECT_RE.match(id.to_s)
+  return nil unless m
+
+  { anchor: m[1], stage: m[2], variety: m[3], ortho: m[4] }
+end
+
+def check_band(band, where)
+  return if band.nil?
+
+  unless band.is_a?(Array) && band.size == 2 &&
+         band.all? { |b| b.nil? || b.is_a?(Integer) }
+    err("#{where}: band must be [start, end] of integers or null, got #{band.inspect}")
+    return
+  end
+  s, e = band
+  err("#{where}: band start #{s} > end #{e}") if s && e && s > e
+end
+
+# Resolves a lect id against the registry; every component must be defined.
+def check_lect_ref(id, anchors, where, require_anchor:)
+  parsed = parse_lect(id)
+  return err("#{where}: '#{id}' violates the lect-id grammar") unless parsed
+
+  entry = anchors[parsed[:anchor]]
+  if entry.nil?
+    if require_anchor || parsed[:stage] || parsed[:variety] || parsed[:ortho]
+      err("#{where}: anchor '#{parsed[:anchor]}' has no registry entry")
+    end
+    return
+  end
+  if parsed[:stage] && !(entry["stages"] || {}).key?(parsed[:stage])
+    err("#{where}: stage '#{parsed[:stage]}' not defined on anchor '#{parsed[:anchor]}'")
+  end
+  if parsed[:variety] && !(entry["varieties"] || {}).key?(parsed[:variety])
+    err("#{where}: variety '#{parsed[:variety]}' not defined on anchor '#{parsed[:anchor]}'")
+  end
+  if parsed[:ortho] && !(entry["orthos"] || {}).key?(parsed[:ortho])
+    err("#{where}: ortho '#{parsed[:ortho]}' not defined on anchor '#{parsed[:anchor]}'")
+  end
+end
+
+lects   = load_yaml("lects.yml")
+codemap = load_yaml("codemap.yml")
+
+anchors = (lects && lects["anchors"]).is_a?(Hash) ? lects["anchors"] : {}
+map     = (codemap && codemap["map"]).is_a?(Hash) ? codemap["map"] : {}
+
+err("lects.yml: missing or empty 'anchors' section") if lects && anchors.empty?
+err("codemap.yml: missing or empty 'map' section")   if codemap && map.empty?
+
+stage_count = 0
+variety_count = 0
+ortho_count = 0
+
+anchors.each do |code, entry|
+  where = "lects.yml: anchor '#{code}'"
+  err("#{where}: key violates the anchor grammar") unless ANCHOR_RE.match?(code.to_s)
+  unless entry.is_a?(Hash)
+    err("#{where}: entry must be a mapping")
+    next
+  end
+
+  if (g = entry["glottocode"]) && !GLOTTO_RE.match?(g.to_s)
+    err("#{where}: malformed glottocode '#{g}'")
+  end
+  if (k = entry["kind"]) && k != "family"
+    err("#{where}: kind must be 'family' when present, got '#{k}'")
+  end
+  check_band(entry["band"], where)
+
+  ords = {}
+  (entry["stages"] || {}).each do |tag, stage|
+    stage_count += 1
+    swhere = "#{where}, stage '#{tag}'"
+    err("#{swhere}: tag must be 2–5 lowercase letters") unless /\A[a-z]{2,5}\z/.match?(tag.to_s)
+    unless stage.is_a?(Hash)
+      err("#{swhere}: stage must be a mapping")
+      next
+    end
+    err("#{swhere}: missing name") unless stage["name"]
+    ord = stage["ord"]
+    if ord.is_a?(Integer)
+      err("#{swhere}: duplicate ord #{ord} (also on '#{ords[ord]}')") if ords.key?(ord)
+      ords[ord] = tag
+    else
+      err("#{swhere}: missing or non-integer ord")
+    end
+    if (m = stage["mode"]) && !MODES.include?(m)
+      err("#{swhere}: mode must be one of #{MODES.join('|')}, got '#{m}'")
+    end
+    check_band(stage["band"], swhere)
+  end
+
+  (entry["varieties"] || {}).each do |tag, variety|
+    variety_count += 1
+    vwhere = "#{where}, variety '#{tag}'"
+    err("#{vwhere}: tag must be 2–5 lowercase letters") unless /\A[a-z]{2,5}\z/.match?(tag.to_s)
+    unless variety.is_a?(Hash)
+      err("#{vwhere}: variety must be a mapping")
+      next
+    end
+    err("#{vwhere}: missing name") unless variety["name"]
+    unless KINDS.include?(variety["kind"])
+      err("#{vwhere}: kind must be one of #{KINDS.join('|')}, got '#{variety['kind']}'")
+    end
+  end
+
+  (entry["orthos"] || {}).each do |tag, ortho|
+    ortho_count += 1
+    owhere = "#{where}, ortho '#{tag}'"
+    err("#{owhere}: tag must be 2–8 lowercase alphanumerics starting with a letter") \
+      unless /\A[a-z][a-z0-9]{1,7}\z/.match?(tag.to_s)
+    err("#{owhere}: missing name") unless ortho.is_a?(Hash) && ortho["name"]
+  end
+end
+
+# Parent edges: must resolve fully, and the anchor-level graph must be acyclic.
+anchors.each do |code, entry|
+  next unless entry.is_a?(Hash) && entry["parent"]
+
+  check_lect_ref(entry["parent"], anchors, "lects.yml: anchor '#{code}' parent",
+                 require_anchor: true)
+end
+
+parent_anchor = {}
+anchors.each do |code, entry|
+  next unless entry.is_a?(Hash) && entry["parent"]
+
+  parsed = parse_lect(entry["parent"])
+  parent_anchor[code] = parsed[:anchor] if parsed
+end
+
+anchors.each_key do |code|
+  seen = []
+  node = code
+  while (node = parent_anchor[node])
+    if seen.include?(node) || node == code
+      err("lects.yml: cycle in parent graph involving '#{code}'")
+      break
+    end
+    seen << node
+  end
+end
+
+# Codemap: keys are standard codes, values are lect ids resolved against the
+# registry. Bare-anchor targets are exempt from requiring a registry entry
+# (identity-shaped); any target carrying stage/variety/ortho is not.
+map.each do |code, target|
+  where = "codemap.yml: '#{code}'"
+  err("#{where}: key is not code-shaped") unless CODE_RE.match?(code.to_s)
+  check_lect_ref(target, anchors, "#{where} → '#{target}'", require_anchor: false)
+end
+
+if @errors.empty?
+  edges = parent_anchor.size
+  puts "lects.yml: #{anchors.size} anchors, #{stage_count} stages, " \
+       "#{variety_count} varieties, #{ortho_count} orthographies"
+  puts "codemap.yml: #{map.size} mappings"
+  puts "parent graph: acyclic (#{edges} edges)"
+  puts "OK"
+else
+  @errors.each { |e| warn "VIOLATION: #{e}" }
+  warn "#{@errors.size} violation(s)."
+  exit 1
+end
