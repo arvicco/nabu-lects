@@ -16,9 +16,12 @@ Axes are **ordered** (`:` before `/` before `@`) and all-lowercase.
   (`roa-opt`, `ine-bsl`): an ISO 639-1/2/3/5 or established Wiktionary
   code naming the most specific genealogical node the lect hangs from.
   A bare anchor is a legal lect and means the anchor's whole span.
-- `stage` — 2–5 lowercase letters from the anchor's registered stage set.
-- `variety` — 2–5 lowercase letters from the anchor's registered
-  variety set.
+- `stage` — 2–5 lowercase alphanumerics starting with a letter, from the
+  anchor's registered stage set. Digits are admitted (v1.1) because the
+  fields' own periodization names carry them — `sux:ur3` is Ur III;
+  pure-letter tags remain the norm.
+- `variety` — 2–5 lowercase alphanumerics starting with a letter, from
+  the anchor's registered variety set.
 - `ortho` — 2–8 lowercase alphanumerics (starting with a letter) from
   the anchor's registered orthography set.
 
