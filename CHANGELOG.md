@@ -16,6 +16,25 @@ stages, 8 varieties, 2 orthographies; `codemap.yml` 20 mappings):
   deliberately overlapping `mid` and `late` — the honest coarser claim
   for corpora dated at period grain across the Middle→Late transition.
 - Grammar: stage/variety tags admit trailing digits (`sux:ur3`).
+- **The ISO-parentage wave** (counts now 84 anchors, 60 stages): anchors
+  mirroring ISO 639's Historical-type stage chains within the
+  collection's focus axes — the Germanic ladders (Gothic; Old/Middle
+  High German → German; Old Saxon → Middle Low German → Low German;
+  Old/Middle Dutch → Dutch; Old/Western Frisian), all four Celtic
+  ladders under a new `cel` family (Primitive Irish → Old → Middle →
+  Irish; the Welsh, Breton and Cornish chains), Old Occitan → Occitan
+  (the ISO code is literally `pro` — noted, no relation to the `:pro`
+  stage convention), Old Spanish → Spanish, Mycenaean and Modern Greek
+  beside `grc`, Avestan and the Persian chain (Old → Middle → Persian),
+  the Armenian chain, the East Slavic moderns under `orv`, and
+  Classical Syriac under `arc`. Modern chain-ends use ISO 639-1 (the
+  `en`/`fr` precedent). Every row is an ISO/MARC fact — names,
+  reference-date bands where MARC states them, parent edges from
+  textbook philology; no new stages, no mode judgments. DELIBERATELY
+  unminted, each needing its own ruling: the Aramaic dialect fan
+  (jpa/tmr/sam/myz — overlaps the arc stage model), the Anatolian
+  family, the Prakrits, Geez (no ISO chain exists). A 639-3 alias
+  suite for modern ends (deu/nld/spa → de/nl/es) is deferred.
 
 Initial registry:
 
