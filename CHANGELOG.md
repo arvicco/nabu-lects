@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+- **The script-suffix codemap suite** (counts now 94 anchors,
+  `codemap.yml` 48 mappings): 27 universal rows for BCP-47-style tags
+  whose script subtag describes the content per the standard's own
+  semantics (`san-Latn → san~latn`, the ogham family, the Sicilian
+  epigraphic pairs, `xtg-Grek`…) — every row byte-verified
+  surface-honest in the first consuming collection before earning its
+  line; deviant artifact-claiming uses (egy-Egyd, -Ital-x-) stay
+  per-collection by the standing rule. Ten new BARE anchors carry the
+  targets (xtg/xcg under cel, osc under itc; xpi/xly/scx/xpu/ta/bra/awa
+  parentless with honest classification notes — the Aramaic-fan
+  discipline). Validator: `CODE_RE` admits Titlecase script subtags
+  (keys are codes verbatim as the standards write them), and the P61
+  gap is closed — a `~script` target on a missing anchor no longer
+  slips the nil-entry branch.
+
 Additions since the initial registry (counts now 41 anchors, 59
 stages, 8 varieties, 2 orthographies; `codemap.yml` 20 mappings):
 

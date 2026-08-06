@@ -9,7 +9,11 @@ require "yaml"
 ROOT = File.expand_path("..", __dir__)
 
 ANCHOR_RE = /\A[a-z]{2,3}(?:-[a-z]{2,4})*\z/
-CODE_RE   = /\A[a-z][a-z0-9-]{1,14}\z/
+# Keys are standard codes VERBATIM as the standards write them -- which
+# since the P61 script-suffix suite includes BCP 47 tags whose script
+# subtag is Titlecase (san-Latn). Each hyphen segment is lowercase
+# alphanumeric or a Titlecase 4-letter script subtag.
+CODE_RE   = /\A[a-z][a-z0-9]*(?:-(?:[a-z0-9]+|[A-Z][a-z]{3}))*\z/
 GLOTTO_RE = /\A[a-z]{4}[0-9]{4}\z/
 LECT_RE   = %r{\A([a-z]{2,3}(?:-[a-z]{2,4})*)(?::([a-z][a-z0-9]{1,4}))?(?:/([a-z][a-z0-9]{1,4}))?(?:~([a-z]{4}))?(?:@([a-z][a-z0-9]{1,7}))?\z}
 SCRIPT_RE = /\A[a-z]{4}\z/
@@ -57,8 +61,15 @@ def check_lect_ref(id, anchors, where, require_anchor:, scripts: {})
 
   entry = anchors[parsed[:anchor]]
   if entry.nil?
-    if require_anchor || parsed[:stage] || parsed[:variety] || parsed[:ortho]
+    # A target carrying ANY axis (script included -- the P61 gap: a
+    # ~script target on a missing anchor must not slip through) needs
+    # its anchor defined; only a bare-anchor target is identity-shaped.
+    if require_anchor || parsed[:stage] || parsed[:variety] || parsed[:script] || parsed[:ortho]
       err("#{where}: anchor '#{parsed[:anchor]}' has no registry entry")
+    end
+    # The script table is global -- checkable even without the anchor.
+    if parsed[:script] && !scripts.key?(parsed[:script])
+      err("#{where}: script '#{parsed[:script]}' not in the scripts table")
     end
     return
   end
