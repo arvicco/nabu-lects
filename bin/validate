@@ -11,7 +11,8 @@ ROOT = File.expand_path("..", __dir__)
 ANCHOR_RE = /\A[a-z]{2,3}(?:-[a-z]{2,4})*\z/
 CODE_RE   = /\A[a-z][a-z0-9-]{1,14}\z/
 GLOTTO_RE = /\A[a-z]{4}[0-9]{4}\z/
-LECT_RE   = %r{\A([a-z]{2,3}(?:-[a-z]{2,4})*)(?::([a-z][a-z0-9]{1,4}))?(?:/([a-z][a-z0-9]{1,4}))?(?:@([a-z][a-z0-9]{1,7}))?\z}
+LECT_RE   = %r{\A([a-z]{2,3}(?:-[a-z]{2,4})*)(?::([a-z][a-z0-9]{1,4}))?(?:/([a-z][a-z0-9]{1,4}))?(?:~([a-z]{4}))?(?:@([a-z][a-z0-9]{1,7}))?\z}
+SCRIPT_RE = /\A[a-z]{4}\z/
 KINDS     = %w[register sociolect recension dialect].freeze
 MODES     = %w[attested reconstructed].freeze
 
@@ -32,7 +33,7 @@ def parse_lect(id)
   m = LECT_RE.match(id.to_s)
   return nil unless m
 
-  { anchor: m[1], stage: m[2], variety: m[3], ortho: m[4] }
+  { anchor: m[1], stage: m[2], variety: m[3], script: m[4], ortho: m[5] }
 end
 
 def check_band(band, where)
@@ -48,7 +49,9 @@ def check_band(band, where)
 end
 
 # Resolves a lect id against the registry; every component must be defined.
-def check_lect_ref(id, anchors, where, require_anchor:)
+# The script component resolves against the GLOBAL scripts table (never
+# per-anchor -- digraphia is open-ended, attestation is a collection fact).
+def check_lect_ref(id, anchors, where, require_anchor:, scripts: {})
   parsed = parse_lect(id)
   return err("#{where}: '#{id}' violates the lect-id grammar") unless parsed
 
@@ -68,12 +71,16 @@ def check_lect_ref(id, anchors, where, require_anchor:)
   if parsed[:ortho] && !(entry["orthos"] || {}).key?(parsed[:ortho])
     err("#{where}: ortho '#{parsed[:ortho]}' not defined on anchor '#{parsed[:anchor]}'")
   end
+  if parsed[:script] && !scripts.key?(parsed[:script])
+    err("#{where}: script '#{parsed[:script]}' not in the scripts table")
+  end
 end
 
 lects   = load_yaml("lects.yml")
 codemap = load_yaml("codemap.yml")
 
 anchors = (lects && lects["anchors"]).is_a?(Hash) ? lects["anchors"] : {}
+scripts = (lects && lects["scripts"]).is_a?(Hash) ? lects["scripts"] : {}
 map     = (codemap && codemap["map"]).is_a?(Hash) ? codemap["map"] : {}
 
 err("lects.yml: missing or empty 'anchors' section") if lects && anchors.empty?
@@ -144,6 +151,25 @@ anchors.each do |code, entry|
     err("#{owhere}: tag must be 2–8 lowercase alphanumerics starting with a letter") \
       unless /\A[a-z][a-z0-9]{1,7}\z/.match?(tag.to_s)
     err("#{owhere}: missing name") unless ortho.is_a?(Hash) && ortho["name"]
+    if ortho.is_a?(Hash) && (sc = ortho["script"]) && !scripts.key?(sc)
+      err("#{owhere}: script '#{sc}' not in the scripts table")
+    end
+  end
+end
+
+# Scripts table: ISO-15924-shaped keys, canonical spelling consistent with
+# the key, a name on every row.
+scripts.each do |code, entry|
+  swhere = "lects.yml: script '#{code}'"
+  err("#{swhere}: key must be a lowercase ISO 15924 code") unless SCRIPT_RE.match?(code.to_s)
+  unless entry.is_a?(Hash)
+    err("#{swhere}: entry must be a mapping")
+    next
+  end
+  err("#{swhere}: missing name") unless entry["name"]
+  iso = entry["iso15924"]
+  if iso.to_s.downcase != code.to_s
+    err("#{swhere}: iso15924 '#{iso}' does not match the key")
   end
 end
 
@@ -152,7 +178,7 @@ anchors.each do |code, entry|
   next unless entry.is_a?(Hash) && entry["parent"]
 
   check_lect_ref(entry["parent"], anchors, "lects.yml: anchor '#{code}' parent",
-                 require_anchor: true)
+                 require_anchor: true, scripts: scripts)
 end
 
 parent_anchor = {}
@@ -181,13 +207,15 @@ end
 map.each do |code, target|
   where = "codemap.yml: '#{code}'"
   err("#{where}: key is not code-shaped") unless CODE_RE.match?(code.to_s)
-  check_lect_ref(target, anchors, "#{where} â '#{target}'", require_anchor: false)
+  check_lect_ref(target, anchors, "#{where} â '#{target}'", require_anchor: false,
+                 scripts: scripts)
 end
 
 if @errors.empty?
   edges = parent_anchor.size
   puts "lects.yml: #{anchors.size} anchors, #{stage_count} stages, " \
-       "#{variety_count} varieties, #{ortho_count} orthographies"
+       "#{variety_count} varieties, #{ortho_count} orthographies, " \
+       "#{scripts.size} scripts"
   puts "codemap.yml: #{map.size} mappings"
   puts "parent graph: acyclic (#{edges} edges)"
   puts "OK"

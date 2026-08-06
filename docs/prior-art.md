@@ -339,10 +339,10 @@ can actually maintain (a, d, h).
 
 That composition is what this repository implements. The unit is the **lect** — the
 standard linguistics term for "any variety of a language, without commitment to its
-status" — and each lect identifier composes four axes:
+status" — and each lect identifier composes five axes:
 
 ```
-lect-id  =  anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
+lect-id  =  anchor [ ":" stage ] [ "/" variety ] [ "~" script ] [ "@" ortho ]
 ```
 
 - the **anchor** is an ISO 639 or established Wiktionary code — the most specific
@@ -353,6 +353,10 @@ lect-id  =  anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
   **mode** — attested or reconstructed — as data, not as a naming convention;
 - the optional **variety** carries registers, sociolects, and recensions — the axis
   the standards conflate with stage;
+- the optional **script** tag (ISO 15924, lowercased, from a global table) claims
+  the script of the text *as held* — the surface a reader meets, machine-checkable
+  against the bytes — never the artifact's original writing system, which stays a
+  consumer-side field;
 - the optional **orthography** tag carries reform-era spelling systems, reusing IANA
   variant names where they exist.
 

@@ -24,7 +24,7 @@ consumer of the code.
 ## The identifier
 
 ```
-lect-id = anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
+lect-id = anchor [ ":" stage ] [ "/" variety ] [ "~" script ] [ "@" ortho ]
 ```
 
 | Example | Meaning |
@@ -36,6 +36,8 @@ lect-id = anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
 | `zho/lit` | Literary Chinese (wenyan) — a register, not a stage |
 | `roa:pro` | Proto-Romance — `mode: reconstructed` in the registry |
 | `jpn:mod@kyu` | Modern Japanese in pre-reform (kyūjitai) orthography |
+| `san~latn` | Sanskrit held as a romanized edition |
+| `sga~ogam` | Old Irish as the reader meets it in ogham |
 
 - **anchor** — an ISO 639 or established Wiktionary code: the most specific
   genealogical node (language or family) the lect hangs from. Every
@@ -45,18 +47,31 @@ lect-id = anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
   keys on the registry field `mode: reconstructed`, never on the tag
   spelling.
 - **variety** — register, sociolect, or recension (`/lit`, `/vul`, `/ecc`).
+- **script** — the writing system of the text AS HELD (`~latn`, `~ogam`):
+  the surface a reader of the document meets, drawn from the global
+  `scripts:` table (ISO 15924 codes, lowercased). Never the artifact's
+  original writing system — a consumer records that separately when it
+  differs (a Latin-transliterated cuneiform tablet is `~latn`; the
+  tablet's Xsux belongs in the consumer's own artifact field).
 - **ortho** — an orthography reform *within* a script (`@kyu`, `@bohoric`),
-  reusing IANA variant names where they exist.
+  reusing IANA variant names where they exist; rows may carry a `script:`
+  scope naming the script the reform lives in.
 
-**Why orthography but not script?** Script already has a standard home —
-ISO 15924 subtags in BCP 47 tags (`sr-Cyrl`, `san-Latn`) — and duplicating it
-here would give one fact two competing homes. Serbian in Cyrillic and in
-Latinica is *one* lect rendered two ways; a romanized Veda is still
-`san:ved`. Orthography reforms, by contrast, have no standard axis anywhere,
-and they carry philological signal (kyūjitai dates a printing; the Bohorič
-alphabet places a Slovene text before 1850). The registry mints only what the
-standards cannot say. Where a script choice is constitutive of a community
-(Ladino in Hebrew script), it belongs in the variety slot instead.
+**Why a script axis?** An earlier revision of this registry argued script
+should stay in BCP 47 (`sr-Cyrl`, `san-Latn`) and out of the lect id — one
+fact, one home. Measurement overturned that: in real catalogs the BCP 47
+suffix convention carries **two different claims with no way to say
+which** — `san-Latn` usually means the held edition is romanized (a surface
+fact), while `egy-Egyd` usually means the papyrus was written in demotic
+(an artifact fact, riding text that is itself Latin transliteration). A
+registry that wants one nomenclature for *which lect, presented how* has
+to say this precisely, so the `~` axis is defined to claim exactly one of
+them: **the script of the text as held** — machine-checkable against the
+bytes. The artifact's differing original script is real and worth keeping,
+but it is the consumer's separate field, never folded into the lect id. A
+romanized Veda is `san:ved~latn` and still the same lect; where a script
+choice is constitutive of a community (Ladino in Hebrew script), it
+belongs in the variety slot instead.
 
 ## The genealogy model
 
