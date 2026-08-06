@@ -5,6 +5,30 @@
 Additions since the initial registry (counts now 41 anchors, 59
 stages, 8 varieties, 2 orthographies; `codemap.yml` 20 mappings):
 
+- **The script axis** (a DOCTRINE REVERSAL, pre-1.0 grammar change):
+  `lect-id = anchor [":" stage] ["/" variety] ["~" script] ["@" ortho]`.
+  The earlier README argued script should stay in BCP 47 subtags —
+  measurement in the first consuming collection overturned that: the
+  suffix convention in real catalogs carries two different claims with
+  no way to say which (`san-Latn` a surface fact about a romanized
+  edition; `egy-Egyd` an artifact fact riding Latin-transliteration
+  text). The `~` axis is therefore defined to claim exactly one thing:
+  **the script of the text as held**, machine-checkable against the
+  bytes; the artifact's differing original script stays a
+  consumer-side field, never folded into the lect id. Sigil `~`
+  chosen over `&` deliberately: shell-safe mid-word and URL-unreserved
+  where `&` backgrounds unquoted commands and separates query strings.
+  Ships as: a **global `scripts:` table** (20 rows seeded from the
+  consuming collection's measured need, surface and artifact both —
+  keys are ISO 15924 lowercased, rows carry the canonical spelling;
+  deliberately not per-anchor, since digraphia is open-ended and
+  attestation is a collection fact); ortho rows gain a machine
+  `script:` scope (`bohoric: latn`, `kyu: jpan` — previously prose
+  notes); validator rules (grammar, table shape, referential integrity
+  of `~` tags and ortho scopes); README/schema/site rewritten,
+  including the retired "Why orthography but not script?" argument
+  replaced by "Why a script axis?".
+
 - Sumerian: the `sux` anchor with five stages (archaic ED I–II through
   post-Sumerian), and a separate `qpc` proto-cuneiform anchor whose
   note records the language-identity debate (no codemap row — its

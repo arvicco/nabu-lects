@@ -40,7 +40,7 @@ rise and withdrawal to Glottolog, BCP 47, and Wiktionary — is in
 ## The answer, in one line
 
 ```
-lect-id = anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
+lect-id = anchor [ ":" stage ] [ "/" variety ] [ "~" script ] [ "@" ortho ]
 ```
 
 | Example | Meaning |
@@ -52,12 +52,15 @@ lect-id = anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
 | `zho/lit` | Literary Chinese (wenyan) — a register, not a stage |
 | `roa:pro` | Proto-Romance — `mode: reconstructed` in the registry |
 | `jpn:mod@kyu` | Modern Japanese in pre-reform (kyūjitai) orthography |
+| `san~latn` | Sanskrit held as a romanized edition |
 
 Anchors are ISO 639 / Wiktionary codes, so every identifier stays legible
 to anyone who knows the standard codes. Stages carry date bands with their
 provenance recorded; genealogy is explicit `parent:` edges (`roa: {parent:
 lat}` — no pseudo-family nodes); reconstruction is a data field, never a
-naming convention. Field-by-field semantics: **[the schema](schema.md)**.
+naming convention; the `~` axis claims the script of the text **as held**
+(ISO 15924, lowercased, from a global table), never the artifact's
+original writing system. Field-by-field semantics: **[the schema](schema.md)**.
 
 ## Integrating the registry in your tool
 

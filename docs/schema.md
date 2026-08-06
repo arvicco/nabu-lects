@@ -7,10 +7,11 @@ title: "Schema — lects.yml and codemap.yml, field by field"
 ## The identifier grammar
 
 ```
-lect-id = anchor [ ":" stage ] [ "/" variety ] [ "@" ortho ]
+lect-id = anchor [ ":" stage ] [ "/" variety ] [ "~" script ] [ "@" ortho ]
 ```
 
-Axes are **ordered** (`:` before `/` before `@`) and all-lowercase.
+Axes are **ordered** (`:` before `/` before `~` before `@`) and
+all-lowercase.
 
 - `anchor` — 2–3 lowercase letters, optionally hyphen-extended
   (`roa-opt`, `ine-bsl`): an ISO 639-1/2/3/5 or established Wiktionary
@@ -22,6 +23,9 @@ Axes are **ordered** (`:` before `/` before `@`) and all-lowercase.
   pure-letter tags remain the norm.
 - `variety` — 2–5 lowercase alphanumerics starting with a letter, from
   the anchor's registered variety set.
+- `script` — exactly 4 lowercase letters: an ISO 15924 code, lowercased,
+  from the **global** `scripts:` table (not per-anchor). Claims the
+  script of the text **as held** — see the scripts section below.
 - `ortho` — 2–8 lowercase alphanumerics (starting with a letter) from
   the anchor's registered orthography set.
 
@@ -31,7 +35,8 @@ spelling**.
 
 ## lects.yml
 
-Top level: one `anchors:` mapping, keyed by anchor code.
+Top level: one `anchors:` mapping keyed by anchor code, and one global
+`scripts:` mapping keyed by lowercased ISO 15924 code.
 
 ### Anchor fields
 
@@ -68,13 +73,31 @@ variety, not an orthography.
 
 ### Orthography fields
 
-`name` and optional `note`. Orthography tags name spelling reforms
-**within one script** (kyūjitai, the Bohorič alphabet) and reuse IANA
-variant names where they exist (`bohoric`, `petr1708`). Each tag is
-implicitly scoped to its script — stated in its note. Script itself is
-never part of a lect id: it lives in BCP 47 script subtags on the
-consumer's side, and a document's full identity is the composition of its
-coded tag and its lect.
+`name`, optional `script:` scope and `note`. Orthography tags name
+spelling reforms **within one script** (kyūjitai, the Bohorič alphabet)
+and reuse IANA variant names where they exist (`bohoric`, `petr1708`).
+The `script:` field names the script the reform lives in, resolved
+against the global `scripts:` table (`bohoric: {script: latn}`,
+`kyu: {script: jpan}`).
+
+### The scripts table
+
+A single **global** `scripts:` mapping — deliberately not per-anchor:
+digraphia is open-ended, and which scripts a language is attested in is
+a fact about collections, not about the registry. Keys are ISO 15924
+codes lowercased; rows carry `name`, `iso15924` (the canonical
+spelling — must match the key when lowercased) and optional `note`.
+
+The `~` axis claims the script of the **text as held** — the surface a
+reader of the document meets, machine-checkable against the bytes. It
+never claims the artifact's original writing system: a
+Latin-transliterated cuneiform tablet is `~latn`, and the tablet's Xsux
+belongs in the consumer's own artifact field. (Why: measured catalogs
+show the BCP 47 suffix convention carrying both claims with no way to
+say which — `san-Latn` is usually a surface fact, `egy-Egyd` usually an
+artifact fact. The axis is defined to say exactly one thing.) Where a
+script choice is constitutive of a community (aljamiado traditions), it
+stays a variety, not a script tag.
 
 ### The parent edge
 
@@ -106,7 +129,8 @@ including etymology-only and `-pro` codes) to lect ids.
 **Identity is the default rule.** Any code not listed maps to itself as a
 bare anchor; the file lists only non-identity mappings, so every line is a
 decision. Bare-anchor targets need no registry entry; any target carrying
-a stage, variety, or orthography must resolve against `lects.yml`.
+a stage, variety, script, or orthography must resolve against
+`lects.yml` (scripts against the global table).
 
 **Precedence for consumers**, highest first:
 
@@ -124,6 +148,8 @@ consumer. Knowledge about particular collections never enters this file.
 `bin/validate` (standard-library Ruby) enforces: YAML well-formedness;
 the identifier grammar everywhere; referential integrity (codemap targets
 and parent edges resolve; stage/variety/ortho tags are defined on their
-anchors); `ord` uniqueness per anchor; band sanity (`start ≤ end`);
-Glottocode shape; parent-graph acyclicity. CI runs it on every push and
-pull request.
+anchors, script tags and ortho `script:` scopes in the global table);
+scripts-table shape (ISO-15924 keys, `iso15924` consistent with the key);
+`ord` uniqueness per anchor; band sanity (`start ≤ end`); Glottocode
+shape; parent-graph acyclicity. CI runs it on every push and pull
+request.
