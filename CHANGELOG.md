@@ -101,3 +101,12 @@ Initial registry:
 
 Pre-1.0: identifiers may change without notice until the first tagged
 release.
+
+## Unreleased — 2026-08-09 (the №1-№10 rulings batch, P64-6)
+
+- Minted: ave:old/yng stages (contested-chronology bands noted) · cop/sah +
+  cop/boh dialects · chu/cro (Croatian recension) · egy/trad (égyptien de
+  tradition — a register, deliberately not a dating stage) · sl stage bands
+  (old 950-1550, emod 1550-1850) + sl:mod · the Aramaic fan jpa/tmr/sam/myz
+  as bare anchors parent arc (the standing deliberately-unminted note
+  retired; sefaria arc:mid/jud rows stand — a different axis).
