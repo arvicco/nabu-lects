@@ -461,10 +461,14 @@ anchors:
       ur3:  {name: Neo-Sumerian (Ur III),   band: [-2100, -2000], ord: 40,
              band_note: "per the CDLI period convention; the bulk of the
                          surviving record"}
-      post: {name: Post-Sumerian,           band: [-2000, -1600], ord: 50,
-             band_note: "the Old Babylonian literary/liturgical corpus, written
-                         after spoken Sumerian died; the band is the OB period
-                         convention, not the end of the scribal tradition"}
+      post: {name: Post-Sumerian,           band: [-2000, 100], ord: 50,
+             band_note: "post-vernacular literary/liturgical Sumerian, from
+                         the Old Babylonian corpus through the first-millennium
+                         library copies to the end of the cuneiform scribal
+                         tradition (last dated text 75 CE). Widened from the
+                         OB-convention band [-2000,-1600] when the 2026-08-09
+                         ruling assigned MB/MA/NA/NB-period copies to this
+                         stage — the LANGUAGE claim spans the whole tradition"}
 
   qpc:
     name: Proto-cuneiform
