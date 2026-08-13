@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+- **The Ibero-Romance medieval flank** (Nabu P77-r6 / OSTA use case):
+  `ast` anchor (Asturleonese, parent `roa`) with stage `old` (Old
+  Leonese, band [1150, 1500]); `an` anchor (Aragonese, parent `roa`)
+  with stage `old` (Navarro-Aragonese, band [1100, 1500] — one stage
+  for the medieval complex, a /nav variety split deferred to a source
+  that needs it); codemap row `arg: an` (the №11 alias suite). First
+  consumer: OSTA's works-table lengua census (2,204 work rows —
+  leonés, aragonés, navarro-aragonés, navarro among castellano/
+  gallego/latín), riding as a raw facet until stage rules land.
+
 - **The script-suffix codemap suite** (counts now 94 anchors,
   `codemap.yml` 48 mappings): 27 universal rows for BCP-47-style tags
   whose script subtag describes the content per the standard's own
