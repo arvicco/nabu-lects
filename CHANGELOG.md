@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- **The `sv` ladder** (Nabu P77-6 / №R-32 use case): `sv` anchor
+  (parent `non`, the isl precedent — East Norse unsplit) with stage
+  `old` (Old Swedish / fornsvenska, band [1225, 1526], wikt
+  `gmq-osw`); codemap rows `swe: sv` (the №11 alias suite) and
+  `gmq-osw: sv:old`. First consumer: Fornsvenska textbanken (the Old
+  Swedish laws, prose and verse), whose whole-source `sv:old` facet
+  rule waits on this mint.
+
 - **The script-suffix codemap suite** (counts now 94 anchors,
   `codemap.yml` 48 mappings): 27 universal rows for BCP-47-style tags
   whose script subtag describes the content per the standard's own

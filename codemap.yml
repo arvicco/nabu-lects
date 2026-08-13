@@ -16,10 +16,14 @@ map:
   deu:     de
   nld:     nl
   spa:     es
+  swe:     sv
 
   # Greek stages that outgrew their codes
   gkm:     grc:byz
   grc-koi: grc:koi
+
+  # Old Swedish (Wiktionary etymology-only code)
+  gmq-osw: sv:old
 
   # Chinese: two stages and the register ISO coded as their sibling
   och:     zho:old
