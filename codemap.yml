@@ -17,6 +17,12 @@ map:
   nld:     nl
   spa:     es
   arg:     an
+  swe:     sv
+  ita:     it
+
+  # Old Swedish / Old Italian (Wiktionary etymology-only codes)
+  gmq-osw: sv:old
+  roa-oit: it:old
 
   # Greek stages that outgrew their codes
   gkm:     grc:byz

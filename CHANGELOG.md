@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- **The `sv` and `it` ladders** (one aggregated mint — Nabu P77-6 /
+  №R-32 and P77-3 use cases): `sv` anchor (parent `non`, the isl
+  precedent) with stage `old` (Old Swedish / fornsvenska, band
+  [1225, 1526], wikt `gmq-osw`) — first consumer Fornsvenska
+  textbanken, whose whole-source `sv:old` facet rule waits on this
+  mint; `it` anchor (parent `roa`) with stage `old` (Old Italian,
+  band [960, 1400], wikt `roa-oit`) — first consumer UD_Italian-Old
+  (the Commedia under UD's one-tag `it`). Codemap: `swe: sv` and
+  `ita: it` (the №11 alias suite), `gmq-osw: sv:old`,
+  `roa-oit: it:old`.
+
 - **The Ibero-Romance medieval flank** (Nabu P77-r6 / OSTA use case):
   `ast` anchor (Asturleonese, parent `roa`) with stage `old` (Old
   Leonese, band [1150, 1500]); `an` anchor (Aragonese, parent `roa`)

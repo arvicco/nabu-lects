@@ -192,6 +192,16 @@ anchors:
                    needs the distinction — the consumer's raw facet
                    preserves it meanwhile"}
 
+  it:
+    name: Italian
+    parent: roa
+    stages:
+      old: {name: Old Italian, band: [960, 1400], ord: 10, wikt: roa-oit,
+            band_note: "conventional, approximate — the Placiti cassinesi
+                        to the Trecento (Dante, Petrarca, Boccaccio); the
+                        1525 Bembo cut is the other school, recorded not
+                        followed"}
+
   # ── Greek ──────────────────────────────────────────────────────────────────
 
   grc:
@@ -677,6 +687,20 @@ anchors:
             band_note: "conventional Icelandic philology, approximate"}
       mod: {name: Modern Icelandic, band: [1550, null], ord: 30,
             band_note: "conventional Icelandic philology, approximate"}
+
+  sv:
+    name: Swedish
+    parent: non
+    note: "parent is the undivided Old Norse anchor (the isl precedent);
+           Swedish descends from the East Norse side, which the registry
+           does not split — a gmq:run-descended east/west fork is a
+           future mint if a source ever needs the distinction"
+    stages:
+      old: {name: Old Swedish, band: [1225, 1526], ord: 10, wikt: gmq-osw,
+            band_note: "conventional Swedish philology, approximate —
+                        fornsvenska, Äldre Västgötalagen's era to the
+                        Gustav Vasa Bible; covers the klassisk/yngre
+                        internal split"}
 
   ara:
     name: Arabic
