@@ -166,6 +166,16 @@ anchors:
     name: Spanish
     parent: osp
 
+  it:
+    name: Italian
+    parent: roa
+    stages:
+      old: {name: Old Italian, band: [960, 1400], ord: 10, wikt: roa-oit,
+            band_note: "conventional, approximate — the Placiti cassinesi
+                        to the Trecento (Dante, Petrarca, Boccaccio); the
+                        1525 Bembo cut is the other school, recorded not
+                        followed"}
+
   # ── Greek ──────────────────────────────────────────────────────────────────
 
   grc:

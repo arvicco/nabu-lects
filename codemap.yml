@@ -16,6 +16,10 @@ map:
   deu:     de
   nld:     nl
   spa:     es
+  ita:     it
+
+  # Old Italian (Wiktionary etymology-only code)
+  roa-oit: it:old
 
   # Greek stages that outgrew their codes
   gkm:     grc:byz

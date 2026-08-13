@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- **The `it` ladder** (Nabu P77-3 use case): `it` anchor (parent
+  `roa`) with stage `old` (Old Italian, band [960, 1400], wikt
+  `roa-oit`); codemap rows `ita: it` (the №11 alias suite) and
+  `roa-oit: it:old`. First consumer: UD_Italian-Old — the full
+  Commedia under UD's one-tag `it` (the IcePaHC-under-`is`
+  practice), whose stage claim needs the target defined.
+
 - **The script-suffix codemap suite** (counts now 94 anchors,
   `codemap.yml` 48 mappings): 27 universal rows for BCP-47-style tags
   whose script subtag describes the content per the standard's own
