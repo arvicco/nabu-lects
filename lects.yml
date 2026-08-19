@@ -271,6 +271,12 @@ anchors:
   de:
     name: German
     parent: gmh
+    stages:
+      early: {name: Early New High German, band: [1350, 1650], ord: 10,
+              band_note: "conventional Germanistik (Frühneuhochdeutsch) —
+                          gmh's ISO band stops ~1500, so ENHG texts ride
+                          the de anchor; band per the Bochum reference
+                          corpus (ReF) it was minted for"}
 
   osx:
     name: Old Saxon
