@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- **The `de:early` stage** (Nabu P80-5 use case): Early New High
+  German under the existing `de` anchor (parent `gmh`), band
+  [1350, 1650] per conventional Germanistik — ENHG has no ISO code
+  and `gmh`'s band stops ~1500, so ReF (Referenzkorpus
+  Frühneuhochdeutsch, 190 texts / 3.1M tokens, the third rung of
+  the Bochum reference-corpus ladder after ReM/ReN) would otherwise
+  ride bare anachronistic `de`. First consumer: Nabu's `ref` source,
+  whose whole-source facet rule waits on this mint (the sv:old
+  add-then-retire shape). Deliberately coarse: no internal
+  ENHG-period split — nothing held distinguishes one.
+
 - **The `sv` and `it` ladders** (one aggregated mint — Nabu P77-6 /
   №R-32 and P77-3 use cases): `sv` anchor (parent `non`, the isl
   precedent) with stage `old` (Old Swedish / fornsvenska, band
