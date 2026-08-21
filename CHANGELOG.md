@@ -2,6 +2,74 @@
 
 ## Unreleased
 
+- **GRAMMAR WIDENING (pre-v1.0.0 window item — №R-41, owner-ruled
+  2026-08-21):** variety tags widen from 2–5 to 2–8 lowercase
+  alphanumerics, mirroring the ortho slot, so IANA variant subtag
+  names ride verbatim (`oc/lengadoc`, `oc/vivaraup`). Additive: every
+  existing identifier stays valid; only consumers with the old grammar
+  compiled into a regex need the one-character update — which is
+  exactly why this lands before the first tag (№R-40's sequencing).
+  Touches `docs/schema.md` (the stated grammar), `bin/validate`
+  (LECT_RE + the variety-tag check), and the README variety bullet
+  (which now also states the reuse-IANA-names doctrine the ortho axis
+  always had — shared).
+
+- **The `oc` dialect varieties** (№R-41 / Nabu P81-r2, Option A of the
+  dialect-placement design): seven `kind: dialect` varieties under
+  `oc`, tags IANA-verbatim per the 2018 Occitan registration —
+  `gascon`, `lengadoc`, `provenc`, `auvern`, `lemosin`, `vivaraup`
+  (Bec's six-dialect classification = the first consuming corpus's own
+  division) plus `aranes` (the Val d'Aran variety of Gascon; the
+  gascon ⊃ aranes nesting carried in prose — the flat variety set is
+  deliberate). First consumers: lo-congres (6 oc docs / 5,152 aligned
+  pairs, upstream's `dialect` facet carries exactly these six names
+  letter-for-letter) and aranese (~420k pairs, definitionally
+  `oc/aranes`); the Nabu-side facet rule and override ride the
+  standing queue until this merges. Deliberately unminted:
+  `nicard`/`cisaup`/`creiss` (IANA-registered, no holdings), the
+  Occitan orthography variants (`grclass`/`grital`/`grmistr` — no
+  source distinguishes orthography), CTILC's Catalan variants (no `ca`
+  anchor; a later mint) and glaux's Greek dialect labels
+  (metadata-only, their own future ruling). The `oci: oc` codemap
+  alias (this PR's alias package) does double duty as this package's
+  code-level rung.
+
+- **The alias-suite completion** (Nabu P81-r1, closing the 2026-08-21
+  maturity-review gap — 50.4k documents re-laddered): the №11
+  639-3 ↔ 639-1 suite applied to every remaining same-language pair in
+  the first consuming collection, each corpus code sample-verified
+  against its held documents before earning its row. Toward the
+  registry's two-letter anchors: `eng: en` (36,970 docs — the
+  translation layers of oracc/rundata/elephantine/suttacentral…),
+  `ger: de` (12,988 — the AES German translation layer; the 639-2/B
+  bibliographic twin of the already-mapped `deu`), `fas: fa` (351,
+  openiti Persian), `fra: fr` (80, RIIG French translations),
+  `oci: oc` (7, Lo Congrès/Aranese), `gle: ga` (2, ogham — upstream
+  distinguishes gle from its pgl/sga rows deliberately), `cym: cy` and
+  `cor: kw` (1 each, local-library grammars). Mirrored where the
+  registry anchored the 639-2/3 code: `ar: ara` (12, ddbdp Arabic
+  papyri — bismillah openings verified) and `is: isl` (3, UD
+  IcePaHC). Plus `syr: syc` (2, elephantine — Syriac-script Christian
+  ostracon verified): 639-2 Syriac read in its pre-2007 classical
+  scope, the gkm precedent; modern Neo-Aramaic collections override
+  per-collection.
+
+- **The Anatolian flank** (Nabu P81-r1 use case — the owner's
+  2026-08-21 review request retired the standing deliberately-unminted
+  note): `ine-ana` family anchor (Anatolian, parent `ine`) carrying
+  `hit` (Hittite, band [-1650, -1180], 35,899 docs: tlhdig 21,209 +
+  cdli 14,671), `xlu` (Cuneiform Luwian, 209), `hlu` (Hieroglyphic
+  Luwian, 2) and `plq` (Palaic, 30); plus the Boğazköy-archive
+  neighbors as parentless bare anchors per the Aramaic-fan discipline —
+  `xht` (Hattic, isolate, 326), `xhu` (Hurrian, 832) and `xur`
+  (Urartian, 703; Hurro-Urartian has no family node and no consumer
+  needing one). `hit` is DELIBERATELY stage-less: the census showed no
+  consuming source carries per-document stage data — CDLI's period
+  facet is a single blanket ("Middle Hittite (ca. 1500-1100 BC)",
+  14,653 of 14,671) and TLHdig carries only CTH numbers and project
+  sigla — so the conventional Old/Middle/New grid waits for a consumer
+  that can materialize it.
+
 - **The `de:early` stage** (Nabu P80-5 use case): Early New High
   German under the existing `de` anchor (parent `gmh`), band
   [1350, 1650] per conventional Germanistik — ENHG has no ISO code

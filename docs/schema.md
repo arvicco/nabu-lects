@@ -21,8 +21,11 @@ all-lowercase.
   anchor's registered stage set. Digits are admitted (v1.1) because the
   fields' own periodization names carry them — `sux:ur3` is Ur III;
   pure-letter tags remain the norm.
-- `variety` — 2–5 lowercase alphanumerics starting with a letter, from
-  the anchor's registered variety set.
+- `variety` — 2–8 lowercase alphanumerics starting with a letter, from
+  the anchor's registered variety set (widened from 2–5 in the
+  pre-v1.0.0 window — №R-41 — so IANA variant subtag names ride
+  verbatim: `oc/lengadoc`, `oc/vivaraup`; the ortho slot's length
+  rule, now shared).
 - `script` — exactly 4 lowercase letters: an ISO 15924 code, lowercased,
   from the **global** `scripts:` table (not per-anchor). Claims the
   script of the text **as held** — see the scripts section below.
