@@ -2,6 +2,38 @@
 
 ## Unreleased
 
+- **GRAMMAR WIDENING (pre-v1.0.0 window item — №R-41, owner-ruled
+  2026-08-21):** variety tags widen from 2–5 to 2–8 lowercase
+  alphanumerics, mirroring the ortho slot, so IANA variant subtag
+  names ride verbatim (`oc/lengadoc`, `oc/vivaraup`). Additive: every
+  existing identifier stays valid; only consumers with the old grammar
+  compiled into a regex need the one-character update — which is
+  exactly why this lands before the first tag (№R-40's sequencing).
+  Touches `docs/schema.md` (the stated grammar), `bin/validate`
+  (LECT_RE + the variety-tag check), and the README variety bullet
+  (which now also states the reuse-IANA-names doctrine the ortho axis
+  always had — shared).
+
+- **The `oc` dialect varieties** (№R-41 / Nabu P81-r2, Option A of the
+  dialect-placement design): seven `kind: dialect` varieties under
+  `oc`, tags IANA-verbatim per the 2018 Occitan registration —
+  `gascon`, `lengadoc`, `provenc`, `auvern`, `lemosin`, `vivaraup`
+  (Bec's six-dialect classification = the first consuming corpus's own
+  division) plus `aranes` (the Val d'Aran variety of Gascon; the
+  gascon ⊃ aranes nesting carried in prose — the flat variety set is
+  deliberate). First consumers: lo-congres (6 oc docs / 5,152 aligned
+  pairs, upstream's `dialect` facet carries exactly these six names
+  letter-for-letter) and aranese (~420k pairs, definitionally
+  `oc/aranes`); the Nabu-side facet rule and override ride the
+  standing queue until this merges. Deliberately unminted:
+  `nicard`/`cisaup`/`creiss` (IANA-registered, no holdings), the
+  Occitan orthography variants (`grclass`/`grital`/`grmistr` — no
+  source distinguishes orthography), CTILC's Catalan variants (no `ca`
+  anchor; a later mint) and glaux's Greek dialect labels
+  (metadata-only, their own future ruling). The `oci: oc` codemap
+  alias (this PR's alias package) does double duty as this package's
+  code-level rung.
+
 - **The alias-suite completion** (Nabu P81-r1, closing the 2026-08-21
   maturity-review gap — 50.4k documents re-laddered): the №11
   639-3 ↔ 639-1 suite applied to every remaining same-language pair in
