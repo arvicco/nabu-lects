@@ -46,7 +46,9 @@ lect-id = anchor [ ":" stage ] [ "/" variety ] [ "~" script ] [ "@" ortho ]
   registered set. Reconstruction is the stage `pro`, but machine behavior
   keys on the registry field `mode: reconstructed`, never on the tag
   spelling.
-- **variety** — register, sociolect, or recension (`/lit`, `/vul`, `/ecc`).
+- **variety** — register, sociolect, recension, or dialect (`/lit`,
+  `/vul`, `/ecc`, `/gascon`), reusing IANA variant names where they
+  exist (the ortho doctrine, shared).
 - **script** — the writing system of the text AS HELD (`~latn`, `~ogam`):
   the surface a reader of the document meets, drawn from the global
   `scripts:` table (ISO 15924 codes, lowercased). Never the artifact's

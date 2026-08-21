@@ -157,6 +157,26 @@ anchors:
   oc:
     name: Occitan
     parent: pro
+    # The dialect varieties (№R-41, 2026-08-21): tags are the IANA variant
+    # subtag names VERBATIM (the 2018 Occitan registration; the ortho
+    # axis's reuse-IANA doctrine, now shared) — Bec's six-dialect
+    # classification, which is also the first consuming corpus's own
+    # division, plus aranes. Deliberately unminted: nicard/cisaup/creiss
+    # (IANA-registered, no holdings — use-case doctrine) and the
+    # orthography variants grclass/grital/grmistr (no source
+    # distinguishes orthography yet).
+    varieties:
+      gascon:   {name: Gascon,        kind: dialect}
+      lengadoc: {name: Languedocien,  kind: dialect}
+      provenc:  {name: Provençal,     kind: dialect}
+      auvern:   {name: Auvergnat,     kind: dialect}
+      lemosin:  {name: Limousin,      kind: dialect}
+      vivaraup: {name: Vivaro-Alpine, kind: dialect}
+      aranes:   {name: Aranese, kind: dialect,
+                 note: "the Val d'Aran variety of Gascon — its own IANA
+                        subtag and orthographic norm; the registry's flat
+                        variety set carries the gascon ⊃ aranes nesting
+                        in prose, not structure"}
 
   osp:
     name: Old Spanish
