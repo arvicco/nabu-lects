@@ -15,7 +15,7 @@ ANCHOR_RE = /\A[a-z]{2,3}(?:-[a-z]{2,4})*\z/
 # alphanumeric or a Titlecase 4-letter script subtag.
 CODE_RE   = /\A[a-z][a-z0-9]*(?:-(?:[a-z0-9]+|[A-Z][a-z]{3}))*\z/
 GLOTTO_RE = /\A[a-z]{4}[0-9]{4}\z/
-LECT_RE   = %r{\A([a-z]{2,3}(?:-[a-z]{2,4})*)(?::([a-z][a-z0-9]{1,4}))?(?:/([a-z][a-z0-9]{1,4}))?(?:~([a-z]{4}))?(?:@([a-z][a-z0-9]{1,7}))?\z}
+LECT_RE   = %r{\A([a-z]{2,3}(?:-[a-z]{2,4})*)(?::([a-z][a-z0-9]{1,4}))?(?:/([a-z][a-z0-9]{1,7}))?(?:~([a-z]{4}))?(?:@([a-z][a-z0-9]{1,7}))?\z}
 SCRIPT_RE = /\A[a-z]{4}\z/
 KINDS     = %w[register sociolect recension dialect].freeze
 MODES     = %w[attested reconstructed].freeze
@@ -144,8 +144,8 @@ anchors.each do |code, entry|
   (entry["varieties"] || {}).each do |tag, variety|
     variety_count += 1
     vwhere = "#{where}, variety '#{tag}'"
-    err("#{vwhere}: tag must be 2–5 lowercase alphanumerics starting with a letter") \
-      unless /\A[a-z][a-z0-9]{1,4}\z/.match?(tag.to_s)
+    err("#{vwhere}: tag must be 2–8 lowercase alphanumerics starting with a letter") \
+      unless /\A[a-z][a-z0-9]{1,7}\z/.match?(tag.to_s)
     unless variety.is_a?(Hash)
       err("#{vwhere}: variety must be a mapping")
       next
