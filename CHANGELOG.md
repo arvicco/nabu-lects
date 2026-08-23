@@ -1,6 +1,19 @@
 # Changelog
 
-## Unreleased
+## v1.0.0 — 2026-08-23
+
+The first tagged release. The registry ships **110 anchors, 68
+stages, 19 varieties, 2 orthographies, 20 scripts; codemap.yml 67
+mappings** — validator-checked (`bin/validate`, CI-wired), with one
+live consumer (Nabu: 148 rule/override/codemap targets resolving,
+zero drift). From this tag the README's Stability contract is
+ACTIVE: renaming/removing a lect id or changing a `mode` is a major
+version; new anchors/stages/varieties/orthographies and new codemap
+rows are minor; bands, notes, and crosswalks are patch. An existing
+codemap row never changes target within a major version.
+
+Everything below is this release — the two pre-tag accumulation
+sections folded (2026-08-09 rulings batch inline at the end).
 
 - **GRAMMAR WIDENING (pre-v1.0.0 window item — №R-41, owner-ruled
   2026-08-21):** variety tags widen from 2–5 to 2–8 lowercase
@@ -200,9 +213,10 @@ Initial registry:
   suffices).
 
 Pre-1.0: identifiers may change without notice until the first tagged
-release.
+release. (That window closed with this tag — the one doctrine
+reversal it existed for, the `~script` axis, is above.)
 
-## Unreleased — 2026-08-09 (the №1-№10 rulings batch, P64-6)
+### 2026-08-09 — the №1-№10 rulings batch (P64-6)
 
 - Minted: ave:old/yng stages (contested-chronology bands noted) · cop/sah +
   cop/boh dialects · chu/cro (Croatian recension) · egy/trad (égyptien de

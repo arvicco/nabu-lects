@@ -132,12 +132,12 @@ acyclicity. CI runs the same script on every push.
 
 ## Stability
 
-**Pre-1.0 instability window: identifiers may be renamed or restructured
-without notice until the first tagged release.** After v1.0.0, semantic
-versioning applies to the identifier space itself: renaming or removing a
-lect id, or changing a `mode`, is a major version; new anchors, stages,
-varieties, or orthographies are minor; band edits, notes, and crosswalks are
-patches. Changes are logged in [CHANGELOG.md](CHANGELOG.md).
+**Since v1.0.0 (2026-08-23), semantic versioning applies to the
+identifier space itself:** renaming or removing a lect id, or changing a
+`mode`, is a major version; new anchors, stages, varieties, orthographies,
+or codemap rows are minor; band edits, notes, and crosswalks are patches.
+An existing codemap row never changes target within a major version.
+Changes are logged in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
