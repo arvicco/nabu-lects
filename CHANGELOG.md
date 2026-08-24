@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.1.0 — 2026-08-24: the Norwegian and Danish descent ladders (Menota use case)
+
+- `no` anchor (parent `non`, the isl/sv precedent) with stage `old`
+  (Old Norwegian / gammelnorsk, band [1050, 1350]); `da` anchor
+  (parent `non`) with stage `old` (Old Danish / gammeldansk, band
+  [1100, 1525], wikt `gmq-oda`). Codemap: `nor: no`, `dan: da` (the
+  №11 alias suite — macrolanguage rows claiming nothing historical),
+  `gmq-oda: da:old` (the gmq-osw sibling). First consumer: Nabu's
+  menota source (91 Medieval Nordic mss; nor 27 · dan 2 — the Menota
+  Handbook's own modern-code + manuscript-dating doctrine, staged by
+  date-band inference plus one facet rule). The `no` anchor note
+  documents the macrolanguage status and the Bokmål/Nynorsk descent
+  trap (prose, never edges); `nb`/`nn`, `no:mid` (band pre-named in
+  the old stage's note), a Danish mid split, and any Scanian variety
+  stay deliberately unminted. Ruling №R-42 (2026-08-24), survey on
+  file in the consuming collection.
+
 ## v1.0.0 — 2026-08-23
 
 The first tagged release. The registry ships **110 anchors, 68
