@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.2.0 — 2026-08-26: the Early Modern English stage (EEBO use case)
+
+- `en:early` (Early Modern English, band [1500, 1700]) under the
+  existing `en` anchor (parent `enm` — the descent chain en ← enm ←
+  ang is untouched). First consumer: Nabu's eebo-tcp source
+  (EEBO-TCP wave 1 = Phase I, 25,368 texts, №R-43 ruled
+  2026-08-26): the corpus census puts ~130 of 60k texts before
+  1500 — the collection is squarely early-modern, and imprint-year
+  date-band inference stages it against this band (the no:old/
+  Menota precedent). Ruling: №R-43 + the owner's explicit "en:early
+  stage mint ok". Deliberately unminted: any internal EModE split
+  (Elizabethan/Jacobean etc. — no consumer distinguishes one).
+
 ## v1.1.0 — 2026-08-24: the Norwegian and Danish descent ladders (Menota use case)
 
 - `no` anchor (parent `non`, the isl/sv precedent) with stage `old`
