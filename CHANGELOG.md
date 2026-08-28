@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.3.0 — 2026-08-28: six scripts for the held-corpus surfaces (Nabu char-desk use case)
+
+- Six rows join the global `scripts:` table — `tibt` (Tibetan), `ethi`
+  (Ethiopic/Geʿez), `hang` (Hangul), `avst` (Avestan), `ugar`
+  (Ugaritic), `xpeo` (Old Persian cuneiform). Naming rows only, no
+  schema change: the registry stays the naming authority; mechanical
+  codepoint→script facts live in the consumer's Unicode data (UCD
+  Scripts.txt), joined on the lowercased ISO 15924 code.
+- First consumers, per row (Nabu's held collections, censused
+  2026-08-28): tibt — the Tibetan shelf family (84000, OTDO, SOAS,
+  Derge); ethi — Beta maṣāḥǝft + Dillmann; hang — ONCOJ-adjacent
+  Korean shelves and the Unihan kHangul stratum; avst — the TITUS
+  Avestan corpus; ugar — the Copenhagen Ugaritic Corpus and RSTI's
+  Unicode cuneiform editions; xpeo — Achemenet. Ruling: №R-49(c)
+  (owner, 2026-08-28, "as recommended").
+- Unblocked downstream: `~script` lect ids on these six (previously
+  resolved nil), artifact-script records for Tibetan/Avestan/Old-
+  Persian texts held in Latin transliteration (previously rejected as
+  unregistered tags), and script-naming for the consumer's char desk.
+- Deliberately unminted: any further scripts without a consuming
+  collection (the table grows by measured need, per its own header).
+
 ## v1.2.0 — 2026-08-26: the Early Modern English stage (EEBO use case)
 
 - `en:early` (Early Modern English, band [1500, 1700]) under the
