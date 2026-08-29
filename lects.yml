@@ -408,6 +408,13 @@ anchors:
             band_note: "conventional, approximate"}
       mid: {name: Middle Chinese, band: [400, 1000],   ord: 20, iso: ltc,
             band_note: "conventional, approximate"}
+      oman: {name: Old Mandarin, band: [1200, 1455], ord: 30,
+             band_note: "conventional, approximate — the Yuan-era spoken
+                         standard the phonological record attests: the
+                         Menggu Ziyun (1308, 'Phags-pa) and Zhongyuan
+                         Yinyun (1324) rhyme books. No ISO code exists;
+                         consumers tag such shelves with the honest-coarse
+                         zho and the zho:oman lect row refines"}
     varieties:
       lit: {name: Literary Chinese (wenyan), kind: register, iso: lzh,
             note: "a written register spanning stages, used for roughly two
@@ -427,6 +434,20 @@ anchors:
   bod:
     name: Tibetan
     parent: xct
+
+  # ── Newar (P88 mint: the DACON corpus — the xct/bod two-anchor mold) ──────
+
+  nwc:
+    name: Classical Newari
+    band: [1100, 1900]
+    band_note: "the attested manuscript/inscription span (DACON's four
+                texts run 12th–19th century); conventional, approximate"
+    note: "Sino-Tibetan; no family node is minted (the Aramaic-fan
+           discipline — no consumer needs the edge)"
+
+  new:
+    name: Newar
+    parent: nwc
 
   # ── Aramaic and Hebrew ─────────────────────────────────────────────────────
 
@@ -472,6 +493,18 @@ anchors:
     stages:
       rab: {name: Rabbinic Hebrew, ord: 10}
       med: {name: Medieval Hebrew, ord: 20}
+
+  # ── Ethiopic (P88 mint: the Geʿez shelf family — Beta maṣāḥǝft 3,774
+  # docs + TraCES 15 + the Dillmann dictionary — was the largest
+  # node-less language left after the Anatolian mint) ───────────────────────
+
+  gez:
+    name: Geʿez
+    note: "Ethio-Semitic; no Semitic family node exists and none is
+           minted (the Aramaic-fan discipline — bare anchors, no parent
+           edge where no consumer needs one). Band deliberately absent:
+           the held corpus spans Aksumite inscriptions to 19th-century
+           manuscripts and Geʿez remains liturgically alive"
 
   # ── Egyptian ───────────────────────────────────────────────────────────────
 
@@ -652,6 +685,17 @@ anchors:
       ved: {name: Vedic Sanskrit,     ord: 10, note: "IANA variant precedent: sa-vaidika"}
       epi: {name: Epic Sanskrit,      ord: 20, note: "IANA variant precedent: sa-itihasa"}
       cla: {name: Classical Sanskrit, ord: 30, note: "IANA variant precedent: sa-laukika"}
+
+  pra:
+    name: Prakrit
+    parent: san
+    note: "ISO 639-2 collective code, kept DELIBERATELY coarse: the
+           consuming corpus (SuttaCentral's 22 pra docs) claims no finer
+           identity, so the member codes (pka/pmh/psu/pgd…) stay
+           unminted until a consumer distinguishes them. The descent
+           edge reads the lineage — Middle Indo-Aryan continues from
+           Old Indo-Aryan (san); the literary-register nuance stays
+           here as prose"
 
   # ── Iranian and Armenian (the ISO-parentage wave) ──────────────────────────
 
