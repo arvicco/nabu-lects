@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.4.0 — 2026-08-29: the P88 anchor batch (Geʿez · Prakrit · Newar · Old Mandarin)
+
+Four node-less constituencies of the consuming library, minted in one
+aggregated package (the №R-53 ruling batch; the concurrent-mints rule):
+
+- **`gez` (Geʿez)** — bare anchor, the Aramaic-fan discipline (no
+  Semitic family node minted). Use case: the Geʿez shelf family was the
+  largest node-less language left after the P81-r1 Anatolian mint —
+  Beta maṣāḥǝft 3,774 docs + TraCES 15 + the Dillmann dictionary
+  (13,727 entries). Band deliberately absent (Aksumite inscriptions to
+  19th-century manuscripts; liturgically alive).
+- **`pra` (Prakrit)** — collective ISO 639-2 anchor, parent `san`
+  (the lineage edge: Middle Indo-Aryan continues from Old Indo-Aryan).
+  DELIBERATELY coarse: the consuming corpus (SuttaCentral, 22 docs)
+  claims no finer identity; pka/pmh/psu/pgd stay unminted until a
+  consumer distinguishes them.
+- **`nwc` (Classical Newari) + `new` (Newar, parent: nwc)** — the
+  xct/bod two-anchor mold. Use case: the DACON gold-POS corpus
+  (P88-A4, 4 docs / 977 passages), whose lect posture pends on exactly
+  this node. Band [1100, 1900] from the attested span. No Sino-Tibetan
+  family node (the Aramaic-fan discipline).
+- **`zho:oman` (Old Mandarin)** — a third stage on the Chinese ladder
+  (band [1200, 1455], after `mid`): the Yuan-era spoken standard the
+  rhyme books attest. Use case: unblocks the menggu-ziyun shelf (the
+  Menggu Ziyun, 1308, 'Phags-pa) and the parked zhongyuan-data
+  question (Zhongyuan Yinyun, 1324) — no ISO code exists for Old
+  Mandarin, so consumers tag those shelves honest-coarse `zho` and the
+  `zho:oman` lect row refines.
+
+Deliberately unminted, recorded: the Anatolian flank (already served,
+P81-r1); finer Prakrit member codes; a Semitic or Sino-Tibetan family
+node; Hittite stages (unchanged from the P81-r1 note).
+
 ## v1.3.0 — 2026-08-28: six scripts for the held-corpus surfaces (Nabu char-desk use case)
 
 - Six rows join the global `scripts:` table — `tibt` (Tibetan), `ethi`
