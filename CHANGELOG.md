@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.5.0 — 2026-08-31: `xum` (Umbrian)
+
+One anchor, completing the Sabellic pair beside `osc`:
+
+- **`xum` (Umbrian)** — parent `itc` (Italic, the existing family
+  node). Use case: the consuming library ingests the TITUS
+  Osco-Umbrian corpus (the complete Iguvine Tables + the Oscan and
+  minor-dialect inscriptions, ~390 pages), whose Umbrian-lane
+  documents claim `xum`; its Oscan lane resolves on the existing
+  `osc` anchor. The claim stays deliberately coarse at the edition's
+  own two-lane split — minor Sabellic dialects (Paelignian, Marsian,
+  …) ride their nearest lane and stay unminted until a consumer
+  distinguishes them. No band minted (the corpus spans the whole
+  epigraphic record); no codemap rows needed — the consumer tags the
+  bare ISO 639-3 code.
+
 ## v1.4.0 — 2026-08-29: the P88 anchor batch (Geʿez · Prakrit · Newar · Old Mandarin)
 
 Four node-less constituencies of the consuming library, minted in one
