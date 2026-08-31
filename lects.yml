@@ -903,6 +903,17 @@ anchors:
     note: "Osco-Umbrian; held in Latin-script transliteration of Old Italic
            originals (the consumer's artifact field carries Ital)"
 
+  xum:
+    name: Umbrian
+    parent: itc
+    note: "Osco-Umbrian; the Iguvine Tables are the corpus. Held in
+           Latin-script transliteration of Old Italic / Latin-alphabet
+           originals (the consumer's per-passage annotation names the
+           original alphabet). Deliberately coarse at the consuming
+           edition's own lane split: minor Sabellic dialects (Paelignian,
+           Marsian, ...) ride the nearest lane unminted until a consumer
+           distinguishes them"
+
   xpi:
     name: Pictish
     note: "classification debated (commonly Brittonic); no parent edge
