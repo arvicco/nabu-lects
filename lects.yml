@@ -932,18 +932,133 @@ anchors:
     note: "descendant of Phoenician; the Semitic fan (phn) is deliberately
            unminted, so no parent edge yet"
 
+  dra:
+    name: Dravidian
+    kind: family
+
   ta:
     name: Tamil
-    note: "ISO 639-1; Dravidian -- no family node minted"
+    parent: dra
+    note: "ISO 639-1; South Dravidian. The Sangam corpus (~1st c. BCE
+           onward) opens its literature; the consuming collections hold
+           classical and modern Tamil under the one code"
+
+  inc:
+    name: Indo-Aryan
+    kind: family
+    parent: iir
 
   bra:
     name: Braj
-    note: "Indo-Aryan -- no family node minted"
+    parent: inc
+    note: "Western Hindi; the dominant literary language of early modern
+           North India (Krishna bhakti poetry, 15th-19th c.)"
 
   awa:
     name: Awadhi
-    note: "Indo-Aryan -- no family node minted"
+    parent: inc
+    note: "Eastern Hindi; the language of Tulsidas's Ramcaritmanas and
+           Jayasi's Padmavat (16th c.)"
 
+  # ── The Southeast Asian wing (v1.6.0) ──────────────────────────────────
+  # Seven language anchors from one consuming wave — the DHARMA epigraphic
+  # corpora (EFEO/ERC; per-file measured xml:lang census) and the Old
+  # Burmese inscriptions of Bagan — each wired into its family spine
+  # (ISO 639-5 codes), minted here with it: Austroasiatic (aav),
+  # Austronesian (map > poz > cmc), Sino-Tibetan (sit > tbq).
+
+  aav:
+    name: Austroasiatic
+    kind: family
+
+  okz:
+    name: Old Khmer
+    parent: aav
+    note: "the Khmeric branch of Austroasiatic (no ISO code for the
+           branch); the ancestor of Modern Khmer (khm). Attested from the
+           early 7th c. CE (pre-Angkorian) through the Angkorian period,
+           ~14th c. The DHARMA Corpus des inscriptions khmeres (the Coedes
+           K-numbers) is the corpus; held romanized (okz-Latn), the
+           stones' Khmer script rides the consumer's artifact records"
+
+  map:
+    name: Austronesian
+    kind: family
+
+  poz:
+    name: Malayo-Polynesian
+    kind: family
+    parent: map
+
+  cmc:
+    name: Chamic
+    kind: family
+    parent: poz
+
+  ocm:
+    name: Old Cham
+    parent: cmc
+    note: "the ancestor of the modern Cham languages (cja/cjm). Its
+           earliest text (Dong Yen Chau, ~4th c. CE) is the oldest
+           attested Austronesian document anywhere. The DHARMA Campa
+           corpus attests it beside Sanskrit; held romanized (ocm-Latn)"
+
+  kaw:
+    name: Old Javanese (Kawi)
+    parent: poz
+    note: "the literary ancestor stage of Javanese (jav); the Javanesic
+           placement below Malayo-Polynesian carries no ISO branch code.
+           Attested from the Sukabumi inscription (804 CE); the kakawin
+           court-poetry tradition (Desavarnana, Sutasoma, Pararaton...) is
+           its literature. The DHARMA Nusantara philology and epigraphy
+           are the corpora; held romanized (kaw-Latn)"
+
+  omy:
+    name: Old Malay
+    parent: poz
+    note: "the Malayic branch of Malayo-Polynesian (no ISO code for the
+           branch); the ancestor stage of Malay (msa). Attested from the
+           Srivijaya inscriptions (Kedukan Bukit, 683 CE) to the Laguna
+           copperplate (900 CE, the Philippines' oldest document). The
+           DHARMA Nusantara epigraphy attests it; held romanized
+           (omy-Latn)"
+
+  osn:
+    name: Old Sundanese
+    parent: poz
+    note: "the ancestor stage of Sundanese (sun). Attested 14th-17th c.
+           (Kawali, Batutulis, the Sanghyang prose treatises). The DHARMA
+           Nusantara corpora attest it; held romanized (osn-Latn)"
+
+  sit:
+    name: Sino-Tibetan
+    kind: family
+
+  tbq:
+    name: Tibeto-Burman
+    kind: family
+    parent: sit
+    note: "the conventional non-Sinitic grouping (ISO 639-5 tbq); its
+           validity as a clade is debated, the code is the standard
+           filing place"
+
+  pyx:
+    name: Pyu
+    parent: sit
+    note: "Sino-Tibetan, position within it debated (parent edge kept at
+           the family root for that reason); extinct, no modern
+           descendant. The language of the Pyu city-states of the
+           Irrawaddy valley, attested ~5th-13th c. CE. The DHARMA Corpus
+           of Pyu Inscriptions (Griffiths et al.) is the corpus; held
+           romanized (pyx-Latn)"
+
+  obr:
+    name: Old Burmese
+    parent: tbq
+    note: "Lolo-Burmese, Burmish (no ISO code below tbq); the ancestor of
+           Burmese (mya). Attested from the Myazedi inscription (1112/1113
+           CE) through the Bagan period. The Bagan stone inscriptions are
+           the corpus, held in Myanmar-script Unicode with transliteration"
 
 # ── Scripts (the ~ axis) ─────────────────────────────────────────────────────
 #
@@ -985,3 +1100,4 @@ scripts:
   avst: {name: Avestan,                              iso15924: Avst}
   ugar: {name: Ugaritic,                             iso15924: Ugar}
   xpeo: {name: Old Persian cuneiform,                iso15924: Xpeo}
+  mymr: {name: Myanmar (Burmese),                    iso15924: Mymr}
