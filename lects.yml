@@ -224,9 +224,15 @@ anchors:
 
   # ── Greek ──────────────────────────────────────────────────────────────────
 
+  grk:
+    name: Hellenic
+    kind: family
+    parent: ine
+
   grc:
     name: Ancient Greek
     glottocode: anci1242
+    parent: grk
     stages:
       hom: {name: Epic (Homeric) Greek, band: [-800, -600], ord: 10,
             band_note: "conventional, approximate"}
@@ -401,8 +407,14 @@ anchors:
 
   # ── Chinese ────────────────────────────────────────────────────────────────
 
+  zhx:
+    name: Sinitic
+    kind: family
+    parent: sit
+
   zho:
     name: Chinese
+    parent: zhx
     stages:
       old: {name: Old Chinese,    band: [-1250, -100], ord: 10, iso: och,
             band_note: "conventional, approximate"}
@@ -425,6 +437,9 @@ anchors:
 
   otb:
     name: Old Tibetan
+    parent: tbq
+    note: "Tibetic (Bodish); the language of the Dunhuang documents and
+           the imperial inscriptions, ancestor of Classical Tibetan (xct)"
 
   xct:
     name: Classical Tibetan
@@ -442,17 +457,31 @@ anchors:
     band: [1100, 1900]
     band_note: "the attested manuscript/inscription span (DACON's four
                 texts run 12th–19th century); conventional, approximate"
-    note: "Sino-Tibetan; no family node is minted (the Aramaic-fan
-           discipline — no consumer needs the edge)"
+    parent: sit
+    note: "Sino-Tibetan (Newaric); the literary language of the Kathmandu
+           valley's manuscript tradition, ancestor of Newar (new); DACON's
+           annotated texts are the held corpus"
 
   new:
     name: Newar
     parent: nwc
 
+  # ── Afro-Asiatic ───────────────────────────────────────────────────────────
+
+  afa:
+    name: Afro-Asiatic
+    kind: family
+
+  sem:
+    name: Semitic
+    kind: family
+    parent: afa
+
   # ── Aramaic and Hebrew ─────────────────────────────────────────────────────
 
   arc:
     name: Aramaic
+    parent: sem
     stages:
       imp: {name: Imperial (Official) Aramaic, band: [-700, -300], ord: 10, iso: arc,
             band_note: "ISO 639-2 reference name: Official Aramaic (700–300 BCE)"}
@@ -486,6 +515,8 @@ anchors:
 
   hbo:
     name: Biblical Hebrew
+    parent: sem
+    note: "Canaanite, Northwest Semitic; the language of the Hebrew Bible"
 
   heb:
     name: Hebrew
@@ -500,16 +531,16 @@ anchors:
 
   gez:
     name: Geʿez
-    note: "Ethio-Semitic; no Semitic family node exists and none is
-           minted (the Aramaic-fan discipline — bare anchors, no parent
-           edge where no consumer needs one). Band deliberately absent:
-           the held corpus spans Aksumite inscriptions to 19th-century
+    parent: sem
+    note: "Ethio-Semitic (South Semitic). Band deliberately absent: the
+           held corpus spans Aksumite inscriptions to 19th-century
            manuscripts and Geʿez remains liturgically alive"
 
   # ── Egyptian ───────────────────────────────────────────────────────────────
 
   egy:
     name: Egyptian
+    parent: afa
     stages:
       old:  {name: Old Egyptian,    band: [-2600, -2000], ord: 10,
              band_note: "approximate Egyptological convention"}
@@ -548,7 +579,7 @@ anchors:
   sux:
     name: Sumerian
     glottocode: sume1241
-    note: "stage grid per the CDLI period vocabulary. Uruk-era proto-cuneiform
+    note: "language isolate. Stage grid per the CDLI period vocabulary. Uruk-era proto-cuneiform
            is deliberately NOT a sux stage — see qpc."
     stages:
       arch: {name: Archaic Sumerian,        band: [-2900, -2700], ord: 10,
@@ -588,7 +619,8 @@ anchors:
 
   akk:
     name: Akkadian
-    note: "the stage grid is dialect × period (Assyrian and Babylonian run in
+    parent: sem
+    note: "East Semitic. The stage grid is dialect × period (Assyrian and Babylonian run in
            parallel), not a single ladder — ord orders display only"
     stages:
       old: {name: Old Akkadian,     band: [-2340, -2200], ord: 5,
@@ -649,9 +681,10 @@ anchors:
   hlu:
     name: Hieroglyphic Luwian
     parent: ine-ana
-    note: "with xlu the two written traditions of the Luwian complex;
-           a joint Luwic node is deliberately unminted — no consumer
-           needs the distinction drawn finer than the ISO codes draw it"
+    note: "with xlu the two written traditions of the Luwian complex
+           (hieroglyphic vs cuneiform script, largely one language in two
+           garbs); a joint Luwic node below ine-ana carries no established
+           code, so the pair rides as siblings"
 
   plq:
     name: Palaic
@@ -663,18 +696,20 @@ anchors:
 
   xht:
     name: Hattic
-    note: "isolate (the pre-Hittite substrate of central Anatolia) —
-           no parent edge; rides the Hittite archives (tlhdig)"
+    note: "language isolate, the pre-Hittite substrate of central
+           Anatolia; survives in Hittite ritual contexts and rides the
+           Hittite archives (tlhdig)"
 
   xhu:
     name: Hurrian
-    note: "Hurro-Urartian; the family node is deliberately unminted —
-           no ISO 639-5 code exists and no consumer needs the edge"
+    note: "Hurro-Urartian, xur's sibling; the family carries no ISO
+           639-5 or Wiktionary code, and anchors require one, so the
+           pair rides as sibling anchors without a family node"
 
   xur:
     name: Urartian
-    note: "Hurro-Urartian, xhu's sibling; same deliberately-unminted
-           family node"
+    note: "Hurro-Urartian, xhu's sibling; see xhu on the codeless
+           family"
 
   # ── Sanskrit ───────────────────────────────────────────────────────────────
 
@@ -774,6 +809,7 @@ anchors:
 
   sl:
     name: Slovene
+    parent: sla
     stages:
       old:  {name: Old Slovene, band: [950, 1550], ord: 10,
              note: "the Freising Fragments era",
@@ -791,6 +827,7 @@ anchors:
 
   bul:
     name: Bulgarian
+    parent: sla
     stages:
       emod: {name: Early Modern Bulgarian, ord: 10}
     varieties:
@@ -798,8 +835,13 @@ anchors:
 
   # ── Others forced by holdings ──────────────────────────────────────────────
 
+  jpx:
+    name: Japonic
+    kind: family
+
   jpn:
     name: Japanese
+    parent: jpx
     stages:
       mod: {name: Modern Japanese, ord: 10}
     orthos:
@@ -876,6 +918,7 @@ anchors:
 
   ara:
     name: Arabic
+    parent: sem
     stages:
       cla: {name: Classical Arabic, ord: 10}
 
@@ -916,21 +959,33 @@ anchors:
 
   xpi:
     name: Pictish
-    note: "classification debated (commonly Brittonic); no parent edge
-           minted -- the ogham corpus attests it"
+    note: "classification debated (commonly held Brittonic, a non-Celtic
+           reading argued historically); the debate keeps the parent edge
+           unclaimed. The ogham corpus attests it"
 
   xly:
     name: Elymian
-    note: "fragmentary; classification uncertain -- no parent edge"
+    note: "fragmentary; an Indo-European (possibly Italic) affiliation
+           is argued but unsettled, so no parent edge is claimed"
 
   scx:
     name: Sicel
-    note: "fragmentary; classification uncertain -- no parent edge"
+    note: "fragmentary; an Indo-European (possibly Italic) affiliation
+           is argued but unsettled, so no parent edge is claimed"
+
+  phn:
+    name: Phoenician
+    parent: sem
+    note: "Canaanite, Northwest Semitic; the language of Tyre, Sidon and
+           Byblos and of the first alphabet's spread; Punic (xpu) is its
+           western descendant"
 
   xpu:
     name: Punic
-    note: "descendant of Phoenician; the Semitic fan (phn) is deliberately
-           unminted, so no parent edge yet"
+    parent: phn
+    note: "the Phoenician of the western colonies, Carthage above all;
+           attested to late antiquity (Neo-Punic, and Latino-Punic in
+           Tripolitania)"
 
   dra:
     name: Dravidian
