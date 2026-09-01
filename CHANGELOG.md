@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.6.0 — 2026-09-01: the Southeast Asian wing (seven languages, six family nodes)
+
+The largest single mint since v1.0: the consuming library opens a
+Southeast Asia desk on the DHARMA epigraphic corpora (EFEO/ERC,
+github.com/erc-dharma) and the Old Burmese inscriptions of Bagan
+(Zenodo 4321314). Every language code is a measured claim — read from
+the editions' own per-file `xml:lang` declarations (the DHARMA five)
+or the corpus's stated language (OBI), never inferred — and every
+anchor is wired into its family spine, minted with it (ISO 639-5):
+
+- **`aav` Austroasiatic** ← **`okz` Old Khmer** (the Cœdès K-numbers,
+  1,187 editions; ancestor of khm)
+- **`map` Austronesian** ← **`poz` Malayo-Polynesian** ← **`cmc`
+  Chamic** ← **`ocm` Old Cham** (~121 editions; Đông Yên Châu is the
+  oldest attested Austronesian text); `poz` also carries **`kaw` Old
+  Javanese** (the kakawin editions), **`omy` Old Malay** (Srivijaya to
+  the Laguna copperplate) and **`osn` Old Sundanese** (Kawali,
+  Batutulis)
+- **`sit` Sino-Tibetan** ← **`tbq` Tibeto-Burman** ← **`obr` Old
+  Burmese** (Bagan, 1,121 files; ancestor of mya); `pyx` **Pyu**
+  attaches at the family root, its lower position debated
+
+Notes state philology — classification, descent line, attestation
+range, corpus — never registry bookkeeping. Housekeeping riders under
+the same rule: `dra` (Dravidian) minted with `ta` wired to it; `inc`
+(Indo-Aryan, parent `iir`) minted with `bra`/`awa` wired to it; the
+three notes rewritten from bare family names to real content.
+
+Codemap: six `-Latn` rows (`okz-Latn` → `okz~latn` …, the `san-Latn`
+shape) for the romanized DHARMA editions. Scripts table: `mymr`
+(Myanmar) added for the OBI surface.
+
 ## v1.5.0 — 2026-08-31: `xum` (Umbrian)
 
 One anchor, completing the Sabellic pair beside `osc`:
