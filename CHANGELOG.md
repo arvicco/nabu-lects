@@ -28,6 +28,27 @@ the same rule: `dra` (Dravidian) minted with `ta` wired to it; `inc`
 (Indo-Aryan, parent `iir`) minted with `bra`/`awa` wired to it; the
 three notes rewritten from bare family names to real content.
 
+**The catalog audit (same wave, owner-commissioned):** a full sweep
+of every anchor against the same standard (researched notes, parent
+edges wired recursively) found and fixed the wider rot the SEA mint's
+review exposed:
+
+- Family spines minted and wired: **`afa` Afro-Asiatic ← `sem`
+  Semitic** (now carrying akk, arc, hbo, ara, gez, and the new **`phn`
+  Phoenician ← `xpu` Punic** chain), **`grk` Hellenic** (← grc),
+  **`zhx` Sinitic** (← zho, under sit), **`jpx` Japonic** (← jpn);
+  `egy` → afa, `otb` → tbq, `nwc` → sit, `sl`/`bul` → sla.
+- Every "deliberately unminted / no consumer needs the edge" note
+  rewritten to state the real fact: xhu/xur (the Hurro-Urartian
+  family carries no code — anchors require one), hlu/xlu (no
+  established Luwic code below ine-ana), xht and sux marked the
+  language isolates they are, xpi/xly/scx notes now state the actual
+  classification debates.
+- Anchors that legitimately stay parentless: root families, the two
+  isolates, the codeless Hurro-Urartian pair, the three debated
+  fragmentary languages, and qpc (its non-mapping to sux is a
+  recorded scholarly position, kept).
+
 Codemap: six `-Latn` rows (`okz-Latn` → `okz~latn` …, the `san-Latn`
 shape) for the romanized DHARMA editions. Scripts table: `mymr`
 (Myanmar) added for the OBI surface.
