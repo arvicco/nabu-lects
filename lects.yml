@@ -721,6 +721,16 @@ anchors:
       epi: {name: Epic Sanskrit,      ord: 20, note: "IANA variant precedent: sa-itihasa"}
       cla: {name: Classical Sanskrit, ord: 30, note: "IANA variant precedent: sa-laukika"}
 
+  pli:
+    name: Pali
+    parent: san
+    note: "Middle Indo-Aryan; the language of the Theravada canon — the
+           consuming library's largest Indic holding (SuttaCentral's
+           7,288 pli documents) and the Pali inscriptions of Bagan (the
+           DHARMA Pyu corpus, 10 editions). The descent edge reads the
+           lineage from Old Indo-Aryan (san), the pra shape; held
+           romanized"
+
   pra:
     name: Prakrit
     parent: san
@@ -1026,6 +1036,16 @@ anchors:
     name: Austroasiatic
     kind: family
 
+  omx:
+    name: Old Mon
+    parent: aav
+    note: "Austroasiatic, Monic; the language of the Dvaravati and early
+           Bagan world, attested ~6th-13th c. CE — the Myazedi
+           quadrilingual's fourth leg. No dedicated digital corpus
+           exists; the DHARMA Pyu corpus carries two Old Mon inscriptions
+           (79 lines, first-sync census 2026-09-02), the consuming
+           library's first omx text anywhere; held romanized (omx-Latn)"
+
   okz:
     name: Old Khmer
     parent: aav
@@ -1035,6 +1055,21 @@ anchors:
            ~14th c. The DHARMA Corpus des inscriptions khmeres (the Coedes
            K-numbers) is the corpus; held romanized (okz-Latn), the
            stones' Khmer script rides the consumer's artifact records"
+
+  xhm:
+    name: Middle Khmer
+    parent: okz
+    note: "the stage between Old and Modern Khmer, ~15th-18th c. (the
+           post-Angkorian transition); the DHARMA Khmer corpus attests it
+           (3 editions, first-sync census 2026-09-01); held romanized
+           (xhm-Latn)"
+
+  khm:
+    name: Khmer
+    parent: xhm
+    note: "Modern Khmer; the DHARMA Khmer corpus carries 23 modern-era
+           editions (its K-numbering runs to the present); held romanized
+           (khm-Latn) there, Khmer script (khmr) natively"
 
   map:
     name: Austronesian
