@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.6.1 — 2026-09-02: the SEA first-sync census (four anchors, seven codemap rows)
+
+What the consuming library's first syncs measured beyond the v1.6.0
+wing (every claim from the per-file census, 2026-09-01/02):
+
+- **`xhm` Middle Khmer** (parent okz) and **`khm` Khmer** (parent
+  xhm) — the okz → xhm → khm descent chain completed: the DHARMA
+  Khmer corpus carries 3 Middle and 23 Modern Khmer editions among
+  its K-numbers.
+- **`omx` Old Mon** (parent aav, Monic) — the Myazedi world's fourth
+  leg. No dedicated digital corpus exists anywhere; the DHARMA Pyu
+  corpus carries two Old Mon inscriptions (79 lines) — the consuming
+  library's first omx text.
+- **`pli` Pali** (parent san, the pra sibling shape) — long attested
+  in the consuming library (SuttaCentral, 7,288 documents) but never
+  anchored; the Bagan Pali inscriptions (10 editions) forced the
+  question.
+- Codemap: six `-Latn` rows (xhm/khm/omx/obr/pli/pra — the romanized
+  SEA editions' surfaces) joining v1.6.0's six.
+
+`bin/validate`: 142 anchors, 82 mappings, acyclic (127 edges).
+
+
 ## v1.6.0 — 2026-09-01: the Southeast Asian wing (seven languages, six family nodes)
 
 The largest single mint since v1.0: the consuming library opens a
