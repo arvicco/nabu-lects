@@ -78,6 +78,17 @@ map:
   iir-pro:     iir:pro
   ine-bsl-pro: ine-bsl:pro
   cel-pro:     cel:pro
+  tut-pro:     tut:pro
+  jpx-pro:     jpx:pro
+  ccn-pro:     ccn:pro
+  ccs-pro:     ccs:pro
+  bat-pro:     bat:pro
+  sit-pro:     sit:pro
+  dra-pro:     dra:pro
+  qfa-cka-pro: qfa-cka:pro
+  qfa-chk-pro: qfa-chk:pro
+  itl-pro:     itl:pro
+  qfa-yen-pro: qfa-yen:pro
 
   # The script-suffix suite (P61): BCP-47-style tags whose script subtag
   # is used per the standard's own semantics -- it describes the CONTENT.
