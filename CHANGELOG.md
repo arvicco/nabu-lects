@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.7.0 — 2026-09-26: the comparative-etymology wing (eight anchors, eleven codemap rows)
+
+Forced by the StarLing etymological shelves (the Tower of Babel
+databases; six further packages joining the consuming library under
+the standing 2026-07-15 grant). Every contested macro-family claim is
+a note, never a parent edge:
+
+- **`tut` Altaic** (hypothesis node, filing place for the AED 2003
+  corpus) · **`ccn` North Caucasian** (NCED 1994) · **`qfa-cka`
+  Chukotko-Kamchatkan** with **`qfa-chk` Chukotkan** (code coined,
+  qfa- style) and **`itl` Itelmen** · **`qfa-yen` Yeniseian** — each
+  with a reconstructed `pro` stage naming its published corpus.
+- **`jpx`/`sit`/`dra` gain `pro` stages** (Proto-Japonic,
+  Proto-Sino-Tibetan, Proto-Dravidian) on their existing family
+  anchors.
+- **Backfill: `ccs` Kartvelian and `bat` Baltic anchors** — their
+  bat-pro/ccs-pro codes shipped in consuming collections before the
+  registry discipline; the anchors land with this wave.
+- Codemap: eleven `-pro` rows (tut/jpx/ccn/ccs/bat/sit/dra/qfa-cka/
+  qfa-chk/itl/qfa-yen), all mapping to `<anchor>:pro` — mode stays
+  the registry's machine truth.
+
 ## v1.6.2 — 2026-09-25: the Elamite anchor (elx)
 
 The last recorded tail of the consuming library's cuneiform wing:
