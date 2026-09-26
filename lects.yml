@@ -877,6 +877,13 @@ anchors:
   jpx:
     name: Japonic
     kind: family
+    stages:
+      pro: {name: Proto-Japonic, mode: reconstructed, ord: 5, wikt: jpx-pro,
+            note: "internal reconstruction over Old Japanese + Ryukyuan (Martin
+                   1987; Starostin 1975 for accent); the AED files Japonic under
+                   Macro-Altaic — the registry keeps Japonic independent, the
+                   Moscow-school claim stays a note. Corpus: starling-japet
+                   (1,705 etymologies)"}
 
   jpn:
     name: Japanese
@@ -1029,6 +1036,13 @@ anchors:
   dra:
     name: Dravidian
     kind: family
+    stages:
+      pro: {name: Proto-Dravidian, mode: reconstructed, ord: 5, wikt: dra-pro,
+            note: "reconstructed over four branches (South, South-Central,
+                   Central, North); the DED (Burrow-Emeneau 1984) is the
+                   standard cognate corpus. Corpus: starling-dravet (2,171
+                   reconstructions, DED correspondences revised and
+                   significantly modified by G. Starostin)"}
 
   ta:
     name: Tamil
@@ -1152,6 +1166,12 @@ anchors:
   sit:
     name: Sino-Tibetan
     kind: family
+    stages:
+      pro: {name: Proto-Sino-Tibetan, mode: reconstructed, ord: 5, wikt: sit-pro,
+            note: "no consensus reconstruction (Benedict/Matisoff STEDT vs the
+                   Moscow school); this registry's corpus is starling-stibet
+                   (2,823 Peiros-Starostin 1996 etymologies, improved
+                   reconstructions)"}
 
   tbq:
     name: Tibeto-Burman
@@ -1178,6 +1198,132 @@ anchors:
            Burmese (mya). Attested from the Myazedi inscription (1112/1113
            CE) through the Bagan period. The Bagan stone inscriptions are
            the corpus, held in Myanmar-script Unicode with transliteration"
+
+  # ── The comparative-etymology wing ──────────────────────────────────
+  # Anchors forced by the StarLing etymological shelves (the Tower of
+  # Babel databases, standing grant 2026-07-15): each proto stage is a
+  # RECONSTRUCTED filing place for a named published corpus, and every
+  # contested macro-family claim stays a note, never a parent edge.
+  # Includes the bat/ccs backfill: starling-baltet and starling-kart
+  # shipped bat-pro/ccs-pro before the registry discipline; their
+  # anchors land here with the wave.
+
+  tut:
+    name: Altaic
+    kind: family
+    note: "ISO 639-5 tut. The Altaic/Transeurasian macro-family HYPOTHESIS
+           (Turkic + Mongolic + Tungusic; 'Macro-Altaic' adds Koreanic and
+           Japonic). Genealogical validity is widely doubted (Clauson's and
+           Doerfer's areal/loan reading is the mainstream position); the node
+           is the standard filing place for Moscow-school reconstructions,
+           expressly individual reconstructions under the grant's own caveat.
+           Corpus: starling-altet (2,805 Starostin-Dybo-Mudrak AED 2003
+           etymologies with five branch databases)."
+    stages:
+      pro: {name: Proto-Altaic, mode: reconstructed, ord: 5,
+            note: "tut-pro by the family-code + -pro convention (the
+                   bat-pro/ccs-pro precedent); Wiktionary does not admit
+                   Proto-Altaic reconstructions"}
+
+  ccn:
+    name: North Caucasian
+    kind: family
+    note: "ISO 639-5 ccn. The proposed union of Northeast (Nakh-Daghestanian)
+           and Northwest (Abkhazo-Adyghean) Caucasian — the Nikolayev-Starostin
+           NCED (Moscow 1994) hypothesis; the mainstream treats the two as
+           separate families, so the node exists as the filing place for NCED
+           reconstructions (often effectively Proto-East-Caucasian, the NCED's
+           own admission where West Caucasian reflexes are absent). Corpus:
+           starling-caucet (2,327 etymologies)."
+    stages:
+      pro: {name: Proto-North-Caucasian, mode: reconstructed, ord: 5,
+            note: "ccn-pro by the family-code + -pro convention (the ccs-pro
+                   sibling)"}
+
+  ccs:
+    name: Kartvelian
+    kind: family
+    note: "ISO 639-5 ccs (South Caucasian): Georgian, Mingrelian, Laz, Svan —
+           an uncontroversial family. Backfill anchor: starling-kart shipped
+           ccs-pro before the registry discipline. Corpus: starling-kart
+           (G. Klimov and Faehnrich-Sardshveladze etymological dictionaries,
+           with S. Starostin's notes)."
+    stages:
+      pro: {name: Proto-Kartvelian, mode: reconstructed, ord: 5, wikt: ccs-pro}
+
+  bat:
+    name: Baltic
+    kind: family
+    parent: ine-bsl
+    note: "ISO 639-5 bat: Lithuanian, Latvian, Old Prussian. Whether Baltic is
+           a clade or a paraphyletic remnant beside Slavic is itself debated
+           (Wiktionary reconstructs only at the Balto-Slavic level); the node
+           is the filing place for the StarLing Baltic etymology base.
+           Backfill anchor: starling-baltet shipped bat-pro before the
+           registry discipline."
+    stages:
+      pro: {name: Proto-Baltic, mode: reconstructed, ord: 5,
+            note: "bat-pro by the family-code + -pro convention; a
+                   Moscow-school reconstruction level mainstream scholarship
+                   folds into Balto-Slavic"}
+
+  qfa-cka:
+    name: Chukotko-Kamchatkan
+    kind: family
+    note: "no ISO 639-5 code; qfa-cka is Wiktionary's family code
+           (Reconstruction:Proto-Chukotko-Kamchatkan pages verified live
+           2026-09-26). Two branches: Chukotkan (Chukchi, Koryak, Alutor,
+           Kerek) and Kamchatkan (Itelmen + the extinct Kamchadal varieties).
+           Family-level unity is generally accepted (Glottolog chuk1271),
+           Itelmen's membership debated historically; O. Mudrak's comparative
+           work (1997/2000, the StarLing databases) supports it. Corpus:
+           starling-kamet (1,099 reconstructions, Russian glosses)."
+    stages:
+      pro: {name: Proto-Chukotko-Kamchatkan, mode: reconstructed, ord: 5,
+            wikt: qfa-cka-pro}
+
+  qfa-chk:
+    name: Chukotkan
+    kind: family
+    parent: qfa-cka
+    note: "the northern branch — Chukchi (ckt), Koryak (kpy), Alutor (alr),
+           Kerek; a shallow dialect-chain-like group. CODE COINED in
+           Wiktionary's qfa- style: neither ISO 639-5 nor Wiktionary names
+           the branch. Corpus: starling-chuket (O. Mudrak's 2,281
+           Chukchee-Koryak reconstructions, subordinate to the qfa-cka base)."
+    stages:
+      pro: {name: Proto-Chukotkan (Chukchee-Koryak), mode: reconstructed,
+            ord: 5}
+
+  itl:
+    name: Itelmen
+    parent: qfa-cka
+    note: "sole survivor of the Kamchatkan branch (Western Itelmen, moribund;
+           Eastern and Southern Kamchadal extinct by the 19th c. — recorded in
+           Krasheninnikov's and Dybowski's wordlists). Parent edge kept at the
+           family root: the Kamchatkan branch node is deliberately not minted,
+           Itelmen being its only coded member. Corpus: starling-itelet
+           (O. Mudrak's 1,673 Proto-Itelmen reconstructions carrying
+           Dybowski's W/S Kamchadal records)."
+    stages:
+      pro: {name: Proto-Itelmen, mode: reconstructed, ord: 5,
+            note: "the gmq:pro shape — a reconstructed stage on a language
+                   anchor, standing for the Kamchatkan branch proto"}
+
+  qfa-yen:
+    name: Yeniseian
+    kind: family
+    note: "no ISO 639-5 code; qfa-yen is Wiktionary's family code
+           (Reconstruction:Proto-Yeniseian pages verified live 2026-09-26).
+           Ket (ket, sole survivor) and Yugh (yug, extinct ~1970s) plus the
+           18th/19th-c.-recorded extinct Kott (zko), Arin (xrn), Pumpokol
+           (xpm), Assan. External proposals stay claims, no parent edge:
+           Starostin's Sino-Caucasian (with North Caucasian and Sino-Tibetan)
+           and Vajda's Dene-Yeniseian (2010). Corpus: starling-yenet (1,059
+           Starostin 1995 reconstructions, Russian glosses)."
+    stages:
+      pro: {name: Proto-Yeniseian, mode: reconstructed, ord: 5,
+            wikt: qfa-yen-pro}
 
 # ── Scripts (the ~ axis) ─────────────────────────────────────────────────────
 #
