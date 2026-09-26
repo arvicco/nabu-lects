@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.6.2 — 2026-09-25: the Elamite anchor (elx)
+
+The last recorded tail of the consuming library's cuneiform wing:
+
+- **`elx` Elamite** — language isolate (no parent; the Elamo-Dravidian
+  hypothesis noted as unproven), glottocode elam1244, with the
+  four-stage ladder the CDLI period vocabulary materializes (Old /
+  Middle / Neo / Achaemenid Elamite; 2,723 documents censused
+  2026-09-25: Achaemenid 2,139 · Neo 300 · Middle 277 · Old 1).
+  Proto-Elamite and Linear Elamite stay out as script traditions.
+
 ## v1.6.1 — 2026-09-02: the SEA first-sync census (four anchors, seven codemap rows)
 
 What the consuming library's first syncs measured beyond the v1.6.0

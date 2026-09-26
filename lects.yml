@@ -615,6 +615,35 @@ anchors:
            this code. A holder may claim specific ED I-II documents as
            sux:arch at document grain; the registry itself takes no side."
 
+  elx:
+    name: Elamite
+    glottocode: elam1244
+    note: "language isolate (the Elamo-Dravidian hypothesis remains
+           unproven; the registry takes no side). Cuneiform Elamite from
+           the Old Elamite treaty era to the Achaemenid chancery, where
+           it served as an imperial administrative language alongside
+           Old Persian and Babylonian; Proto-Elamite and Linear Elamite
+           are script traditions, not stages of this anchor. Stage grid
+           per the CDLI period vocabulary — the consuming library's
+           2,723 elx documents (cdli 2,700 · oracc 23, censused
+           2026-09-25) carry per-document period labels that materialize
+           all four stages (Achaemenid 2,139 · Neo-Elamite 300 · Middle
+           Elamite 277 · Old Elamite 1)"
+    stages:
+      old: {name: Old Elamite,        band: [-2700, -1500], ord: 10,
+            band_note: "per the CDLI period convention (ca. 2700-1500 BC);
+                        the treaty and sukkalmah-era record"}
+      mid: {name: Middle Elamite,     band: [-1300, -1000], ord: 20,
+            band_note: "per the CDLI period convention (ca. 1300-1000 BC);
+                        the Igihalkid-Shutrukid royal record — scholarly
+                        usage often opens the stage ~1500"}
+      neo: {name: Neo-Elamite,        band: [-770, -539], ord: 30,
+            band_note: "per the CDLI period convention (ca. 770-539 BC)"}
+      ach: {name: Achaemenid Elamite, band: [-547, -331], ord: 40,
+            band_note: "per the CDLI period convention (547-331 BC); the
+                        chancery language of the Persepolis archives and
+                        the trilingual royal inscriptions"}
+
   # ── Akkadian ───────────────────────────────────────────────────────────────
 
   akk:
