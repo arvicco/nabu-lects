@@ -602,6 +602,16 @@ anchors:
                          OB-convention band [-2000,-1600] when the 2026-08-09
                          ruling assigned MB/MA/NA/NB-period copies to this
                          stage — the LANGUAGE claim spans the whole tradition"}
+    varieties:
+      es: {name: Emesal, kind: sociolect,
+           note: "the 'fine tongue' beside main-dialect Emegir: the register
+                  of the cult laments (Balaĝ, Eršema) sung by gala priests
+                  and of female deities' direct speech, written syllabically
+                  because the standard logograms would read as Emegir by
+                  default; carried by the lament liturgy deep into the first
+                  millennium. ORACC codes it sux-x-emesal (inline es);
+                  consuming dictionaries: 9 oracc glossaries (censused
+                  2026-09-27)"}
 
   qpc:
     name: Proto-cuneiform
@@ -652,6 +662,14 @@ anchors:
     note: "East Semitic. The stage grid is dialect × period (Assyrian and Babylonian run in
            parallel), not a single ladder — ord orders display only"
     stages:
+      ear: {name: Early Akkadian,   band: [-2600, -2350], ord: 3,
+            band_note: "pre-Sargonic (ED IIIa-b) East Semitic, approximate —
+                        the earliest Akkadian-read record, before the
+                        Sargonic span old opens",
+            note: "ORACC's akk-x-earakk, glossed by ORACC itself 'For
+                   pre-Sargonic Akkadian' (ATF inline tutorial) — a distinct
+                   period code beside oldakk, so a distinct stage rather
+                   than a widened old band"}
       old: {name: Old Akkadian,     band: [-2340, -2200], ord: 5,
             band_note: "the Sargonic record, before the Assyrian/Babylonian
                         split; per the CDLI period convention"}
@@ -676,6 +694,31 @@ anchors:
     varieties:
       lit: {name: Standard Babylonian, kind: register,
             note: "the literary register of first-millennium scholarship"}
+      peri: {name: Peripheral Akkadian, kind: dialect,
+             note: "the western-periphery scribal Akkadian of the Late
+                    Bronze international age — Amarna, Nuzi, Emar, Ugarit,
+                    Ḫattuša (15th-12th c. BCE): Akkadian as written by
+                    non-native chanceries. ORACC codes it per period
+                    (akk-x-mbperi 'MB Peripheral', with an obperi sibling),
+                    so consumers reach it as the stage/variety compound
+                    akk:mb/peri"}
+
+  qca:
+    name: Canaano-Akkadian
+    parent: sem
+    band: [-1360, -1330]
+    band_note: "the Amarna archive's span, approximate — Amenhotep III
+                through early Tutankhamun"
+    note: "the mixed scribal language of the Canaanite Amarna letters:
+           mainly Akkadian lexicon on Canaanite (Northwest Semitic)
+           morphosyntax — an interlanguage of the Egyptian-vassal
+           chanceries, not a vernacular (Izre'el, Canaano-Akkadian).
+           Both components are Semitic, so the family edge is honest
+           while no single-branch descent is claimable — the mixed
+           nature stays this note. ORACC's registry names the code
+           'Canaanite' (qca — a q- local-use code, the qpc precedent);
+           consuming dictionary: the oracc aemw/amarna glossary
+           (censused 2026-09-27)"
 
   # ── The Anatolian flank (P81-r1: hit was the largest node-less language
   # in the first consuming collection — 35.9k docs, tlhdig + cdli; the
@@ -885,9 +928,25 @@ anchors:
                    Moscow-school claim stays a note. Corpus: starling-japet
                    (1,705 etymologies)"}
 
+  ojp:
+    name: Old Japanese
+    parent: jpx
+    band: [700, 800]
+    band_note: "the substantial corpus is Nara-period (8th c.); 7th-c.
+                attestation is marginal and epigraphic"
+    note: "the oldest attested Japonic stage: Kojiki (712), Nihon Shoki
+           (720), Man'yōshū (c. 759, 4,500+ poems), written in
+           man'yōgana (Chinese characters as syllabograms); preserves
+           the kō/otsu (A/B) vowel-type distinctions Early Middle
+           Japanese merged. Own-anchor rather than a jpn stage per the
+           ang/enm/non precedent (an ISO-coded historical stage is its
+           own anchor); jpn's descent re-reads through it. Consumers:
+           the oncoj-lexicon and wiktionary-ojp shelves (censused
+           2026-09-27) beside the held ONCOJ corpus"
+
   jpn:
     name: Japanese
-    parent: jpx
+    parent: ojp
     stages:
       mod: {name: Modern Japanese, ord: 10}
     orthos:
@@ -1003,6 +1062,45 @@ anchors:
            Marsian, ...) ride the nearest lane unminted until a consumer
            distinguishes them"
 
+  sbv:
+    name: Sabine
+    parent: itc
+    note: "Osco-Umbrian (Sabellic), osc/xum's minor sibling — the
+           consumer that distinguishes it arrived (a curated
+           Sabine→Latin loan shelf, 26 entries, censused 2026-09-27),
+           closing xum's ride-the-nearest-lane note for this one
+           dialect. Attested almost entirely through Latin authors'
+           glosses (Varro, Festus), not a running-text corpus"
+
+  ett:
+    name: Etruscan
+    glottocode: etru1241
+    band: [-700, 50]
+    band_note: "conventional epigraphic span, approximate — the earliest
+                inscriptions to the language's extinction under Latin"
+    note: "Tyrsenian (with Raetic and Lemnian), pre-Indo-European; the
+           family carries no ISO 639-5 or Wiktionary code, so ett rides
+           as a bare anchor (the xhu/xur discipline). ~13,000
+           inscriptions, mostly short and funerary, in an
+           Euboean-Greek-derived alphabet written right-to-left.
+           Consumers: the wiktionary-ett and larth-etp shelves and 30
+           ett documents (censused 2026-09-27)"
+
+  xlp:
+    name: Lepontic
+    parent: cel
+    band: [-550, -100]
+    band_note: "conventional epigraphic span, approximate; the earliest
+                inscriptions may reach the 7th c. BCE"
+    note: "Continental Celtic of the Lugano/Como/Maggiore lake region —
+           the earliest attested Celtic of any kind; ~140 short
+           funerary and dedicatory inscriptions in the Lugano alphabet
+           (Etruscan-derived, no voice distinction). Whether a distinct
+           language or early Cisalpine Gaulish is debated (Schumacher:
+           possibly the first branch off Proto-Celtic) — the registry
+           claims only the cel edge. Consumer: the lexlep-words shelf
+           (Lexicon Leponticum, censused 2026-09-27)"
+
   xpi:
     name: Pictish
     note: "classification debated (commonly held Brittonic, a non-Celtic
@@ -1018,6 +1116,22 @@ anchors:
     name: Sicel
     note: "fragmentary; an Indo-European (possibly Italic) affiliation
            is argued but unsettled, so no parent edge is claimed"
+
+  uga:
+    name: Ugaritic
+    parent: sem
+    band: [-1350, -1190]
+    band_note: "the Ras Shamra archives to the destruction of Ugarit
+                (~1190 BCE), approximate"
+    note: "Northwest Semitic (its exact position beside Canaanite is
+           debated; the registry claims only the sem edge). Written in
+           its own alphabetic cuneiform (the 30-letter long alphabet,
+           left-to-right) and occasionally in Sumero-Akkadian cuneiform;
+           corpus ~1,800 inscriptions from Ras Shamra. Reference
+           dictionary: del Olmo Lete & Sanmartín, A Dictionary of the
+           Ugaritic Language in the Alphabetic Tradition (Brill 2003) —
+           ORACC's own uga reference. Consuming dictionaries: 3 oracc
+           glossaries (censused 2026-09-27)"
 
   phn:
     name: Phoenician
