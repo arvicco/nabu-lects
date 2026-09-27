@@ -1,5 +1,36 @@
 # Changelog
 
+## Unreleased — 2026-09-27: the dictionary-group wave (six anchors, one stage, three varieties, fourteen codemap rows)
+
+Forced by the consuming library's per-lect dictionary grouping: its
+464 dictionary shelves resolved through the codemap left 61 codes
+node-less, and the ancient-language tail of that census is real
+registry material (the modern loanword-database recipient codes stay
+deliberately unresolved on the consumer's side).
+
+- **The ORACC Akkadian dialect suite**: eleven `akk-x-*` codemap rows
+  onto the standing akk grid — nine to existing stages (`ltebab`
+  folds into `nb` per that band's own recorded decision), plus the
+  new **`akk:ear` Early Akkadian stage** (pre-Sargonic, ORACC's own
+  gloss) and the new **`akk/peri` Peripheral Akkadian variety**
+  (`akk-x-mbperi` → `akk:mb/peri`, the Amarna/Nuzi/Emar/Ugarit/
+  Ḫattuša scribal Akkadian).
+- **`sux/es` Emesal** (variety, sociolect) — the cult-lament register;
+  `sux-x-emesal` → `sux/es`.
+- **`qca` Canaano-Akkadian** — the Amarna letters' mixed scribal
+  language (Akkadian lexicon on Canaanite grammar), parent sem with
+  the mixed nature a note; a q- local-use code on the qpc precedent.
+- **`uga` Ugaritic** (parent sem, band [-1350, -1190]) and **`ett`
+  Etruscan** (bare anchor — Tyrsenian has no code; glottocode
+  etru1241, band [-700, 50]).
+- **`xlp` Lepontic** (parent cel — the earliest attested Celtic) and
+  **`sbv` Sabine** (parent itc — the consumer that distinguishes a
+  minor Sabellic dialect arrived, per xum's standing note).
+- **`ojp` Old Japanese** (parent jpx, band [700, 800]) on the
+  ang/enm/non own-anchor precedent, **re-reading jpn's descent
+  through it** (jpn: parent jpx → parent ojp).
+- Codemap also gains `rus` → `ru` (the №11 alias-suite shape).
+
 ## v1.7.0 — 2026-09-26: the comparative-etymology wing (eight anchors, eleven codemap rows)
 
 Forced by the StarLing etymological shelves (the Tower of Babel
