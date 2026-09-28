@@ -839,9 +839,98 @@ anchors:
     name: Middle Persian (Pahlavi)
     parent: peo
 
+  xpr:
+    name: Parthian
+    parent: iir:pro
+    band: [-250, 250]
+    band_note: "the Arsacid attestation core, approximate — ostraca and
+                inscriptions from the 3rd c. BCE (Nisa) through the
+                Sasanian trilinguals; the Manichaean Parthian literary
+                corpus carries the language to ~the 9th c. in Turfan
+                copies"
+    note: "Northwestern Middle Iranian, pal's northwestern counterpart —
+           parented to iir:pro like peo (no Proto-Iranian node is
+           minted; the NW/SW split stays this note). First consuming
+           document: the ŠKZ trilingual's Parthian version (word-
+           aligned with pal and grc)"
+
+  kho:
+    name: Khotanese
+    parent: iir:pro
+    band: [400, 1000]
+    band_note: "the Khotan and Dunhuang document horizon, approximate —
+                Old Khotanese (Book of Zambasta era) through Late
+                Khotanese business documents"
+    note: "Eastern Middle Iranian (Saka); the Buddhist literary and
+           documentary language of the Khotan oasis, written in Brahmi.
+           Tumshuqese, its poorly attested sibling, stays unminted (no
+           consumer). Consumers: 552 IEDC documents + the 2,357-record
+           British Library transliteration set (censused 2026-09-28)"
+
+  sog:
+    name: Sogdian
+    parent: iir:pro
+    band: [300, 1000]
+    band_note: "the Ancient Letters (early 4th c.) through the Mugh
+                archive and the Turfan/Dunhuang religious corpora,
+                approximate"
+    note: "Eastern Middle Iranian; the lingua franca of the Silk Road —
+           secular documents, Buddhist/Manichaean/Christian literatures,
+           each in its own script tradition. Yaghnobi, its living
+           descendant, stays unminted (no consumer). Consumers: 111
+           IEDC documents (censused 2026-09-28)"
+
+  xbc:
+    name: Bactrian
+    parent: iir:pro
+    band: [100, 850]
+    band_note: "the Kushan inscriptions (Rabatak) through the Islamic-era
+                economic documents, approximate"
+    note: "Eastern Middle Iranian, the one Iranian language regularly
+           written in GREEK script (the Kushan chancery's inheritance).
+           Consumers: 26 IEDC documents — the open rail into the
+           Bactrian economic-document corpus (censused 2026-09-28)"
+
   fa:
     name: Persian
     parent: pal
+
+  jpr:
+    name: Judeo-Persian
+    parent: fa
+    note: "New Persian written in Hebrew script — including some of the
+           EARLIEST New Persian documents of any kind (8th c. letters).
+           An ISO-coded script-community tradition minted as an anchor
+           on the jpa/tmr precedent. Consumers: 27 IEDC documents
+           (censused 2026-09-28)"
+
+  # ── Tocharian (the ine-ana sibling discipline: the branch carries no
+  # ISO 639-5 code, so the pair rides directly under ine) ───────────────────
+
+  xto:
+    name: Tocharian A
+    parent: ine
+    band: [400, 1000]
+    band_note: "the Tarim manuscript horizon, approximate — absolute
+                Tocharian chronology rests on palaeography and carbon
+                dates, both debated"
+    note: "Agnean; the eastern (Turfan/Shorchuk) member of the pair, a
+           liturgical/literary language possibly already dead in daily
+           use when copied. With txb the branch rides directly under
+           ine — no established family code, the hlu/xlu discipline.
+           Consumers: kaikki extract (581 senses) now; the manuscript
+           corpus is ask-gated (censused 2026-09-28)"
+
+  txb:
+    name: Tocharian B
+    parent: ine
+    band: [400, 1000]
+    band_note: "the Tarim manuscript horizon, approximate — see xto"
+    note: "Kuchean; the western and far better attested member —
+           thousands of fragments (monastic, economic, medical,
+           caravan passes) across three dialect areas. See xto on the
+           codeless branch. Consumers: kaikki extract (2,856 senses)
+           now; CEToM is ask-gated (censused 2026-09-28)"
 
   xcl:
     name: Classical Armenian
@@ -952,6 +1041,113 @@ anchors:
     orthos:
       kyu: {name: Kyūjitai (pre-reform character forms), script: jpan,
             note: "pre-1946 printings"}
+
+  # ── The Turkic ladder (ISO 639-5 family + the literary-continuum
+  # chain: Old Turkic → Old Uyghur / Karakhanid → Chagatai) ─────────────────
+
+  trk:
+    name: Turkic
+    kind: family
+    note: "ISO 639-5. Family node only — modern Turkic languages stay
+           unminted until consumers arrive; the historical literary
+           ladder below is what the library holds"
+
+  otk:
+    name: Old Turkic
+    parent: trk
+    band: [700, 840]
+    band_note: "the runiform corpus, approximate — the Orkhon
+                inscriptions (Kül Tegin, Bilge Kagan, Tonyukuk,
+                720s–730s) and the Yenisei epitaphs, to the Uyghur
+                khaganate's fall"
+    note: "the earliest attested Turkic: the runiform ('Orkhon
+           script') inscriptional language. Consumers: kaikki extract
+           (505 senses) + a CC0 UD treebank seed; no open runiform
+           corpus exists yet (bitig.kz down at survey — censused
+           2026-09-28)"
+
+  oui:
+    name: Old Uyghur
+    parent: otk
+    band: [800, 1400]
+    band_note: "the Turfan/Dunhuang manuscript horizon, approximate —
+                Manichaean and Buddhist corpora through Yuan-era
+                prints and civil documents"
+    note: "the Old Turkic literary continuum in its Tarim-basin
+           continuation — Uyghur script (Sogdian-derived), plus
+           Manichaean, Brahmi and runiform strands. Descent edge otk
+           per the literary-continuum reading (the enm←ang shape).
+           Consumers: kaikki extract (632 senses) + the Wilkens
+           dictionary; the corpus (VATEC) is ask-gated (censused
+           2026-09-28)"
+
+  xqa:
+    name: Karakhanid
+    parent: otk
+    band: [1000, 1200]
+    band_note: "the Kutadgu Bilig (1069) and Dīwān Lughāt al-Turk
+                (1070s) era, approximate"
+    note: "the first ISLAMIC Turkic literary language (Arabic script),
+           continuing the Old Turkic literary tradition parallel to
+           oui — both carry parent otk, the na/nb-style parallel
+           branches. No open machine-readable corpus exists (censused
+           2026-09-28); minted now so the ladder reads whole and
+           kaikki's DLT-derived otk entries have their context"
+
+  chg:
+    name: Chagatai
+    parent: xqa
+    band: [1400, 1920]
+    band_note: "Nawāʾī's classical age through the late 'Turki' of
+                Central Asian chanceries and the Jarring-collection
+                manuscripts, approximate"
+    note: "the great Perso-Arabic-script literary language of Central
+           Asia, continuing the Karakhanid tradition. The consuming
+           ATMO manuscripts (18th–20th c. Eastern 'Turki') sit at its
+           late edge — the honest-coarse chg claim, with any finer
+           late-Turki node a future call. Consumers: ATMO TEI + kaikki
+           extract (813 senses) (censused 2026-09-28)"
+
+  # ── Mongolic and Tungusic (ISO 639-5 families, one anchor each) ───────────
+
+  xgn:
+    name: Mongolic
+    kind: family
+    note: "ISO 639-5. Family node; Classical Mongolian (cmg) stays
+           unminted — the survey found NO open machine-readable
+           corpus (censused 2026-09-28)"
+
+  xng:
+    name: Middle Mongol
+    parent: xgn
+    band: [1200, 1600]
+    band_note: "the Secret History era through the late
+                Sino-Mongolian glossaries, approximate"
+    note: "the language of the Mongol empire's records: the Secret
+           History (hanzi phonetic transcription), 'Phags-pa edicts,
+           Sino-Mongolian inscriptions and glossaries. Consumers: the
+           altaica.ru romanized Secret History (use granted by the
+           site's maintainer by email, 2026-09-27) + the zh.wikisource
+           transcription (queued) (censused 2026-09-28)"
+
+  tuw:
+    name: Tungusic
+    kind: family
+    note: "ISO 639-5 (code glossed 'Tungus languages'). Family node;
+           the modern members stay unminted until consumers arrive"
+
+  mnc:
+    name: Manchu
+    parent: tuw
+    band: [1600, 1950]
+    band_note: "the Old Manchu records (Fe Dangse era) through the
+                Qing chancery tradition's end, approximate"
+    note: "the Qing dynastic language — vertical script adapted from
+           Mongolian; the empire's bilingual chancery left an enormous
+           documentary corpus, almost all still image-only. Consumers:
+           kaikki extract (3,207 senses) now; the annotated 滿文老檔
+           and the curated e-text collections are ask-gated (censused
+           2026-09-28)"
 
   non:
     name: Old Norse
