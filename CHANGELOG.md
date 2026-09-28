@@ -1,5 +1,28 @@
 # Changelog
 
+## Unreleased — 2026-09-28: the Central Asia wave (sixteen anchors)
+
+Forced by the consuming library's Central Asia opener phase — four
+Middle Iranian document corpora, the Turki manuscript shelf, the Old
+Uyghur dictionary, the Middle Mongol Secret History and six
+dictionary extracts arrive together, across a belt the registry had
+never covered. All identity anchors (no codemap rows needed):
+
+- **Middle Iranian**: `xpr` Parthian · `kho` Khotanese · `sog`
+  Sogdian · `xbc` Bactrian — parented to iir:pro on the standing
+  peo/ave pattern (no Proto-Iranian node; NW/SW and Eastern
+  groupings stay notes) · `jpr` Judeo-Persian (parent fa, the
+  jpa/tmr script-community precedent).
+- **Tocharian**: `xto` A + `txb` B directly under ine — the branch
+  carries no ISO 639-5 code, the hlu/xlu sibling discipline.
+- **The Turkic ladder**: `trk` family (639-5) + the literary
+  continuum `otk` Old Turkic → `oui` Old Uyghur ∥ `xqa` Karakhanid
+  → `chg` Chagatai (the consuming Turki manuscripts sit at chg's
+  late edge, honest-coarse).
+- **Mongolic/Tungusic**: `xgn` + `xng` Middle Mongol; `tuw` + `mnc`
+  Manchu. Classical Mongolian (cmg) deliberately unminted — no open
+  corpus exists.
+
 ## Unreleased — 2026-09-27: the dictionary-group wave (six anchors, one stage, three varieties, fourteen codemap rows)
 
 Forced by the consuming library's per-lect dictionary grouping: its
