@@ -1,6 +1,17 @@
 # Changelog
 
-## Unreleased — 2026-09-28: the Central Asia wave (sixteen anchors)
+## Unreleased
+
+- 2026-09-29, the Japanese classical ladder: `jpn` grows the full
+  historical staging — `emj` (Early Middle/Classical, Heian 794-1185:
+  Kokinshū, Genji), `lmj` (Late Middle, 1185-1600), `emod` (Early
+  Modern/Edo, 1600-1868), and `mod` gains its band (Meiji onward).
+  Use case: the japonic text wave — the 校異源氏物語 TEI (c. 1008) and
+  嘉禄二年本古今和歌集 (905 text) claim `jpn:emj`; the honkoku
+  crowd-transcription mass is largely `jpn:emod`; ONCOJ's Nara corpus
+  stays on the existing `ojp` anchor (own-anchor precedent). Bands
+  follow the conventional periodization; notes carry the philology.
+ — 2026-09-28: the Central Asia wave (sixteen anchors)
 
 Forced by the consuming library's Central Asia opener phase — four
 Middle Iranian document corpora, the Turki manuscript shelf, the Old
