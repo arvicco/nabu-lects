@@ -1037,7 +1037,28 @@ anchors:
     name: Japanese
     parent: ojp
     stages:
-      mod: {name: Modern Japanese, ord: 10}
+      emj:  {name: Early Middle (Classical) Japanese, band: [794, 1185], ord: 2,
+             note: "the Heian kana literature: Kokinshū (905), Genji
+                    Monogatari (c. 1008), the court diaries; the classical
+                    grammar (bungo) later stages keep as a written norm.
+                    Merges Old Japanese's kō/otsu vowel distinctions;
+                    hiragana/katakana replace man'yōgana as the vernacular
+                    scripts",
+             band_note: "the Heian period as the conventional envelope"}
+      lmj:  {name: Late Middle Japanese, band: [1185, 1600], ord: 4,
+             note: "Kamakura-Muromachi: the gunki monogatari (Heike),
+                    kyōgen, the Christian-mission romanizations (Nippo
+                    Jisho 1603 documents its close); onbin contractions
+                    and the shift toward the modern verb system",
+             band_note: "Kamakura through Momoyama; approximate convention"}
+      emod: {name: Early Modern Japanese (Edo), band: [1600, 1868], ord: 6,
+             note: "the Edo print and manuscript mass — kuzushiji
+                    documents, ukiyo-zōshi, kokugaku scholarship; the
+                    stage most crowd-transcription corpora inhabit",
+             band_note: "Tokugawa era by convention"}
+      mod:  {name: Modern Japanese, band: [1868, 2100], ord: 10,
+             band_note: "Meiji onward — banded so date staging covers the
+                         modern corpora beside the new premodern stages"}
     orthos:
       kyu: {name: Kyūjitai (pre-reform character forms), script: jpan,
             note: "pre-1946 printings"}
