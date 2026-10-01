@@ -1386,6 +1386,41 @@ anchors:
     name: Indo-Aryan
     kind: family
     parent: iir
+    stages:
+      pro: {name: Proto-Indo-Aryan, mode: reconstructed, ord: 5, wikt: inc-pro}
+
+  # ── The Indo-Iranian comparative wing (StarLing LEXSTAT, 2026-10-01) ──
+  # The IE package's dardet/indet/iranet etymology shelves key their
+  # proto-entries to inc-dar-pro / inc-pro / ira-pro; the ira and
+  # inc-dar nodes (and the three pro stages) are minted with them.
+
+  ira:
+    name: Iranian
+    kind: family
+    parent: iir
+    stages:
+      pro: {name: Proto-Iranian, mode: reconstructed, ord: 5, wikt: ira-pro}
+    note: "Indo-European > Indo-Iranian; the sister branch to Indo-Aryan.
+           Attested from the Avesta (Old Avestan, oral composition
+           ~2nd-1st mill. BCE) and the Old Persian cuneiform inscriptions
+           (6th c. BCE); the held corpora reach it through Avestan,
+           Middle Persian and the StarLing Iranian comparative material
+           (iran wordlist + iranet etymology shelves)"
+
+  inc-dar:
+    name: Dardic
+    kind: family
+    parent: inc
+    stages:
+      pro: {name: Proto-Dardic, mode: reconstructed, ord: 5, wikt: inc-dar-pro}
+    note: "The northwestern Indo-Aryan mountain languages (Kashmiri,
+           Shina, Khowar, Kalasha, Indus Kohistani, Bashkarik/Kalami,
+           Pashai...). CAVEAT, recorded deliberately: modern scholarship
+           (Strand, Bashir) treats Dardic as an AREAL/geographic grouping
+           within Indo-Aryan, not a proven genetic clade — this node (and
+           its reconstructed pro stage) exists to carry the StarLing
+           dardet database's claims, which assume a Proto-Dardic level;
+           the registry records the claim without endorsing the clade"
 
   bra:
     name: Braj

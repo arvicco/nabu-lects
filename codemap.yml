@@ -104,6 +104,9 @@ map:
   cel-pro:     cel:pro
   tut-pro:     tut:pro
   jpx-pro:     jpx:pro
+  inc-pro:     inc:pro
+  ira-pro:     ira:pro
+  inc-dar-pro: inc-dar:pro
   ccn-pro:     ccn:pro
   ccs-pro:     ccs:pro
   bat-pro:     bat:pro
