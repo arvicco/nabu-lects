@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-10-01, the Indo-Iranian comparative wing: `ira` (Iranian) and
+  `inc-dar` (Dardic) family anchors under `iir`/`inc`, with `pro`
+  stages on `ira`, `inc` and `inc-dar` (codemap: ira-pro, inc-pro,
+  inc-dar-pro — Wiktionary-consistent). Use case: the StarLing IE
+  package's LEXSTAT shelves — the iranet/indet/dardet etymology
+  tables key proto-entries to these codes, and the iran/ind/dard
+  wordlist shelves claim the branch codes. The Dardic node carries a
+  deliberate caveat: an areal grouping per modern scholarship
+  (Strand, Bashir), minted to record the StarLing claim, not to
+  endorse the clade.
+
 - 2026-09-29, the Japanese classical ladder: `jpn` grows the full
   historical staging — `emj` (Early Middle/Classical, Heian 794-1185:
   Kokinshū, Genji), `lmj` (Late Middle, 1185-1600), `emod` (Early
