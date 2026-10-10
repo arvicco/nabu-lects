@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+- 2026-10-07, the StarLing branch-base wing: pro stages on the
+  existing trk/xgn/tuw anchors; six Northeast-Caucasian branch
+  families + cau-nec itself (parent ccn with the NCED caveat) and
+  cau-nwc; qfa-kor (Koreanic, deliberately parentless — the Altaic
+  affiliation stays a data-layer claim) and sit-kir (Kiranti) with
+  their singles (lbe, kjj, dus, kle, lif, ybi); and the Dravidian
+  subtree (dra-sou/tkt/tel/cen/nor/gki/gon on Wiktionary codes,
+  verified against Module:families 2026-10-07; dra-kki as structural
+  parent; dra-kui + dra-pem COINED with Konda-Kui subgrouping per
+  Krishnamurti 2003), plus anchors kfc and brh. Use case: the 28
+  StarLing branch etymology bases (42,247 entries / 91,041 reflex
+  rows) shelved by the consuming project's current phase.
+
 - 2026-10-01, the Indo-Iranian comparative wing: `ira` (Iranian) and
   `inc-dar` (Dardic) family anchors under `iir`/`inc`, with `pro`
   stages on `ira`, `inc` and `inc-dar` (codemap: ira-pro, inc-pro,

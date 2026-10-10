@@ -107,6 +107,27 @@ map:
   inc-pro:     inc:pro
   ira-pro:     ira:pro
   inc-dar-pro: inc-dar:pro
+  trk-pro:     trk:pro
+  xgn-pro:     xgn:pro
+  tuw-pro:     tuw:pro
+  qfa-kor-pro: qfa-kor:pro
+  cau-nec-pro: cau-nec:pro
+  cau-nkh-pro: cau-nkh:pro
+  cau-ava-pro: cau-ava:pro
+  cau-tsz-pro: cau-tsz:pro
+  cau-drg-pro: cau-drg:pro
+  cau-lzg-pro: cau-lzg:pro
+  cau-nwc-pro: cau-nwc:pro
+  sit-kir-pro: sit-kir:pro
+  dra-sou-pro: dra-sou:pro
+  dra-tkt-pro: dra-tkt:pro
+  dra-tel-pro: dra-tel:pro
+  dra-cen-pro: dra-cen:pro
+  dra-nor-pro: dra-nor:pro
+  dra-gki-pro: dra-gki:pro
+  dra-gon-pro: dra-gon:pro
+  dra-kui-pro: dra-kui:pro
+  dra-pem-pro: dra-pem:pro
   ccn-pro:     ccn:pro
   ccs-pro:     ccs:pro
   bat-pro:     bat:pro
