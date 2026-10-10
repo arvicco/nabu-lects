@@ -70,7 +70,11 @@ Top level: one `anchors:` mapping keyed by anchor code, and one global
 `name`, `kind` (one of `register`, `sociolect`, `recension`, `dialect`),
 optional `wikt`/`iso` crosswalks and `note`. Varieties carry the axis the
 standards conflate with stage: Literary Chinese is `kind: register`; the
-Church Slavonic recensions are `kind: recension`. Where a script choice is
+Church Slavonic recensions are `kind: recension`. A recension is a regional
+written tradition — orthogonal to time, so never a stage — and by
+construction post-canonical, so a dated witness combines both axes:
+`chu:csl/srp`, `chu:csl/bul` (the convention is stated on `chu`'s note).
+Where a script choice is
 constitutive of a community (aljamiado traditions), it is modeled as a
 variety, not an orthography.
 
