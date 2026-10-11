@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+- 2026-10-11, the Indic package (the South Asia opening): `te` Telugu
+  (telu1262, parent dra-tel) and `kn` Kannada (kann1255, parent
+  dra-sou) minted with researched notes — Telugu attested from the
+  Renati Chola grant (~575 CE), Kannada from Halmidi (~450) with
+  `kn:old` [450, 1200] and `kn:mid` [1200, 1800] stages for the campū
+  and dāsa corpora; `ta` re-parented dra → dra-sou (the family node
+  arrived with the StarLing sdret mint) and its note grown to the
+  DHARMA Tamil-country estate; `pka` Ardhamāgadhī minted under `pra`
+  (the first member a consumer distinguishes — the Śvētāmbara canon's
+  language; pmh/psu/pgd stay unminted). Codemap: the 639-3 aliases
+  tam → ta, tel → te, kan → kn.
+
 - 2026-10-11, the americas package: the registry's first American
   nodes. Families on standard codes only — `omq` Oto-Manguean (ISO
   639-5; otom1299) > `omq-zap` Zapotecan (Wiktionary; zapo1436), and
