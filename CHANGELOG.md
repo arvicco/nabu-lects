@@ -2,6 +2,32 @@
 
 ## Unreleased
 
+- 2026-10-10, the Slavic package: the West and South Slavic branch
+  families `zlw` (West Slavic, under sla), `zlw-lch` (Lechitic, under
+  zlw) and `zls` (South Slavic, under sla), with the existing `chu`
+  (from sla:pro), `sl` and `bul` (from sla) re-wired onto `zls` by the
+  most-specific-ancestor rule. New anchors: `pl` Polish (under
+  zlw-lch) with `pl:old` [1136, 1500] and `pl:mid` [1500, 1780]
+  (Klemensiewicz's staropolski/średniopolski); `cs` Czech (under zlw)
+  with `cs:old` [1100, 1500] and `cs:mid` [1500, 1775]
+  (Lamprecht/Šlosar/Bauer's staročeština/střední čeština); `sr`
+  Serbian, `hr` Croatian and `mk` Macedonian (under zls). The
+  Serbo-Croatian pair takes the pluricentric shape read off the `no`
+  precedent from the other side: the standards are anchored, `hbs`/`sh`
+  deliberately unminted. `chu` gains the `bul` recension (Middle
+  Bulgarian, Wiktionary cu-bgm) and a documented recension convention:
+  recensions ride the variety slot, combined with the post-canonical
+  stage (`chu:csl/<recension>`); schema.md states it. Codemap: the
+  alias suite pol/ces/cze/srp/hrv/mkd/mac, the Wiktionary stage codes
+  zlw-opl/zlw-mpl/zlw-ocs/cs-ear (verified 2026-10-10), and
+  cu-bgm → chu:csl/bul. Use case: the consuming library's Slavic
+  wave — the KorBa Baroque corpus (850 Middle Polish texts,
+  1601–1775), the Prague Bible (1488, Old Czech HTR ground truth), and
+  the pl/cs/sr/hr/mk/bg Wikisource premodern cones, whose lect claims
+  had no registry nodes; the bg-wikisource charters (Rila 1378, Zograf,
+  …) carry a Serbian/Bulgarian recension grouping now addressable as
+  chu:csl/srp and chu:csl/bul.
+
 - 2026-10-07, the StarLing branch-base wing: pro stages on the
   existing trk/xgn/tuw anchors; six Northeast-Caucasian branch
   families + cau-nec itself (parent ccn with the NCED caveat) and

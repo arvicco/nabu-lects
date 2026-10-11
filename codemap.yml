@@ -49,6 +49,17 @@ map:
   roa-oit: it:old
   gmq-oda: da:old
 
+  # Old/Middle Polish, Old/Middle Czech, Middle Bulgarian (Wiktionary
+  # codes verified 2026-10-10: zlw-opl and zlw-ocs full languages,
+  # zlw-mpl / cs-ear / cu-bgm etymology-only varieties). cu-bgm lands on
+  # the Church Slavonic recension convention (chu's note): the
+  # post-canonical stage with the Bulgarian recension variety.
+  zlw-opl: pl:old
+  zlw-mpl: pl:mid
+  zlw-ocs: cs:old
+  cs-ear:  cs:mid
+  cu-bgm:  chu:csl/bul
+
   # Greek stages that outgrew their codes
   gkm:     grc:byz
   grc-koi: grc:koi
@@ -81,6 +92,19 @@ map:
   # 639-3 Russian → the anchored 639-1 code (the №11 alias suite's shape,
   # recorded when the first rus-coded shelf arrived)
   rus:     ru
+
+  # The Slavic package (2026-10-10): the same alias suite for the newly
+  # anchored two-letter codes. cze and mac are the 639-2/B bibliographic
+  # spellings (the ger precedent). No hbs/sh row: an alias from the
+  # Serbo-Croatian macrolanguage onto either standard would claim the
+  # other's texts (see sr's note) — identity leaves the code bare.
+  pol:     pl
+  ces:     cs
+  cze:     cs
+  srp:     sr
+  hrv:     hr
+  mkd:     mk
+  mac:     mk
 
   # The Latin stage suite (Wiktionary etymology-only codes)
   la-vul:  lat/vul      # the ATTESTED register is the universal default reading
