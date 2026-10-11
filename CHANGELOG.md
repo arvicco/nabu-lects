@@ -2,6 +2,54 @@
 
 ## Unreleased
 
+- 2026-10-11, the americas package: the registry's first American
+  nodes. Families on standard codes only — `omq` Oto-Manguean (ISO
+  639-5; otom1299) > `omq-zap` Zapotecan (Wiktionary; zapo1436), and
+  `tup` Tupian (ISO 639-5; tupi1275) > `tup-gua` Tupi-Guarani
+  (Wiktionary; tupi1276), both Wiktionary codes verified against
+  Module:families 2026-10-11. The Glottolog-only intermediates
+  (Eastern Otomanguean east2557, Popoloca-Zapotecan popo1292; Eastern
+  Tupian, Maweti-Guarani, Aweti-Guarani, the Tupi-Guarani subgroups)
+  carry no standard code and stay prose with their glottocodes. New
+  anchors: `zap` Zapotec (the 639-2/3 macrolanguage, under omq-zap;
+  zapo1437) with `zap:col` Colonial Valley Zapotec [1550, 1850];
+  `tpn` Tupinambá (extinct, under tup-gua; tupi1273), anchor-banded
+  [1549, 1760]; `gn` Guarani (the 639-1/2/3 macrolanguage, under
+  tup-gua) with `gn:old` Old (Classical) Guaraní [1600, 1800]
+  (Wiktionary gn-cls), whose note keeps Glottolog's descent nuance
+  (oldp1258 is a dialect under Paraguayan Guaraní para1311 — the
+  ancestor of the gug lineage, not of Mbyá or the Bolivian members).
+  Codemap: grn → gn (macrolanguage alias), gn-cls → gn:old, and
+  tpw → tpn (ISO retired tpw 'Tupí' as a duplicate of tpn, CR 2022-012,
+  effective 2023-01-20; Wiktionary still spells the language tpw 'Old
+  Tupi'). Use case: the consuming library's americas wave — the Ticha
+  corpus of colonial Valley Zapotec (93 documents: Córdova's Arte and
+  Vocabulario 1578, Agüero 1666, Levanto 1766, the Valley notarial
+  manuscripts 1633–1832) and the two colonial UD treebanks,
+  Tupinambá-TuDeT (Anchieta, Araújo, Figueira, the 1645 Camarão
+  letters, Bettendorf; 581 sentences) and Guarani-OldTuDeT (Montoya
+  1639–40, Restivo 1722–24; 59 sentences), whose lect claims had no
+  registry nodes. Deliberately NOT minted or mapped:
+  - `xzp` Ancient Zapotec gets no codemap row: an active individual
+    historical code (CR 2006-065, adopted 2007-07-18; outside the zap
+    macrolanguage; no Glottolog languoid) defined by its request as the
+    language of the pre-Hispanic glyphic script, not the colonial
+    alphabetic stage. A collection spelling 16th-c. Zapotec xzp (Ticha's
+    Córdova header) folds it onto zap:col in its own override.
+  - `gug` Paraguayan Guaraní: no anchor and no alias — one member of
+    the macrolanguage; identity keeps it bare until a modern-Guarani
+    consumer exists (it would then take gn:old as parent).
+  - `qwc` Classical Quechua: ready for the next package, not minted
+    without a consumer lane (the consuming library's Guaman Poma
+    edition tags no language for its Quechua runs). Facts on file: ISO
+    639-3 qwc is an active individual HISTORICAL code, a member of the
+    que macrolanguage; Glottolog clas1251, directly under Quechuan
+    quec1387; Wiktionary qwc under the family qwe (ISO 639-5 qwe
+    Quechuan) — the family anchor would be minted with it.
+  - The Língua Geral varieties (Paulista; Amazônica → Nheengatu yrl,
+    Wiktionary tpw-lgp/tpw-lga) and the pro stages of omq, omq-zap,
+    tup and tup-gua: no consumer and no held reconstruction corpus.
+
 - 2026-10-10, the Slavic package: the West and South Slavic branch
   families `zlw` (West Slavic, under sla), `zlw-lch` (Lechitic, under
   zlw) and `zls` (South Slavic, under sla), with the existing `chu`
