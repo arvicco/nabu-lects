@@ -1788,6 +1788,40 @@ anchors:
            bhakti compositions; the consumer claims the bare code,
            declared coarse"
 
+  pa:
+    name: Punjabi
+    parent: inc
+    glottocode: panj1256
+    note: "ISO 639-1 pa / 639-3 pan (aliases here). Northwestern
+           Indo-Aryan, continuous with the Lahndā continuum; the
+           literary record opens with the Gurmukhī scriptural canon.
+           The granthic written language is not modern Punjabi but
+           the Sant Bhāṣā mix — Old Punjabi with Lahndā, Braj and
+           Sahaskritī registers side by side in one codex — so the
+           pa:old stage carries the canon and the bare anchor stays
+           for modern material. Corpus: the shabados line database
+           (Gurū Granth Sāhib 60,555 primary lines, the Vārāṅ of
+           Bhāī Gurdās, Sarabloh; its Braj and Persian layers claim
+           bra and fa through script-qualified codemap rows, never
+           pa)"
+    stages:
+      old: {name: Old Punjabi (granthic), band: [1450, 1708], ord: 10,
+            band_note: "the scriptural-canon convention: from Gurū
+                        Nānak's bāṇī (b. 1469; compositions from the
+                        late 15th c.) through the Ādi Granth
+                        compilation (1604, Gurū Arjan) to the canon's
+                        closure at Gurū Gobind Singh's death (1708);
+                        approximate at both ends",
+            note: "the language of the Gurmukhī scriptural corpus:
+                   Old Punjabi as the base of the Sant Bhāṣā blend
+                   (with Lahndā, Braj and Sahaskritī passages
+                   riding their own claims where the source marks
+                   them). Witnesses: the Ādi Granth / Gurū Granth
+                   Sāhib (1604; the Kartārpur pothī tradition), the
+                   Vārāṅ of Bhāī Gurdās (c. 1551-1636). Corpus:
+                   shabados, the consuming library's line-grain
+                   scripture database"}
+
   bra:
     name: Braj
     parent: inc
@@ -2648,6 +2682,7 @@ scripts:
   grek: {name: Greek,                                iso15924: Grek}
   ogam: {name: Ogham,                                iso15924: Ogam}
   deva: {name: Devanagari (Nagari),                  iso15924: Deva}
+  guru: {name: "Gurmukhi",                           iso15924: Guru}
   ital: {name: "Old Italic (Etruscan, Oscan, etc.)", iso15924: Ital}
   egyd: {name: Egyptian demotic,                     iso15924: Egyd}
   egyp: {name: Egyptian hieroglyphs,                 iso15924: Egyp}
