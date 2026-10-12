@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- 2026-10-12, the Punjabi package (the Gurmukhī scripture wave):
+  `pa` Punjabi (panj1256) under inc with `pa:old` Old Punjabi
+  (granthic) [1450, 1708] — the Sant Bhāṣā scriptural canon from
+  Gurū Nānak's bāṇī to the canon's closure; the `guru` script row
+  (Gurmukhi, ISO 15924 Guru). Codemap: pan → pa, plus the
+  script-qualified bra-Guru → bra~guru and fas-Guru → fa~guru for
+  the Braj and Persian layers held in Gurmukhī transcription.
+  Consumer: the shabados line database (141,264 primary scripture
+  lines; 127 section documents).
 - 2026-10-12, the Southeast Asia + Gujarat package (the lontar and
   cone wave): `ban` Balinese (bali1278) and `sas` Sasak (sasa1249)
   under poz (Bali–Sasak–Sumbawa stays prose — no ISO branch code,
