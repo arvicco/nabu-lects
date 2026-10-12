@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-10-12, the Southeast Asia + Gujarat package (the lontar and
+  cone wave): `ban` Balinese (bali1278) and `sas` Sasak (sasa1249)
+  under poz (Bali–Sasak–Sumbawa stays prose — no ISO branch code,
+  the kaw precedent); `ms` Malay (mala1479) under poz with
+  `ms:cls` Classical Malay [1300, 1900] for the Jawi manuscript
+  tradition; `gu` Gujarati (guja1252) under inc; the `tai` family
+  (ISO 639-5) minted with `th` Thai (thai1261). Codemap: the 639-3
+  aliases guj → gu, msa → ms, tha → th; ban/sas ride the identity
+  default. Consumers: the ban-wikisource lontar corpus (1,252
+  manuscripts) and the gu/ms/th cones.
+
 - 2026-10-11, the Indic package (the South Asia opening): `te` Telugu
   (telu1262, parent dra-tel) and `kn` Kannada (kann1255, parent
   dra-sou) minted with researched notes — Telugu attested from the
