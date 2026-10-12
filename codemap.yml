@@ -30,6 +30,9 @@ map:
   tam:     ta
   tel:     te
   kan:     kn
+  guj:     gu
+  msa:     ms
+  tha:     th
   ger:     de   # the 639-2/B bibliographic spelling (deu is the /T twin)
   nor:     "no" # the macrolanguage alias, claiming nothing historical (quoted: YAML 1.1 reads bare no as false)
   dan:     da
