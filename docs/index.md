@@ -4,6 +4,8 @@ title: nabu-lects
 
 # nabu-lects
 
+[Schema](schema.md) · [Prior art](prior-art.md) · [News](news.md)
+
 A small, curated registry of **lects** — language varieties identified by
 genealogical anchor × historical stage × variety × orthography — with a
 universal mapping from the standard language codes (ISO 639, Wiktionary)
