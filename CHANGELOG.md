@@ -2,7 +2,16 @@
 
 ## Unreleased
 
-(nothing yet)
+- 2026-10-13, the Africa package (the Ajami wave): six family
+  nodes — nic Niger–Congo (glottocode declined, the dispute
+  stated), alv Atlantic–Congo, alv-fwo Fula–Wolof, bnt Bantu, cdc
+  Chadic, dmn Mande (deliberately parentless: the Niger–Congo
+  inclusion dispute stays stated, not ruled) — and five anchors
+  with their Ajami philology: ha Hausa, wo Wolof, fuf Pular (the
+  macrolanguage unminted until a consumer spells it), mnk
+  Mandinka, sw Swahili. Codemap: hau → ha, wol → wo, swa → sw.
+  Consumers: the bu-ajami manuscripts (80 items, four languages)
+  and the africa-pd reference shelf.
 
 ## v1.7.0 — 2026-10-13: the autumn arc
 
