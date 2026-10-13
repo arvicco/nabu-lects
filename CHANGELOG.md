@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- 2026-10-13, Tumshuqese: the `xtq` anchor under iir:pro, band
+  [600, 800] — Khotanese's northern Saka sibling, ~70 known pieces
+  (Maue's provisional handlist). The standing no-consumer hold
+  lifted: the consuming library's Tocharian B chain carries IOL
+  Toch 162 (the Tumshuqese Araṇemijātaka) and IOL Toch 185 as its
+  first xtq documents.
 - 2026-10-12, the Punjabi package (the Gurmukhī scripture wave):
   `pa` Punjabi (panj1256) under inc with `pa:old` Old Punjabi
   (granthic) [1450, 1708] — the Sant Bhāṣā scriptural canon from

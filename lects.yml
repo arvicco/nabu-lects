@@ -878,9 +878,28 @@ anchors:
                 Khotanese business documents"
     note: "Eastern Middle Iranian (Saka); the Buddhist literary and
            documentary language of the Khotan oasis, written in Brahmi.
-           Tumshuqese, its poorly attested sibling, stays unminted (no
-           consumer). Consumers: 552 IEDC documents + the 2,357-record
+           Its sibling xtq is minted below (the no-consumer hold lifted
+           2026-10-13). Consumers: 552 IEDC documents + the 2,357-record
            British Library transliteration set (censused 2026-09-28)"
+
+  xtq:
+    name: Tumshuqese
+    parent: iir:pro
+    band: [600, 800]
+    band_note: "the Tumshuq and Maralbashi manuscript horizon,
+                approximate — the Karmavācanā and jātaka fragments'
+                palaeographic window"
+    note: "Eastern Middle Iranian (Saka), Khotanese's poorly attested
+           northern sibling from the Tumshuq oasis — ISO 639-3 xtq;
+           written in a distinctive Brahmi with Fremdzeichen. The
+           corpus is ~70 known pieces (Maue's provisional handlist,
+           2009): Konow's eight founding texts (1935), the Berlin and
+           Paris fragments, the St. Petersburg document, and the two
+           London leaves found among the Tocharian manuscripts —
+           IOL Toch 162 (the Tumshuqese Araṇemijātaka; Bailey 1968,
+           Skjærvø 2002) and IOL Toch 185. Minted when a consumer
+           arrived: the library's titus-tocharian-b chain holds those
+           two leaves as its first xtq documents (2026-10-13)"
 
   sog:
     name: Sogdian
