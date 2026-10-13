@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+(nothing yet)
+
+## v1.7.0 — 2026-10-13: the autumn arc
+
+Eleven waves cut as one release — the registry's largest growth
+span, from the comparative-etymology wing (2026-09-26) through the
+Tumshuqese anchor (2026-10-13): the Slavic, americas, Indic,
+Southeast Asia + Gujarat and Punjabi packages, the dictionary-group
+and StarLing branch-base wings, the Japanese classical ladder, the
+Indo-Iranian comparative wing. Headings below keep each wave's own
+record.
+
 - 2026-10-13, Tumshuqese: the `xtq` anchor under iir:pro, band
   [600, 800] — Khotanese's northern Saka sibling, ~70 known pieces
   (Maue's provisional handlist). The standing no-consumer hold
@@ -170,7 +182,7 @@ never covered. All identity anchors (no codemap rows needed):
   Manchu. Classical Mongolian (cmg) deliberately unminted — no open
   corpus exists.
 
-## Unreleased — 2026-09-27: the dictionary-group wave (six anchors, one stage, three varieties, fourteen codemap rows)
+### 2026-09-27: the dictionary-group wave (six anchors, one stage, three varieties, fourteen codemap rows)
 
 Forced by the consuming library's per-lect dictionary grouping: its
 464 dictionary shelves resolved through the codemap left 61 codes
@@ -201,7 +213,7 @@ deliberately unresolved on the consumer's side).
   through it** (jpn: parent jpx → parent ojp).
 - Codemap also gains `rus` → `ru` (the №11 alias-suite shape).
 
-## v1.7.0 — 2026-09-26: the comparative-etymology wing (eight anchors, eleven codemap rows)
+### 2026-09-26: the comparative-etymology wing (eight anchors, eleven codemap rows)
 
 Forced by the StarLing etymological shelves (the Tower of Babel
 databases; six further packages joining the consuming library under
