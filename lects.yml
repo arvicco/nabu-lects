@@ -2683,6 +2683,117 @@ anchors:
                    treebank (59 sentences from Montoya and Restivo in
                    the consuming library's census)"}
 
+  nic:
+    name: Niger–Congo
+    kind: family
+    glottocode: null
+    note: "ISO 639-5 nic. The largest conventional African phylum —
+           Atlantic–Congo at its core with contested outliers; Glottolog
+           declines a single node (Atlantic–Congo atla1278 is its
+           largest accepted unit), so no glottocode is claimed. Minted
+           as the conventional hat for the consuming library's West
+           African and Bantu anchors; placement disputes stay in prose
+           on the members"
+
+  alv:
+    name: Atlantic–Congo
+    kind: family
+    parent: nic
+    glottocode: atla1278
+    note: "ISO 639-5 alv; Glottolog's largest accepted African unit"
+
+  alv-fwo:
+    name: Fula–Wolof
+    kind: family
+    parent: alv
+    note: "Wiktionary family code (Module:families — the Senegambian
+           grouping of Fula and Wolof within Atlantic); no ISO 639-5
+           code exists at this grain"
+
+  bnt:
+    name: Bantu
+    kind: family
+    parent: alv
+    glottocode: narr1281
+    note: "ISO 639-5 bnt; Glottolog Narrow Bantu. The Benue–Congo
+           intermediates between Atlantic–Congo and Bantu carry no
+           ISO 639-5 rungs and stay prose"
+
+  cdc:
+    name: Chadic
+    kind: family
+    parent: afa
+    glottocode: chad1250
+    note: "ISO 639-5 cdc; the Afro-Asiatic branch of Hausa"
+
+  dmn:
+    name: Mande
+    kind: family
+    glottocode: mand1469
+    note: "ISO 639-5 dmn. Deliberately PARENTLESS: Mande's inclusion
+           in Niger–Congo is a live dispute (Glottolog treats it as an
+           independent family; the lexical evidence for the phylum link
+           is thin) — the registry states the dispute rather than
+           ruling it"
+
+  ha:
+    name: Hausa
+    parent: cdc
+    glottocode: haus1257
+    note: "ISO 639-1 ha / 639-3 hau (aliases here). West Chadic; the
+           largest Chadic language. Written in Ajami (Arabic script)
+           since at least the Sokoto Caliphate — Usman ɗan Fodio
+           (1754–1817) and Nana Asmaʾu (1793–1864) anchor the literary
+           tradition; the Latin boko orthography is colonial-era.
+           Corpus: 20 bu-ajami manuscripts (Kano, Zaria, Kaduna) in
+           romanized transcription, plus Schön 1885 and Robinson 1896
+           as object language on the africa-pd shelf"
+
+  wo:
+    name: Wolof
+    parent: alv-fwo
+    glottocode: wolo1247
+    note: "ISO 639-1 wo / 639-3 wol (aliases here). Atlantic
+           (Senegambian); the lingua franca of Senegal. The Wolofal
+           Ajami tradition is the written record — above all the Murid
+           poets Serigne Moussa Ka (1889–1963) and Serigne Mor Kayre
+           (1869–1951). Corpus: 20 bu-ajami manuscripts, mostly from
+           Touba, in romanized transcription"
+
+  fuf:
+    name: Pular (Fuuta Jalon)
+    parent: alv-fwo
+    glottocode: pula1263
+    note: "ISO 639-3 fuf — the Fuuta Jalon member of the Fula
+           macrolanguage (ff/ful), minted directly because the
+           consuming corpus claims fuf; the macrolanguage stays
+           unminted until a consumer spells it (the gn/gug shape,
+           inverted). The Ajami tradition of the 18th-century Fuuta
+           Jalon imamate — Cerno Samba Mombeya (1755–1852), whose
+           Oogirde Malal argued for writing Pular itself. Corpus: 20
+           bu-ajami manuscripts (Labé, Dalaba, Conakry)"
+
+  mnk:
+    name: Mandinka
+    parent: dmn
+    glottocode: mand1436
+    note: "ISO 639-3 mnk. Manding cluster (Mande); the Casamance and
+           Gambian member. Ajami tradition in the Casamance (Sitookoto
+           Daabo among the copyists). Corpus: 20 bu-ajami manuscripts
+           (Sedhiou, Ziguinchor, Kolda) in romanized transcription"
+
+  sw:
+    name: Swahili
+    parent: bnt
+    glottocode: swah1253
+    note: "ISO 639-1 sw / 639-2/3 swa (aliases here; the individual
+           code swh is a future ruling, not defaulted). Bantu G42
+           (Sabaki). The Arabic-script utenzi tradition runs from the
+           18th century (Utendi wa Tambuka, 1728); the Latin standard
+           is colonial-era. Corpus: Velten 1907 claims sw on the
+           africa-pd shelf; Steere, Taylor and Büttner carry it as
+           object language"
+
 # ── Scripts (the ~ axis) ─────────────────────────────────────────────────────
 #
 # A GLOBAL table, deliberately not per-anchor: digraphia is open-ended, and
