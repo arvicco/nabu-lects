@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- 2026-10-14, the Old Nubian package: the nub Nubian family node
+  (deliberately parentless — the Nilo-Saharan/Eastern Sudanic
+  placement stays a stated hypothesis, the dmn shape) and the onw
+  Old Nubian anchor with its philology (medieval Nobadia/Makuria,
+  ~8th–15th c. CE, Coptic-derived alphabet with three Meroitic
+  signs, the Qasr Ibrim corpus; ancestor of Nobiin, unminted).
+  Consumers: the Old Nubian UD treebank (CC BY-NC-SA 4.0 grant,
+  124 sentences) and africa-pd object-language metadata.
+
 - 2026-10-13, the Africa package (the Ajami wave): six family
   nodes — nic Niger–Congo (glottocode declined, the dispute
   stated), alv Atlantic–Congo, alv-fwo Fula–Wolof, bnt Bantu, cdc
