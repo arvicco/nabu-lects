@@ -243,6 +243,16 @@ anchors:
       byz: {name: Byzantine Greek,      band: [330, 1453],  ord: 40, wikt: gkm,
             band_note: "upper bound 1453 is the LoC/ISO cataloguing convention
                         (fall of Constantinople), not a linguistic boundary"}
+    varieties:
+      cyp: {name: Arcadocypriot (Cypriot) Greek, kind: dialect,
+            note: "the Greek of ancient Cyprus, written in the Cypriot
+                   syllabary from the late second millennium to the end
+                   of the 4th c. BCE; with Arcadian it forms the Achaean
+                   group (the Mycenaean-descended remnant). A regional
+                   dialect outside the hom/cla/koi time-grid — hence a
+                   variety, not a stage. Corpus: the IG Cypriot
+                   syllabary fascicle (~170 Greek-interpreted records,
+                   censused 2026-10-11)"}
 
   gmy:
     name: Mycenaean Greek
@@ -250,6 +260,34 @@ anchors:
     note: "the earliest attested Greek (Linear B); conventionally the elder
            sibling of the alphabetic tradition rather than its direct
            ancestor — hence a sibling anchor, not grc's parent"
+
+  xpg:
+    name: Phrygian
+    glottocode: phry1239
+    parent: ine
+    note: "its own Indo-European branch, epigraphically attested in two
+           phases — Old Phrygian (~8th–4th c. BCE, its own alphabet) and
+           Neo-Phrygian (1st–3rd c. CE, Greek script, mostly funerary
+           curse formulae). Glottolog places it under a Graeco-Phrygian
+           node with Greek (grae1234); that joint node carries no ISO
+           639-5 or Wiktionary code, and anchors require one, so xpg
+           rides as ine's child with the hypothesis stated (the hlu/xlu
+           no-code-for-the-joint-node discipline). Deliberately
+           stage-less: the consuming treebank (UD_Phrygian-KUL, 203
+           sentences) does not mark the phase per sentence — the two
+           phases are a future mint for a consumer that distinguishes
+           them (the hit precedent)"
+
+  ecy:
+    name: Eteocypriot
+    glottocode: eteo1240
+    note: "the non-Greek language of first-millennium Cyprus, written in
+           the Cypriot syllabary and only partly interpreted; Glottolog:
+           unclassifiable. Attested chiefly at Amathus, ~6th–4th c. BCE,
+           the Amathus Greek–Eteocypriot bilingual the key text. No
+           parent edge where no classification exists (the xht/Hattic
+           discipline). Corpus: the IG Cypriot syllabary fascicle (18
+           Eteocypriot records, censused 2026-10-11)"
 
   el:
     name: Modern Greek
@@ -524,6 +562,60 @@ anchors:
     stages:
       rab: {name: Rabbinic Hebrew, ord: 10}
       med: {name: Medieval Hebrew, ord: 20}
+
+  xna:
+    name: Ancient North Arabian
+    glottocode: anci1245
+    parent: sem
+    note: "the ISO cover anchor for the pre-Islamic North Arabian
+           epigraphic varieties (Macdonald's script-based taxonomy).
+           Central Semitic; the unity of the group is CONTESTED — recent
+           scholarship (Al-Jallad) reads Safaitic and Hismaic as Old
+           Arabic dialects rather than a separate branch; the registry
+           keeps the ISO anchor and states the dispute rather than
+           ruling it (the dmn/nub discipline). The varieties below are
+           the corpus's own documentary categories (parallel regional
+           traditions, not time-slices — hence varieties, not stages),
+           mirroring the consuming corpus's per-record script field
+           (OCIANA, 37,955 records censused 2026-10-18)"
+    varieties:
+      saf: {name: Safaitic, kind: dialect,
+            note: "the basalt-desert tradition (S Syria / NE Jordan /
+                   N Saudi Arabia), ~1st c. BCE – 4th c. CE; the bulk of
+                   the record (31,768 OCIANA records). Glottolog
+                   safa1245"}
+      his: {name: Hismaic, kind: dialect,
+            note: "the Ḥismā desert (S Jordan / NW Saudi Arabia),
+                   roughly contemporary with Safaitic (3,644 OCIANA
+                   records)"}
+      dad: {name: Dadanitic, kind: dialect,
+            note: "the oasis tradition of Dadān (al-ʿUlā), ~6th–1st c.
+                   BCE (1,706 OCIANA records)"}
+      tay: {name: Taymanitic, kind: dialect,
+            note: "the oasis tradition of Taymāʾ, ~6th c. BCE (482
+                   OCIANA records)"}
+
+  # Ancient South Arabian (Sayhadic) — bare anchors with parent sem:
+  # the Sayhadic group carries no ISO 639-5 or established Wiktionary
+  # family code, so the pair rides without a family node (the
+  # Aramaic-fan discipline). Minted for OCIANA's minor-script records.
+  xsa:
+    name: Sabaic
+    glottocode: saba1279
+    parent: sem
+    note: "Sabaean — the principal Ancient South Arabian (Sayhadic)
+           language, the Sabaʾ kingdom's epigraphic record, ~1st
+           millennium BCE to the 6th c. CE. Corpus toehold: 1 OCIANA
+           record (censused 2026-10-18); the real ASA corpora (DASI/
+           CSAI) are future acquisitions"
+  inm:
+    name: Minaic
+    glottocode: mina1279
+    parent: sem
+    note: "Madhabic — the Ancient South Arabian (Sayhadic) language of
+           the Maʿīn oasis polity and its trading colonies (incl.
+           Dadān), ~8th–1st c. BCE. Corpus toehold: 8 OCIANA records
+           (censused 2026-10-18)"
 
   # ── Ethiopic (P88 mint: the Geʿez shelf family — Beta maṣāḥǝft 3,774
   # docs + TraCES 15 + the Dillmann dictionary — was the largest
