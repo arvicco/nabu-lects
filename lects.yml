@@ -595,6 +595,28 @@ anchors:
             note: "the oasis tradition of Taymāʾ, ~6th c. BCE (482
                    OCIANA records)"}
 
+  # Ancient South Arabian (Sayhadic) — bare anchors with parent sem:
+  # the Sayhadic group carries no ISO 639-5 or established Wiktionary
+  # family code, so the pair rides without a family node (the
+  # Aramaic-fan discipline). Minted for OCIANA's minor-script records.
+  xsa:
+    name: Sabaic
+    glottocode: saba1279
+    parent: sem
+    note: "Sabaean — the principal Ancient South Arabian (Sayhadic)
+           language, the Sabaʾ kingdom's epigraphic record, ~1st
+           millennium BCE to the 6th c. CE. Corpus toehold: 1 OCIANA
+           record (censused 2026-10-18); the real ASA corpora (DASI/
+           CSAI) are future acquisitions"
+  inm:
+    name: Minaic
+    glottocode: mina1279
+    parent: sem
+    note: "Madhabic — the Ancient South Arabian (Sayhadic) language of
+           the Maʿīn oasis polity and its trading colonies (incl.
+           Dadān), ~8th–1st c. BCE. Corpus toehold: 8 OCIANA records
+           (censused 2026-10-18)"
+
   # ── Ethiopic (P88 mint: the Geʿez shelf family — Beta maṣāḥǝft 3,774
   # docs + TraCES 15 + the Dillmann dictionary — was the largest
   # node-less language left after the Anatolian mint) ───────────────────────
