@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+- 2026-10-18, the epigraphic-belt package: the xpg Phrygian anchor
+  (ine's child, the Graeco-Phrygian hypothesis stated per Glottolog
+  grae1234; deliberately stage-less, the hit precedent), the ecy
+  Eteocypriot anchor (unclassifiable, parentless per the Hattic
+  discipline), the xna Ancient North Arabian anchor under sem (the
+  classification dispute stated, not ruled) with four documentary
+  varieties saf/his/dad/tay (Safaitic, Hismaic, Dadanitic,
+  Taymanitic — parallel regional traditions, hence varieties), and
+  the grc/cyp Arcadocypriot dialect variety (outside the hom/cla/koi
+  time-grid). Consumers: the IG Cypriot syllabary fascicle (593
+  records: grc/cyp + ecy), OCIANA (37,955 records: xna + varieties),
+  UD_Phrygian-KUL (203 sentences: xpg). Widened same day with the
+  OCIANA minor-script census: xsa Sabaic and inm Minaic as bare
+  Sayhadic anchors under sem (no family code exists — the
+  Aramaic-fan discipline).
+
 - 2026-10-14, the Old Nubian package: the nub Nubian family node
   (deliberately parentless — the Nilo-Saharan/Eastern Sudanic
   placement stays a stated hypothesis, the dmn shape) and the onw
