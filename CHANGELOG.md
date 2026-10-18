@@ -13,7 +13,10 @@
   the grc/cyp Arcadocypriot dialect variety (outside the hom/cla/koi
   time-grid). Consumers: the IG Cypriot syllabary fascicle (593
   records: grc/cyp + ecy), OCIANA (37,955 records: xna + varieties),
-  UD_Phrygian-KUL (203 sentences: xpg).
+  UD_Phrygian-KUL (203 sentences: xpg). Widened same day with the
+  OCIANA minor-script census: xsa Sabaic and inm Minaic as bare
+  Sayhadic anchors under sem (no family code exists — the
+  Aramaic-fan discipline).
 
 - 2026-10-14, the Old Nubian package: the nub Nubian family node
   (deliberately parentless — the Nilo-Saharan/Eastern Sudanic
