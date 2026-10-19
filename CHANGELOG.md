@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+- 2026-10-19, the Korean ladder (after Lee & Ramsey, *A History of
+  the Korean Language*, 2011): the oko Old Korean anchor under
+  qfa-kor (Silla-centred, character-mediated attestation, band
+  [300, 935]), the okm Middle Korean anchor under oko (midd1372)
+  with stages okm:emk Early Middle Korean [918, 1391] and okm:lmk
+  Late Middle Korean [1392, 1599], and the ko Korean anchor under
+  okm (kore1280) with stages ko:emod Early Modern Korean
+  [1600, 1893] and ko:mod Modern Korean [1894, open]; qfa-kor gains
+  its verified Glottocode kore1284. Codemap: kor → ko (the 639-3
+  alias suite). Consumers: the Open Korean Historical Corpus
+  (58,366 Korean-language records; the 28,635 year-carrying ones
+  fall 2,306 / 26,329 into emod / mod, matching the corpus's own
+  Early Modern / Modern labels record for record) and the
+  Korean Wikisource Yongbi ŏch'ŏn'ga (1447, okm:lmk).
+
 - 2026-10-18, the epigraphic-belt package: the xpg Phrygian anchor
   (ine's child, the Graeco-Phrygian hypothesis stated per Glottolog
   grae1234; deliberately stage-less, the hit precedent), the ecy
