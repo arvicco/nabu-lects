@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-10-20, chu:ncs — New Church Slavonic (Synodal) as a second
+  stage under the Church Slavonic anchor (ord 20, band [1650, 2100]
+  open at the modern end): the post-Nikonian liturgical standard,
+  Russian-recension in origin but supra-regional by construction, so
+  it rides the stage slot bare rather than a recension variety.
+  Consumers: the SCAT hagiography corpus (18th-c. Northern Russian
+  saints' lives, CC BY-SA 4.0) and the DIACU period scheme (Cassese
+  et al. 2025), both of which label this period distinctly from
+  post-canonical Church Slavonic. No codemap change (cu/chu already
+  route to the anchor).
+
 - 2026-10-19, the Korean ladder (after Lee & Ramsey, *A History of
   the Korean Language*, 2011): the oko Old Korean anchor under
   qfa-kor (Silla-centred, character-mediated attestation, band
