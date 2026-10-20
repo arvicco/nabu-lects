@@ -1169,6 +1169,30 @@ anchors:
            only guarantees the targets"
     stages:
       csl: {name: Church Slavonic (post-canonical), ord: 10}
+      ncs: {name: New Church Slavonic (Synodal), ord: 20,
+            band: [1650, 2100],
+            band_note: "Patriarch Nikon's book revision (1650s-60s) onward;
+                        the standard remains in liturgical use today, so
+                        the band stays open at the modern end",
+            note: "the post-reform standard of the Russian Church after
+                   Nikon's book revision, fixed in the Elizabethan Bible
+                   (1751) and used since as the liturgical language of the
+                   Russian, Ukrainian, Belarusian, Serbian and Bulgarian
+                   Orthodox churches. Classification: the latest stage of
+                   Church Slavonic, Russian-recension in origin but
+                   supra-regional by construction — which is why ncs rides
+                   the STAGE slot bare, not a recension variety (the
+                   recension convention above covers regional written
+                   traditions; this one displaced them). Descent: from
+                   chu:csl/rus through the Kyivan grammatical normalization
+                   (Smotryc'kyj's Grammatica, 1619). Attestation: printed
+                   liturgical books from the 1650s; hagiography and church
+                   prose of the 18th c. Corpus: SCAT's 18th-c. Northern
+                   Russian saints' lives (CC BY-SA 4.0); the DIACU dataset
+                   (Cassese et al. 2025, doi 10.18653/v1/2025.bsnlp-1.12)
+                   labels this period 'New Church Slavonic'. Coarseness
+                   declared: the 17th/18th-c. boundary is a period label,
+                   not an orthographic diagnosis"}
     varieties:
       rus: {name: Russian recension, kind: recension}
       srp: {name: Serbian recension, kind: recension,
