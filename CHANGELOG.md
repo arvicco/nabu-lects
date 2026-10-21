@@ -2,6 +2,31 @@
 
 ## Unreleased
 
+- 2026-10-21, the Baltic–Finnic–Basque package: the Baltic anchors
+  under bat — lt Lithuanian (lith1251) with lt:old Old Lithuanian
+  [1547, 1800] (Wiktionary olt), lv Latvian (latv1249) with lv:old Old
+  Latvian [1500, 1800], and prg Old Prussian (prus1238, stage-less,
+  band [1350, 1700]); the Uralic spine — the urj Uralic family
+  (ural1272, parentless; stage pro) and the urj-fin Finnic family
+  (finn1317, under urj per Glottolog's flat Uralic; stage pro) — with
+  fi Finnish (finn1318) and fi:old Old Literary Finnish [1540, 1810]
+  (Kotus' vanha kirjasuomi), et Estonian (esto1258) and et:old Old
+  Written Estonian [1520, 1739]; and eu Basque (basq1248, parentless —
+  the isolate; Aquitanian in prose) with eu:arch Archaic [1400, 1599],
+  eu:old Old [1600, 1744] and eu:emod Early Modern Basque [1745, 1900]
+  after the BIM/SAHCOBA periodization. Codemap: lit → lt, lav/lvs → lv,
+  fin → fi, est/ekk → et, eus/baq → eu (the alias suite), olt → lt:old.
+  Consumers: SENIE, the Corpus of Early Written Latvian (183 documents,
+  1507–1800 → lv:old); VKS, the Corpus of Old Literary Finnish (134
+  texts, 4.13M tokens, 1543–1810 → fi:old); BIM/SAHCOBA, the historical
+  Basque corpus (15 works, 669k tokens, 1545–1782 → eu:arch/old/emod);
+  and the Wiktionary descendant trees (lt 3,757 · lv 2,727 · fi 1,620 ·
+  prg 1,152 · et 1,139 · olt 188 · eu 13 reflex rows, bare until now).
+  Riding the same package: mr Marathi (mara1378) and si Sinhala
+  (sinh1246) as bare anchors under inc, with mar → mr and sin → si
+  aliases — the South Indian Inscriptions widening carries romanized
+  Marathi and Sinhala records that quarantine without the nodes.
+
 - 2026-10-20, chu:ncs — New Church Slavonic (Synodal) as a second
   stage under the Church Slavonic anchor (ord 20, band [1650, 2100]
   open at the modern end): the post-Nikonian liturgical standard,
