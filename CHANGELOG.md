@@ -2,6 +2,47 @@
 
 ## Unreleased
 
+- 2026-10-21, the South Asian, Javanese–Sundanese, Welsh–Breton–Telugu
+  and Caucasus package. South Asia: ml Malayalam (mala1464) under
+  dra-sou beside ta and kn, and dv Dhivehi (dhiv1236) under inc beside
+  si (the Insular node stays prose), both bare anchors. Nusantara: jv
+  Javanese (java1254) under kaw and su Sundanese (sund1252) under osn,
+  stage-less (Middle Javanese a named candidate). Stages on standing
+  anchors: te:cls Classical Telugu [1000, 1850] — a register stage for
+  the kāvya language from Nannaya to the 18th-c. prabandha, deliberately
+  not te:old (Old Telugu is the pre-Nannaya epigraphic language, left
+  for an epigraphic consumer) — and cy:emod Early Modern Welsh
+  [1500, 1800] (wlm is its own node, so the period slices cy, the
+  lt:old precedent). The Caucasus: the ccs-gzn Georgian-Zan family
+  (geor1252, under ccs; stage pro, Wiktionary ccs-gzn-pro) with oge Old
+  Georgian (oldg1234, band [430, 1100]) and ka Georgian (nucl1302) as
+  SIBLINGS under it — separate ISO codes, the prg/chu shape, descent in
+  prose both ways; no Middle Georgian stage (no consumer); os Ossetian
+  (osse1243) directly under ira, Alanic (xln) left in prose with no
+  node. Backfills: notes, bands and glottocodes for the bare Armenian
+  ladder — xcl Classical Armenian (clas1249, [405, 1100]), axm Middle
+  Armenian ([1100, 1700]), hy Armenian (nucl1235) — with the
+  Proto-Armenian (hyx) re-parenting of xcl deferred and recorded in
+  prose; a philology note and glottocode (bret1244) for br; glottocode
+  kart1248 for ccs. Codemap: mal → ml, div → dv, jav → jv, sun → su,
+  bre → br, kat/geo → ka, hye/arm → hy, oss → os (the alias suite),
+  ccs-gzn-pro → ccs-gzn:pro. Scripts: java (Java), sund (Sund), bali
+  (Bali), rjng (Rjng). Consumers: the Wiktionary Malayalam and Dhivehi
+  dictionary shelves (11,505 and 2,047 entries) and GRETIL's
+  Maṇipravāḷam Jyotsnikā (mal-Latn, quarantined without the node); the
+  te-, cy-, jv-, su- and br-wikisource cones (classical Telugu prints
+  1891–1930 → te:cls; Welsh original-orthography prints 1547–1800 →
+  cy:emod; Javanese, Sundanese and Breton prints to 1900, measured
+  jav-Java / sun-Java per page); UD Old Georgian GLC (151 sentences →
+  oge) and UD Middle Armenian ArmTDP (27 sentences → axm); the kaikki
+  Old Armenian, Middle Armenian, Old Georgian and Ossetian extracts
+  (8,541 · 478 · 728 · 913 records); iip's 14 kat-coded Georgian
+  inscriptions; the Balinese- and Rejang-script pages of the ban- and
+  ms-wikisource shelves (the bali/rjng rows); and the Wiktionary
+  descendant trees (hy 6,385 · ml 2,899 · ka 1,195 · axm 481 · oge 199
+  · os 59 · dv 29 reflex rows) plus the kaikki etymon edges
+  (ccs-gzn-pro 185 · ka 27 · oge 10), bare until now.
+
 - 2026-10-21, the Baltic–Finnic–Basque package: the Baltic anchors
   under bat — lt Lithuanian (lith1251) with lt:old Old Lithuanian
   [1547, 1800] (Wiktionary olt), lv Latvian (latv1249) with lv:old Old
