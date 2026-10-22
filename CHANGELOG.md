@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- 2026-10-22, the Iron Age Hebrew package. obm Moabite (moab1234)
+  under sem — the Mesha Stele's language, closest to Hebrew within
+  Canaanite (Garr 1985), a single-monument corpus. hbo gains its first
+  stage: epi Epigraphic Hebrew (−1000 to −586, Gogel 1998), the Iron
+  Age II inscriptional register (Arad, Lachish, Kuntillet Ajrud,
+  Siloam, Ketef Hinnom, Mesad Hashavyahu) beside the bare biblical/
+  Qumran literary default. Both censused from the ETCBC extrabiblical
+  corpus (13 books / 1,800 verses; the Mesha book is obm's 39 lines).
+
 - 2026-10-22, the Aegean package. lab Linear A (mino1236), the
   undeciphered language of palatial Crete, a parentless anchor on the
   ecy/xht no-classification discipline, with the sigla corpus censused
