@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- 2026-10-22, the Aegean package. lab Linear A (mino1236), the
+  undeciphered language of palatial Crete, a parentless anchor on the
+  ecy/xht no-classification discipline, with the sigla corpus censused
+  (787 inscriptions). Scripts: lina Linear A, and the two sibling
+  syllabic traditions its consumers already hold — linb Linear B (the
+  gmy corpus) and cprt the Cypriot syllabary (the IG Cyprus fascicle) —
+  so artifact-script claims across the Aegean family stop riding bare.
+
 - 2026-10-21, the South Asian, Javanese–Sundanese, Welsh–Breton–Telugu
   and Caucasus package. South Asia: ml Malayalam (mala1464) under
   dra-sou beside ta and kn, and dv Dhivehi (dhiv1236) under inc beside
