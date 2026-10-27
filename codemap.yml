@@ -116,6 +116,13 @@ map:
   # Greek stages that outgrew their codes
   gkm:     grc:byz
   grc-koi: grc:koi
+  # Wiktionary's etymology-only dialect codes onto grc's dialect varieties
+  # (2026-10-27; the region, not the period — a bare dialect claim spans
+  # the whole time-grid)
+  grc-att: grc/att
+  grc-ion: grc/ion
+  grc-dor: grc/dor
+  grc-aeo: grc/aeo
 
   # Chinese: two stages and the register ISO coded as their sibling
   och:     zho:old
