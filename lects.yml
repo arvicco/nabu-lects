@@ -471,7 +471,36 @@ anchors:
 
   ofs:
     name: Old Frisian
+    glottocode: oldf1241
+    band: [1200, 1550]
+    band_note: "the manuscript span, approximate (Bremmer 2009): the
+                oldest codices c. 1300 with texts composed in the 13th c.
+                (a few 12th-c. names and glosses earlier), the West
+                Frisian charters and law books to the mid-16th c., when
+                Dutch replaces Frisian as the written language of the
+                Frisian lands"
     parent: gmw:pro
+    note: "West Germanic, North Sea Germanic: with English the
+           Anglo-Frisian subgroup (Glottolog North Sea Germanic >
+           Anglo-Frisian > Frisian) — the shared Anglo-Frisian node has
+           no ISO 639-5 or Wiktionary code, so the anchor parents gmw:pro
+           and the subgrouping stays prose (the hlu/xlu discipline).
+           Attestation is overwhelmingly LEGAL: the shared core of the
+           Seventeen Statutes (Keuren) and the Twenty-Four Landlaws,
+           copied with local law in the regional codices. The corpus
+           splits by the Lauwers: Old East Frisian (the 'classical'
+           texts, 13th–14th c.: the Rüstringen codices, the Brokmer,
+           Emsingo, Fivelgo and Hunsingo codices) and Old West Frisian
+           (the 'post-classical' texts, 15th–16th c.: the Codex Unia,
+           the Jus Municipale Frisonum, the Codex Roorda, the charters) —
+           Bremmer 2009 (An Introduction to Old Frisian) prefers the
+           geographic labels over the older classical/post-classical
+           periodization, and the registry follows him: the split stays
+           prose, not a stage or variety pair, until a consumer marks it.
+           Runic Frisian (6th–9th c.) precedes it and is not this anchor.
+           Corpus: the Corpus Oudfries (Rita van de Poel's lemmatized
+           Old Frisian corpus, Instituut voor de Nederlandse Taal; 177
+           documents / 235k tokens), incoming in the consuming library"
 
   fy:
     name: Western Frisian
