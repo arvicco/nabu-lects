@@ -3900,3 +3900,4 @@ scripts:
   lina: {name: Linear A,                             iso15924: Lina}
   linb: {name: Linear B,                             iso15924: Linb}
   cprt: {name: Cypriot syllabary,                    iso15924: Cprt}
+  sinh: {name: Sinhala,                              iso15924: Sinh}
