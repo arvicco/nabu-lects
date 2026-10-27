@@ -2,6 +2,32 @@
 
 ## Unreleased
 
+- 2026-10-27, the South Asian stages, Greek dialects and Catalan
+  package. Stages: ta:old Old Tamil [−300, 700] (iso oty) and ta:mid
+  Middle Tamil [700, 1600] (wikt ta-mid), the conventional grid of
+  Zvelebil and Lehmann 1998, Modern Tamil left as the bare anchor's
+  open end; te:old Old Telugu [575, 1100], Krishnamurti's epigraphic
+  period before the te:cls kāvya register; mr:old Old Marathi
+  [1000, 1350] (iso omr; Tulpule 1979, Master 1964). Prakrit members
+  under pra: pmh Māhārāṣṭrī (maha1305) and psu Śaurasenī (saur1252)
+  beside pka (Pischel 1900, Woolner 1928, Ollett 2017); Gāndhārī (pgd)
+  stays unminted, no held text. grc varieties att / ion / dor / aeo —
+  the literary dialect groups (Buck 1955), regional and orthogonal to
+  the time-grid, the cyp precedent. ca Catalan (stan1289) under roa.
+  Script: sinh Sinhala. Backfill: ofs Old Frisian gains its
+  glottocode (oldf1241), band [1200, 1550] and a philology note
+  (Anglo-Frisian in prose, the East/West manuscript split; Bremmer
+  2009). Codemap: oty → ta:old, ta-mid → ta:mid, omr → mr:old,
+  pra-mah → pmh, pra-sau → psu, pra-ard → pka, grc-att/ion/dor/aeo →
+  the grc varieties, cat → ca. Consumers: tamilex and Project
+  Madurai's classical Tamil, the dated Tamil and Telugu epigraphy
+  (dharma-tamil, sii-clean), GRETIL's Jñāneśvarī, the prakrit-texts
+  kāvya and the Wiktionary Prakrit/Indic descent rows (omr 930,
+  pra-sau 99, pra-mah 72, pra-ard 20), the GLAUx treebank's dialect
+  field (1,176 marked texts), CTILC (967 printed Catalan works), the
+  Sinhala-script Pāli of tipitaka.lk, and an incoming lemmatized Old
+  Frisian corpus (177 documents).
+
 - 2026-10-22, the Iron Age Hebrew package. obm Moabite (moab1234)
   under sem — the Mesha Stele's language, closest to Hebrew within
   Canaanite (Garr 1985), a single-monument corpus. hbo gains its first
