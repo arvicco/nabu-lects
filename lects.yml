@@ -212,6 +212,33 @@ anchors:
                    needs the distinction — the consumer's raw facet
                    preserves it meanwhile"}
 
+  ca:
+    name: Catalan
+    glottocode: stan1289
+    parent: roa
+    note: "ISO 639-1 (639-2/3 cat aliases here). Western Romance;
+           Catalan's closest relative is Occitan, and its place between
+           Gallo-Romance and Ibero-Romance is the classic disputed
+           subgrouping (Badia i Margarit 1981, Gramàtica històrica
+           catalana; Glottolog files it under Shifted Western Romance) —
+           prose, never an edge: the anchor parents roa directly (the
+           ast/an/it shape). Attestation: Catalan glosses and oath
+           formulas in Latin charters from the 11th c. (the Greuges de
+           Guitard Isarn, c. 1080–1095), the Homilies d'Organyà (late
+           12th c.) as the first literary prose; the medieval flowering
+           (Ramon Llull, the four great chronicles, Ausiàs March, Tirant
+           lo Blanc) is Old Catalan, deliberately unminted (Wiktionary
+           roa-oca) until a consumer holds medieval text. Modern dialect
+           division (Wheeler, Yates & Dols 1999, Catalan: A Comprehensive
+           Grammar): Eastern — central, balearic, northern (Rossellonès),
+           Alguerese — and Western — north-western, Valencian; varieties
+           unminted, the consumer's dialect facet carries them meanwhile
+           (central 793 · baleàric 80 · valencià 42 · nord-occidental 41 ·
+           septentrional 10 · alguerès 1). Corpus: ctilc — the Corpus
+           Textual Informatitzat de la Llengua Catalana (Institut
+           d'Estudis Catalans), 967 printed works 1832–1957, claimed bare
+           (censused 2026-10-27)"
+
   it:
     name: Italian
     parent: roa
