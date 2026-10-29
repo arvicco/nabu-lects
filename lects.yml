@@ -747,6 +747,28 @@ anchors:
            'obm' is the ISO 639-3 code"
     # no stages — one monument does not stage
 
+  qda:
+    name: Deir ʿAlla
+    band: [-850, -750]
+    band_note: "the plaster text's archaeological horizon (late Iron
+                IIA–IIB, conventionally c. 800 BCE)"
+    parent: sem
+    note: "LOCAL-USE code (the qpc discipline — no ISO code exists, and
+           Glottolog's deir1238 is retired with no forwarding languoid):
+           the language of the Deir ʿAlla plaster inscription (the Balaam
+           son of Beor text, Jordan Valley). Its place WITHIN Northwest
+           Semitic is a live scholarly dispute the registry deliberately
+           does not settle: Hoftijzer & van der Kooij 1976 read it as
+           Aramaic; Hackett 1984 as South-Canaanite-leaning; Huehnergard
+           as its own NWS branch; Beyer as 'South Gileadite'. The parent
+           edge states only the uncontested level (Semitic — Northwest
+           Semitic by all parties); the contested branch below it is left
+           open (the xna/dmn state-the-dispute discipline). Corpus: the
+           ETCBC extrabiblical plaster text, whose upstream labels every
+           word Hebrew as a processing convenience — that claim retires
+           onto this anchor"
+    # no stages — one inscription does not stage
+
   xna:
     name: Ancient North Arabian
     glottocode: anci1245
