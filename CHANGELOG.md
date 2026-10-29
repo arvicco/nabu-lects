@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- 2026-10-29, the Deir ʿAlla anchor: qda, a local-use code (no ISO
+  code; Glottolog's deir1238 retired with no forwarding languoid) for
+  the Balaam plaster inscription's language, band [−850, −750] on the
+  archaeological horizon. Parent states only the uncontested Semitic
+  level; the Aramaic-vs-Canaanite-vs-own-branch dispute is carried in
+  the note (Hoftijzer & van der Kooij 1976; Hackett 1984; Huehnergard;
+  Beyer), deliberately unsettled — the xna/dmn discipline.
 - 2026-10-27, the South Asian stages, Greek dialects and Catalan
   package. Stages: ta:old Old Tamil [−300, 700] (iso oty) and ta:mid
   Middle Tamil [700, 1600] (wikt ta-mid), the conventional grid of
