@@ -2,6 +2,29 @@
 
 ## Unreleased
 
+- 2026-10-30, the Italic minor-languages package. Eleven anchors for
+  the lexicon-itant consumer's lexicons. xfa Faliscan (fali1291) under
+  itc, Latino-Faliscan in prose, the autonomous-language vs
+  Latin-dialect question carried (Bakkum 2009), band [−700, −150].
+  xve Venetic (vene1257) under ine: its Italic membership is the
+  majority view (Marinetti 2020; Glottolog) but contested (Hamp 1954;
+  Meiser 2017's Italo-Venetic; Schrijver 2016), so the edge states
+  only the uncontested level — the qda/xna discipline — band
+  [−600, −50]. The Sabellic members under itc, on the osc/xum/sbv
+  shape (no Sabellic node; the minor-dialect grouping stays prose):
+  spx South Picene (sout2618, [−600, −300], Marinetti 1985), pgn
+  Paelignian (pael1234, [−200, −1]), umc Marrucinian (marr1267,
+  [−300, −100]), ims Marsian (mars1253, [−300, −150]), xvs Vestinian
+  (vest1239, [−250, −100]), xvo Volscian (vols1237, [−300, −250], a
+  single-monument language whose Umbrian reading is noted), xhr
+  Hernican (hemi1234, no band — too thin). Local-use codes for the two
+  varieties ISO leaves uncoded: qps Pre-Samnite (pres1240,
+  [−600, −400]) and qcp Capenate (no glottocode, no band). The
+  consumer's own tags for them (snt, xca) are unassigned ISO 639-3
+  codes and are deliberately not adopted. No codemap rows: the nine
+  ISO anchors resolve by identity. Consumer: Lexicon ItAnt (xve 85 ·
+  xfa 75 · pgn 31 · spx 23 · umc 17 · xvo 10 · ims 9 · xvs 8 · snt 2 ·
+  xhr 1 · xca 1 entries, censused 2026-10-29).
 - 2026-10-29, the Deir ʿAlla anchor: qda, a local-use code (no ISO
   code; Glottolog's deir1238 retired with no forwarding languoid) for
   the Balaam plaster inscription's language, band [−850, −750] on the
