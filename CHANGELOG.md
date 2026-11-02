@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- 2026-11-02, Romanian. ro Romanian (roma1327) under roa, with the
+  ro:old Old Romanian stage [1521, 1780] (Neacșu's letter to the
+  Elementa linguae daco-romanae; the Cyrillic church-print literary
+  language — Coresi, the Palia de la Orăștie, the Bălgrad New
+  Testament, the 1688 Bucharest Bible, Dosoftei). Codemap ron and rum
+  onto ro. The Eastern Romance siblings (rup, ruq, ruo) stay prose
+  until a consumer holds one. Consumer: the 1688 Bucharest Bible
+  (79 books / 36,312 verses, Romanian Cyrillic).
+
 - 2026-11-02, the Pacific, Vietnamese–Tai, Mongolic, Tangut and
   Yiddish package. **Pacific:** twelve leaves — mi Māori (maor1246),
   haw Hawaiian (hawa1245), ty Tahitian (tahi1242), rar Rarotongan

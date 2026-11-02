@@ -146,6 +146,29 @@ anchors:
     name: French
     parent: frm
 
+  ro:
+    name: Romanian
+    parent: roa
+    glottocode: roma1327
+    note: "Daco-Romanian, the largest Eastern Romance language (the Eastern
+           Romance split — Aromanian rup, Megleno-Romanian ruq,
+           Istro-Romanian ruo — stays prose; no sibling minted until a
+           consumer holds one). Written in Cyrillic from the first dated
+           text (Neacșu's letter, Câmpulung 1521) until the official switch
+           to the Latin alphabet (Wallachia/Moldavia 1860–1862), with mixed
+           transitional alphabets in the 1830s–50s. Consumer: the 1688
+           Bucharest Bible (Biblia de la București), Romanian Cyrillic"
+    stages:
+      old: {name: Old Romanian, band: [1521, 1780], ord: 10,
+            band_note: "the old literary period, from the first dated text
+              (1521) to the conventional close at the Transylvanian
+              School's Elementa linguae daco-romanae (1780); approximate",
+            note: "the Cyrillic-written literary language of the church
+              prints — Coresi's Brașov books (1559–1581), the Palia de la
+              Orăștie (1582), the Noul Testament de la Bălgrad (1648), the
+              Biblia de la București (1688), Dosoftei's Psaltirea în
+              versuri (1673)"}
+
   pro:
     name: Old Occitan
     band: [null, 1500]
