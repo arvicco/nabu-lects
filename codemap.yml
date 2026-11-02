@@ -107,6 +107,7 @@ map:
   # Old Swedish / Old Italian / Old Danish (Wiktionary etymology-only codes)
   gmq-osw: sv:old
   roa-oit: it:old
+  fa-cls:  "fa:cls" # Wiktionary's etymology-only Classical Persian code
   gmq-oda: da:old
   olt:     lt:old   # Wiktionary's Old Lithuanian — 188 reflex rows held
   # The South Asian stage suite (2026-10-27): ISO 639-3 codes that name a
