@@ -1363,6 +1363,37 @@ anchors:
   fa:
     name: Persian
     parent: pal
+    note: "New Persian, the Arabic-script continuation of Middle Persian —
+           until 2026-11 the registry's largest unstaged holding (2.8M
+           passages: the Ganjoor classical library, OpenITI's Persian
+           shelf, the Invisible East documents). Modern Persian is the
+           bare anchor's open end from the mid-19th c. (Qajar prose
+           reform, the Constitutional press); the Dari and Tajik
+           standards stay prose until a consumer separates them"
+    stages:
+      early: {name: Early New Persian, band: [800, 1200], ord: 10,
+              band_note: "Lazard (The Rise of the New Persian Language,
+                          Cambridge History of Iran IV) and Paul
+                          (Encyclopaedia Iranica, Persian Language i.
+                          Early New Persian): the 8th/9th-c. first
+                          monuments to the 12th-c. consolidation;
+                          approximate — some draw the close at 1100",
+              note: "the first Arabic-script monuments and the Samanid
+                     court language: Rudaki, Bal'ami's chronicle, the
+                     early Quran commentaries, Ferdowsi's Shahnameh;
+                     keeps the majhul vowels and the postvocalic ḏāl
+                     the classical norm later levels"}
+      cls: {name: Classical Persian, band: [1200, 1850], ord: 20,
+            wikt: fa-cls,
+            band_note: "conventional, approximate — the Seljuk–Mongol
+                        consolidation of the supra-regional norm to the
+                        Qajar-era turn toward modern prose; other
+                        schools close it at 1500 or run it to 1900",
+            note: "the remarkably stable literary standard of Nezami,
+                   ʿAṭṭār, Rumi, Saʿdi, Hafez and Jami, carried across
+                   Iran, Central Asia, the Caucasus and Mughal India;
+                   the bulk of the held Ganjoor and OpenITI material
+                   composes here, and the date-band inference stages it"}
 
   jpr:
     name: Judeo-Persian
