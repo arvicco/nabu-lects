@@ -3631,11 +3631,23 @@ anchors:
            with the longest record. It continues Old Georgian (oge) — PROSE,
            not an edge: the two are separate ISO codes, siblings under
            ccs-gzn. Middle Georgian (12th–18th c.: Rustaveli's Knight in
-           the Panther's Skin, the Kartlis Tskhovreba redactions) is
-           deliberately NOT staged — no consumer holds it (the TITUS Middle
-           Georgian corpora are the candidate). Consumers: 1,195 kaikki
-           descendant reflexes and 27 etymon edges; iip's 14 kat-coded
-           inscriptions"
+           the Panther's Skin, the Kartlis Tskhovreba redactions) was
+           deliberately unstaged until 2026-11, when the first consumer
+           was calendared (a Middle Georgian treebank in the UD v2.19
+           release; the TITUS Middle Georgian corpora wait behind it).
+           Consumers: 1,195 kaikki descendant reflexes and 27 etymon
+           edges; iip's 14 kat-coded inscriptions"
+    stages:
+      mid: {name: Middle Georgian, band: [1100, 1800], ord: 10,
+            band_note: "conventional, approximate — the close of the Old
+                        Georgian classical period to the 18th-c. reforms
+                        that open the modern literary language",
+            note: "the secular golden-age and later literature:
+                   Rustaveli's Knight in the Panther's Skin, the Kartlis
+                   Tskhovreba redactions, Sulkhan-Saba Orbeliani's
+                   dictionary and fables; Old Georgian is the SIBLING
+                   anchor oge, not a stage, so the Georgian record reads
+                   oge → ka:mid → bare ka"}
 
   # ── The StarLing branch-base wing (2026-10-07) ────────────────────────
   # The ALTAIC/CAUC/DRAV/SINTIB packages' 28 branch etymology bases
