@@ -2728,6 +2728,76 @@ anchors:
            editions (its K-numbering runs to the present); held romanized
            (khm-Latn) there, Khmer script (khmr) natively"
 
+  mkh-vie:
+    name: Vietic
+    kind: family
+    parent: aav
+    glottocode: viet1250
+    stages:
+      pro: {name: Proto-Vietic, mode: reconstructed, ord: 5, wikt: mkh-vie-pro,
+            note: "Ferlus's reconstruction (1996 onward), refined by Sidwell
+                   & Alves; sesquisyllabic, pre-tonal — the tones arise
+                   later from final laryngeals and initial voicing
+                   (Haudricourt 1954)"}
+    note: "the Austroasiatic branch of Vietnamese, Mường and the small
+           Vietic languages of the Annamite range (Thavưng, Arem, Chứt,
+           Pọng …). Wiktionary's code mkh-vie sits under its Mon-Khmer
+           family (mkh, also an ISO 639-5 code), but Mon-Khmer is not a
+           clade on current classification (Sidwell 2009; Glottolog lists
+           Austroasiatic flat), so the edge goes straight to aav. The
+           Viet-Muong sub-node (Glottolog viet1251 — Vietnamese with
+           Mường) stays prose"
+
+  vi:
+    name: Vietnamese
+    parent: mkh-vie
+    glottocode: viet1252
+    stages:
+      old: {name: Old (Ancient) Vietnamese, band: [1000, 1500], ord: 10,
+            band_note: "the conventional grid (Maspero 1912; Nguyễn Tài
+                        Cẩn 1995): from the Việt–Mường split near
+                        the end of the 1st millennium CE to c. 1500;
+                        approximate, boundaries vary by school",
+            note: "known through Chinese-character transcription: Chen Fu's
+                   Annan jishi glossary (c. 1293), the Ming Annanguo yiyu
+                   (15th c.), early Buddhist Nôm (the Phật thuyết đại báo
+                   phụ mẫu ân trọng kinh, dated 12th c. by some, later by
+                   others), Nôm names on Lý–Trần steles, and the first
+                   literary Nôm — Nguyễn Trãi's Quốc âm thi tập (15th c.,
+                   extant only in much later copies). The initial
+                   clusters and sesquisyllables Middle Vietnamese still
+                   shows are not yet resolved"}
+      mid: {name: Middle Vietnamese, band: [1500, 1850], ord: 20, wikt: mkh-mvi,
+            band_note: "16th to mid-19th c., approximate; schools differ on
+                        the close (mid- vs end-19th c.). Wiktionary's
+                        mkh-mvi names the same rung",
+            note: "the language the Jesuits romanized: de Rhodes's
+                   Dictionarium Annamiticum Lusitanum et Latinum (1651) is
+                   the anchoring witness, with its bl-/tl-/ml- clusters;
+                   Pigneau de Behaine's dictionary (1773, printed by Taberd
+                   1838). The great Nôm verse literature sits here and at
+                   the close: Chinh phụ ngâm (Đoàn Thị Điểm or Phan Huy
+                   Ích's Nôm version, 18th c.), Hồ Xuân Hương, Nguyễn Du's
+                   Truyện Kiều (early 19th c.)"}
+    note: "ISO 639-1 (639-3 vie aliases here). Vietic, Viet-Muong;
+           Austroasiatic by descent with a massive Chinese overlay — the
+           Sino-Vietnamese (Hán-Việt) reading layer from Late Middle
+           Chinese, plus older loan strata. Three written vehicles:
+           Literary Sinitic (Hán văn), which is Chinese and NOT this
+           anchor (it is zho/lit — lzh — however Vietnamese its author);
+           chữ Nôm, the vernacular Han-derived script, from Lý–Trần
+           names (12th–13th c.) to the early 20th c. (held text is
+           vi~hani — ISO 15924 has no Nôm code, Unicode encodes Nôm in
+           the CJK blocks); and quốc ngữ, the Jesuit romanization of the
+           17th c., made the official script under French rule (the
+           civil examinations ended 1919). Modern Vietnamese (from the
+           19th c.) is the bare anchor's open end — the ta precedent: a
+           Nôm text is staged by its date, not by its script. Consumers:
+           the kaikki Vietnamese extract (45,519 words; 11,850 Han/Nôm
+           character senses with nom- and Hán-Việt readings); the Nôm
+           verse corpora are licence-gated (the vi.wikisource Nôm cone
+           and the community Nôm transcriptions are parked)"
+
   map:
     name: Austronesian
     kind: family
@@ -3199,6 +3269,44 @@ anchors:
            ประชุมพงศาวดาร in its early-Rattanakosin printings
            (≤ BE 2473 / 1930 CE by the edition rule). Corpus:
            th-wikisource (92 chronicle parts / 11,006 pages)"
+
+  za:
+    name: Zhuang
+    parent: tai
+    note: "ISO 639-1 (639-2/3 zha aliases here) — a MACROLANGUAGE, and one
+           that cross-cuts the genealogy: ISO splits it into sixteen
+           member codes (zyb Yongbei, the standard's base, zch, zgb, zhd,
+           zyn …), and on Li Fang-Kuei's Tai grid (1977) the northern
+           varieties are Northern Tai while the southern ones are Central
+           Tai, nearer Tày and Nùng than to Northern Zhuang. 'Zhuang' is
+           an ethnic and administrative unit (Guangxi), not a clade, so
+           the edge stops at tai; Glottolog files the zha code on its
+           Northern Daic node (nort3180), the northern half only, so no
+           glottocode crosswalk is stated. Written in Sawndip (古壮字,
+           'raw characters'), a vernacular Han-derived script — the
+           Tang stele at Shanglin (682 CE) is the usual first witness —
+           carrying folk song, the Buluotuo scriptures and ritual texts
+           in manuscript, never standardized (Holm 2013 maps its
+           variation); held text is za~hani. The Latin standard
+           (Sawcuengh, 1957, revised 1982) is modern. Consumers: the
+           kaikki Zhuang extract (2,981 words, 815 entries with 3,659
+           Sawndip forms) and the Unihan kZhuang readings (2,472, from
+           the 1989 古壮字字典)"
+
+  tyz:
+    name: Tày
+    parent: tai
+    glottocode: tayy1238
+    note: "Central Tai on Li Fang-Kuei's grid (1977), a continuum with
+           Nùng and Southern Zhuang across the Sino-Vietnamese border
+           (Cao Bằng, Lạng Sơn); Glottolog's Wenma-Southwestern Tai
+           placement and Pittayaporn's (2009) re-cut of Tai subgrouping
+           differ, so the edge stops at tai. No ISO 639-1 code. Written
+           in Nôm Tày, a Han-derived script on the Vietnamese Nôm model,
+           for the then ritual repertoire and lượn song — manuscript
+           literature mostly of the 18th–19th c.; the Latin orthography
+           is 20th-c. Consumers: the kaikki Tày extract (1,203 words, 150
+           Nôm Tày character senses)"
 
   tbq:
     name: Tibeto-Burman
@@ -4454,6 +4562,11 @@ scripts:
   glag: {name: Glagolitic,                           iso15924: Glag}
   armn: {name: Armenian,                             iso15924: Armn}
   hant: {name: Han (Traditional variant),            iso15924: Hant}
+  hani: {name: "Han (Hanzi, Kanji, Hanja)",          iso15924: Hani,
+         note: "the generic Han code, for the vernacular Han-derived
+                scripts ISO 15924 does not separate — Vietnamese chữ Nôm
+                (vi~hani) and Zhuang Sawndip (za~hani) — whose characters
+                Unicode encodes in the CJK Unified blocks beside Chinese"}
   jpan: {name: Japanese (Han + Hiragana + Katakana), iso15924: Jpan}
   phnx: {name: Phoenician,                           iso15924: Phnx}
   runr: {name: Runic,                                iso15924: Runr}

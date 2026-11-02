@@ -78,6 +78,11 @@ map:
   tah:     ty
   fij:     fj
   cha:     ch
+  # The Vietnamese and Zhuang anchors (2026-11-02). zha is the Zhuang
+  # macrolanguage itself; its sixteen member codes stay identity (none is
+  # anchored — see za's note).
+  vie:     vi
+  zha:     za
 
   # The suite mirrored: where the registry anchored the 639-2/3 code, a
   # collection spelling the same language in 639-1 means exactly that
@@ -138,6 +143,10 @@ map:
   och:     zho:old
   ltc:     zho:mid
   lzh:     zho/lit
+
+  # Wiktionary's Middle Vietnamese (a full language code there, ancestor
+  # of vi) onto the vi stage it names
+  mkh-mvi: vi:mid
 
   # The ORACC Akkadian dialect suite (2026-09-27): ORACC's published
   # akk-x-* period/dialect codes onto the standing akk grid — universal
@@ -254,6 +263,7 @@ map:
   poz-pnp-pro: poz-pnp:pro
   poz-pep-pro: poz-pep:pro
   poz-mic-pro: poz-mic:pro
+  mkh-vie-pro: mkh-vie:pro
 
   # The script-suffix suite (P61): BCP-47-style tags whose script subtag
   # is used per the standard's own semantics -- it describes the CONTENT.
