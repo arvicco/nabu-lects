@@ -2,6 +2,64 @@
 
 ## Unreleased
 
+- 2026-11-02, Romanian. ro Romanian (roma1327) under roa, with the
+  ro:old Old Romanian stage [1521, 1780] (Neacșu's letter to the
+  Elementa linguae daco-romanae; the Cyrillic church-print literary
+  language — Coresi, the Palia de la Orăștie, the Bălgrad New
+  Testament, the 1688 Bucharest Bible, Dosoftei). Codemap ron and rum
+  onto ro. The Eastern Romance siblings (rup, ruq, ruo) stay prose
+  until a consumer holds one. Consumer: the 1688 Bucharest Bible
+  (79 books / 36,312 verses, Romanian Cyrillic).
+
+- 2026-11-02, the Pacific, Vietnamese–Tai, Mongolic, Tangut and
+  Yiddish package. **Pacific:** twelve leaves — mi Māori (maor1246),
+  haw Hawaiian (hawa1245), ty Tahitian (tahi1242), rar Rarotongan
+  (raro1241), rap Rapa Nui (rapa1244) under poz-pep; sm Samoan
+  (samo1305) under poz-pnp; to Tongan (tong1325) under poz-pol (Tongic
+  in prose); fj Fijian (fiji1243) and rtm Rotuman (rotu1241) under
+  poz-pcc; kos Kosraean (kosr1238) and pon Pohnpeian (pohn1238) under
+  poz-mic; ch Chamorro (cham1312) directly under poz, the non-Oceanic
+  primary branch. The spine they need, each with its proto stage: pqe
+  Eastern Malayo-Polynesian (east2712; ISO 639-5, Blust 1978; CEMP
+  contested, prose) > poz-oce Oceanic (ocea1241) > poz-pcc Central
+  Pacific (cent2060, a linkage) > poz-pol Polynesian (poly1242) >
+  poz-pnp Nuclear Polynesian (nucl1485) > poz-pep East Polynesian
+  (east2449), and poz-mic Micronesian (micr1243) under Oceanic — the
+  Wiktionary family codes, since ISO 639-5 stops at pqe; Central-Eastern
+  Oceanic, Tokalau Fijian, Samoic-Outlier, Tahitic and Marquesic stay
+  prose. **Vietnamese–Tai:** vi Vietnamese (viet1252) under the new
+  mkh-vie Vietic family (viet1250, with Proto-Vietic; parented to aav,
+  Mon-Khmer not being a clade), staged by date across the Nôm era —
+  vi:old Old Vietnamese [1000, 1500] and vi:mid Middle Vietnamese
+  [1500, 1850] (Maspero 1912; Nguyễn Tài Cẩn 1995), Modern the bare
+  anchor's open end, Vietnamese-authored Literary Sinitic staying
+  zho/lit; za Zhuang (the macrolanguage, crossing Northern and Central
+  Tai; no glottocode stated) and tyz Tày (tayy1238), both under tai with
+  the subgrouping in prose. **Mongolic:** cmg Classical Mongolian
+  [1600, 1946] and xwo Written Oirat [1648, open], both under xng (Written
+  Oirat follows the spoken Oirat lineage; its Classical model stays
+  prose); xng gains its glottocode (midd1351). **Tangut:** txg
+  (tang1334) under tbq, band [1036, 1502], the Qiangic vs West Gyalrongic
+  question (Lai, Gong, Gates & Jacques 2020) carried in the note.
+  **Yiddish:** yi under gmh, stages yi:old [1250, 1500], yi:mid
+  [1500, 1700] and yi:mod [1700, open] (Weinreich), varieties yi/west and
+  yi/east; the origin debate (Rhineland, Danube, East Middle German,
+  Wexler's relexification) carried unsettled. Scripts: hani (the generic
+  Han code, for Nôm and Sawndip), mong Mongolian, tang Tangut. Codemap:
+  mri/smo/ton/tah/fij/cha → mi/sm/to/ty/fj/ch, vie → vi, zha → za,
+  mkh-mvi → vi:mid, yid → yi, ydd → yi/east, yih → yi/west, and the
+  eight new proto codes (pqe-pro … poz-mic-pro, mkh-vie-pro).
+  Consumers: eBible's PD Pacific Bibles (haw1868 31,102 verses, cha1908,
+  kos1928, pon1922) and the archive.org Pacific mission-press shelf
+  (Grey 1853, the Māori, Samoan, Tongan, Fijian, Tahitian and
+  Rarotongan Bibles); the kaikki Vietnamese (11,850 Han/Nôm character
+  senses), Zhuang (815 entries with Sawndip forms) and Tày (150 character
+  senses) extracts with Unihan's kZhuang; the DILA Pentaglot (1,071
+  entries) and the PD Mongolic scan shelf; UD Tangut-MiCA and the
+  Digital Wenhai (3,085 records); the Penn Parsed Corpus of Historical
+  Yiddish (63 texts, 1478–1959). rap and rtm are minted ahead of an open
+  text (censused 2026-11-02).
+
 - 2026-10-30, the Italic minor-languages package. Eleven anchors for
   the lexicon-itant consumer's lexicons. xfa Faliscan (fali1291) under
   itc, Latino-Faliscan in prose, the autonomous-language vs
