@@ -83,6 +83,11 @@ map:
   # anchored — see za's note).
   vie:     vi
   zha:     za
+  # Yiddish (2026-11-02): yid is the 639-2 macrolanguage code; the two
+  # 639-3 members ARE the two dialect varieties by ISO's own definition.
+  yid:     yi
+  ydd:     yi/east
+  yih:     yi/west
 
   # The suite mirrored: where the registry anchored the 639-2/3 code, a
   # collection spelling the same language in 639-1 means exactly that
