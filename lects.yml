@@ -443,6 +443,65 @@ anchors:
                           the de anchor; band per the Bochum reference
                           corpus (ReF) it was minted for"}
 
+  yi:
+    name: Yiddish
+    parent: gmh
+    stages:
+      old: {name: Old Yiddish, band: [1250, 1500], ord: 10,
+            band_note: "Weinreich's periodization (1973; Eng. 2008),
+                        approximate; his Earliest Yiddish (before 1250)
+                        is known only from glosses and names and is not
+                        minted",
+            note: "the Worms Maḥzor blessing (1272/73), the Cambridge
+                   Codex (1382: Dukus Horant and the biblical epics),
+                   the oldest letters (Regensburg 1478)"}
+      mid: {name: Middle Yiddish, band: [1500, 1700], ord: 20,
+            band_note: "Weinreich's periodization, approximate",
+            note: "the age of print (Cracow, Prague, Venice, Amsterdam):
+                   Elia Levita's Bovo-bukh (composed 1507, printed 1541),
+                   the Tsene-rene (c. 1600), the Mayse-bukh (1602), the
+                   historical songs; a supraregional literary norm
+                   still West-based"}
+      mod: {name: Modern Yiddish, band: [1700, null], ord: 30,
+            band_note: "Weinreich's periodization, approximate — banded so
+                        date staging covers the 18th–20th-c. texts (the
+                        jpn:mod reasoning)",
+            note: "Glikl's memoirs (1691–1719) stand at the seam; the
+                   literary centre moves east — Hasidic tales (Nakhman of
+                   Bratslav), the Haskalah, the classic writers, the
+                   YIVO standard (1936). Western Yiddish dies out as a
+                   vernacular in the 18th–19th c."}
+    varieties:
+      west: {name: Western Yiddish, kind: dialect, iso: yih,
+             note: "the Yiddish of the German lands, Alsace, Switzerland,
+                    Holland, Bohemia-Moravia (Glottolog west2361; dialect
+                    groups Northwestern, Midwestern, Southwestern, plus
+                    the Czech/Moravian transitional zone)"}
+      east: {name: Eastern Yiddish, kind: dialect, iso: ydd,
+             note: "the Yiddish of the Slavic and Baltic lands (Glottolog
+                    east2295): Northeastern ('Lithuanian'), Mideastern
+                    ('Polish'), Southeastern ('Ukrainian'); the base of
+                    the modern standard"}
+    note: "ISO 639-1 (639-2 yid aliases here; the 639-3 member codes ydd
+           and yih map onto the varieties). The Germanic language of
+           Ashkenazi Jewry, a fusion language (Weinreich) — a German
+           determinant from the Middle High German period with
+           Hebrew-Aramaic, Romance (Loez) and, in the east, Slavic
+           components, written in Hebrew script. The gmh edge is the
+           mainstream reading (Wiktionary: ancestor gmh, family High
+           German; Glottolog files the two Yiddishes inside its High
+           German dialect tree, Eastern under East Middle German,
+           Western under East Franconian). Its point of origin is
+           DISPUTED and not settled here: the Rhineland ('Loter') thesis
+           (Weinreich), the Danube / Bavarian-Austrian case (King;
+           Manaster Ramer), East Middle German (Beider 2015); Wexler's
+           Slavic-relexification thesis (1991, 2002) is a minority
+           position that would deny the Germanic descent outright.
+           Glottolog has no single Yiddish languoid, so no glottocode is
+           stated. Consumers: the Penn Parsed Corpus of Historical
+           Yiddish (63 texts, 1478–1959, romanized YIVO-style — yi~latn;
+           dialect-tagged West 12 / East 49)"
+
   osx:
     name: Old Saxon
     parent: gmw:pro
