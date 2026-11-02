@@ -1853,13 +1853,16 @@ anchors:
       pro: {name: Proto-Mongolic, mode: reconstructed, ord: 5, wikt: xgn-pro,
             note: "Corpus: starling-monget (2,174 etymologies, EDAL's
                    Mongolic branch base)"}
-    note: "ISO 639-5. Family node; Classical Mongolian (cmg) stays
-           unminted — the survey found NO open machine-readable
-           corpus (censused 2026-09-28)"
+    note: "ISO 639-5. Family node. The written languages (cmg, xwo)
+           were minted 2026-11-02 for their dictionary and scan-shelf
+           consumers; an open Classical Mongolian running-text corpus is
+           still not found (censused 2026-09-28, re-confirmed
+           2026-11-02)"
 
   xng:
     name: Middle Mongol
     parent: xgn
+    glottocode: midd1351
     band: [1200, 1600]
     band_note: "the Secret History era through the late
                 Sino-Mongolian glossaries, approximate"
@@ -1869,6 +1872,55 @@ anchors:
            altaica.ru romanized Secret History (use granted by the
            site's maintainer by email, 2026-09-27) + the zh.wikisource
            transcription (queued) (censused 2026-09-28)"
+
+  cmg:
+    name: Classical Mongolian
+    parent: xng
+    band: [1600, 1946]
+    band_note: "the classical written norm, approximate: from the
+                Buddhist translation movement of c. 1600 (Ligdan Khan's
+                Kanjur, 1628–29) to the Cyrillic reform of the Mongolian
+                People's Republic (decreed 1941, in force 1946); the
+                Uyghur-script tradition continues in Inner Mongolia as a
+                modern written norm, not this stage"
+    note: "Written (literary) Mongolian in the Uyghur-derived vertical
+           script — the pan-Mongol written language of the Buddhist
+           canon, the Qing chancery and the chronicles (Altan Tobči,
+           Erdeni-yin Tobči). Descends from the written Middle Mongol of
+           the 13th–16th c. ('pre-classical', the Yisüngge stone c. 1225
+           onward), hence the xng edge; its spelling is conservative,
+           preserving forms older than any spoken Mongolic of its time
+           (Janhunen 2003; Poppe 1954), so it represents no single
+           spoken dialect. Wiktionary files cmg under Central Mongolic
+           (xgn-cen), Glottolog has no languoid for it (none stated).
+           No ISO 639-1 code; consumers' modern codes (mon, khk) do not
+           mean this lect by default — a collection whose mon-Latn is
+           the classical language overrides per collection. Consumers:
+           the DILA Pentaglot Buddhist-term dictionary (1,071 entries,
+           romanized), the PD scan shelf's Kowalewski (1844–49) and
+           Schmidt (1831)"
+
+  xwo:
+    name: Written Oirat
+    parent: xng
+    band: [1648, null]
+    band_note: "from Zaya Pandita's Clear Script (todo bičig, 1648); open
+                — Kalmykia left it for Cyrillic in 1924 (definitively
+                1938), but the Xinjiang Oirats still write it"
+    note: "the literary language of the Oirats and Kalmyks, written in
+           the Clear Script — Zaya Pandita's 1648 reform of the
+           Uyghur-Mongol script, fitted to Oirat (Western Mongolic)
+           phonology and spelling much closer to speech than Classical
+           Mongolian. Its literature is Buddhist translation (the Golden
+           Light sutra and the canon translations of Zaya Pandita's
+           school), chronicles, law codes and letters. Glottolog sets
+           spoken Oirat inside its Mongolian node (kalm1243); the edge
+           follows the spoken Oirat lineage to xng, while the literary
+           model it reformed — Classical Mongolian — stays prose (the
+           single-parent rule). No glottocode for the written language;
+           Wiktionary files xwo under Central Mongolic. Consumers: the PD
+           scan shelf's Pozdneev Kalmyk dictionary (1911) and Jülg's
+           Kalmyk tales (1866)"
 
   tuw:
     name: Tungusic
@@ -4586,3 +4638,7 @@ scripts:
   linb: {name: Linear B,                             iso15924: Linb}
   cprt: {name: Cypriot syllabary,                    iso15924: Cprt}
   sinh: {name: Sinhala,                              iso15924: Sinh}
+  mong: {name: Mongolian,                            iso15924: Mong,
+         note: "the Uyghur-derived vertical script family as ISO 15924
+                and Unicode unify it: Classical Mongolian, Zaya Pandita's
+                Clear Script (xwo) and Manchu (mnc) all ride Mong"}
