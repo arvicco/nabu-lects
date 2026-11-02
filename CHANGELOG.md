@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+- 2026-11-02, the registry-scope review package (a census of the held
+  catalog and the planned intake against the registry). **Stages:**
+  fa:early Early New Persian [800, 1200] and fa:cls Classical Persian
+  [1200, 1850] onto the 2.8M-passage Persian holding (Lazard/Paul
+  banding, conventions stated; Wiktionary fa-cls mapped); ka:mid
+  Middle Georgian [1100, 1800] ahead of its first calendared treebank;
+  sco:old Older Scots [1375, 1700] on the DOST scope. **Anchors:**
+  xeb Eblaite (ebla1238, the East Semitic branch question stated),
+  sco Scots (scot1243), gd Scottish Gaelic (scot1245), lad Ladino
+  (ladi1251, on its pre-expulsion Old Spanish parent), pt Portuguese
+  (port1283, under Old Galician-Portuguese beside Galician).
+  **Codemap:** the bibliographic/retired spellings wel, iri, gla,
+  fre, por, ae; cmn onto the Sinitic anchor's open end; nine
+  byte-censused script surfaces (tam/kan/tel/mar/awa/pka/bra-Latn,
+  ron-Cyrl, msa-Arab). The Balinese-script label failed its byte
+  census and stays per-collection; egy-Egyd stays out by the standing
+  artifact-claim rule.
+
 - 2026-11-02, Romanian. ro Romanian (roma1327) under roa, with the
   ro:old Old Romanian stage [1521, 1780] (Neacșu's letter to the
   Elementa linguae daco-romanae; the Cyrillic church-print literary
