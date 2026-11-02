@@ -3386,6 +3386,32 @@ anchors:
            CE) through the Bagan period. The Bagan stone inscriptions are
            the corpus, held in Myanmar-script Unicode with transliteration"
 
+  txg:
+    name: Tangut
+    parent: tbq
+    glottocode: tang1334
+    band: [1036, 1502]
+    band_note: "from the script's promulgation under Li Yuanhao (1036)
+                to the last dated texts, the Baoding dhāraṇī pillars
+                (1502); the Xi Xia state itself spans 1038–1227"
+    note: "the language of the Xi Xia (Western Xia) state, extinct; no
+           ISO 639-1 code. Sino-Tibetan, its subgrouping a live question:
+           traditionally Qiangic (Sun Hongkai; Matisoff), argued West
+           Gyalrongic beside Horpa/Stau by Lai, Gong, Gates & Jacques
+           2020 (Glottolog follows: Tangut-Chamdoic; Wiktionary parents
+           it to Horpa) — Qiangic itself is not a secure clade, so the
+           edge states only tbq, the pyx/obr practice. Known almost
+           wholly from the Khara-Khoto library (Kozlov 1908–09, now
+           IOM RAS St Petersburg): Buddhist translations, law (the
+           Tiansheng code), and the native lexica — the Wenhai rhyme
+           dictionary, the Homophones, and the Tangut–Chinese Pearl in
+           the Palm (1190), the key to decipherment (Nevsky; Sofronov
+           1968; Gong Hwang-cherng's reconstruction). Held in the Tangut
+           script (txg~tang) and in romanized reconstructions
+           (txg~latn). Consumers: UD Tangut-MiCA (the Lotus and
+           Avataṃsaka sūtras, glossed) and the Digital Wenhai (3,085
+           rhyme-dictionary records)"
+
   # ── The comparative-etymology wing ──────────────────────────────────
   # Anchors forced by the StarLing etymological shelves (the Tower of
   # Babel databases, standing grant 2026-07-15): each proto stage is a
@@ -4642,3 +4668,6 @@ scripts:
          note: "the Uyghur-derived vertical script family as ISO 15924
                 and Unicode unify it: Classical Mongolian, Zaya Pandita's
                 Clear Script (xwo) and Manchu (mnc) all ride Mong"}
+  tang: {name: Tangut,                               iso15924: Tang,
+         note: "the Xi Xia logographic script (promulgated 1036), some
+                6,000 characters; Unicode-encoded since 9.0"}
