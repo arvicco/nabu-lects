@@ -2871,6 +2871,306 @@ anchors:
            the DHARMA Old Sundanese texts held as osn. Stages unminted (the
            consumer dates at the print grain)"
 
+  # ── The Pacific wing (2026-11-02) ──────────────────────────────────────
+  # Twelve Oceanic and western-Pacific leaves for the PD mission-print and
+  # Bible corpora (eBible's USFM Bibles, the archive.org mission-press
+  # shelf) and the parked rongorongo and Rotuman threads, with the family
+  # spine they need under poz. ISO 639-5 stops at pqe (Eastern
+  # Malayo-Polynesian, verified against the LOC 639-5 list 2026-11-02):
+  # Oceanic, Central Pacific, Polynesian and Micronesian carry no ISO
+  # code, so those nodes take Wiktionary's family codes (poz-oce …), the
+  # ine-bsl / dra-sou practice. The two-letter ISO 639-1 codes are the
+  # anchors where they exist (mi sm to ty fj ch); codemap aliases the
+  # 639-2/3 spellings. Intermediate clades below the minted nodes
+  # (Tongic, Samoic, Tahitic, Marquesic, Chuukic-Pohnpeic) stay prose.
+
+  pqe:
+    name: Eastern Malayo-Polynesian
+    kind: family
+    parent: poz
+    glottocode: east2712
+    stages:
+      pro: {name: Proto-Eastern Malayo-Polynesian, mode: reconstructed, ord: 5,
+            wikt: pqe-pro}
+    note: "ISO 639-5 pqe. Blust's (1978) subgroup joining South
+           Halmahera–West New Guinea and Oceanic; Glottolog sets it
+           directly under Malayo-Polynesian. Blust's larger
+           Central-Eastern Malayo-Polynesian node (Wiktionary poz-cet,
+           which parents pqe there) is contested — Donohue & Grimes 2008
+           reject it — so the edge reads through to poz and CEMP stays
+           prose. Minted as the spine of the Pacific wing; no corpus
+           consumes it directly"
+
+  poz-oce:
+    name: Oceanic
+    kind: family
+    parent: pqe
+    glottocode: ocea1241
+    stages:
+      pro: {name: Proto-Oceanic, mode: reconstructed, ord: 5, wikt: poz-oce-pro,
+            note: "the best-reconstructed Austronesian interstage: Ross,
+                   Pawley & Osmond, The Lexicon of Proto Oceanic (1998–2016);
+                   the speech of the Lapita horizon of the Bismarck
+                   Archipelago (late 2nd millennium BCE) on the usual
+                   archaeological correlation"}
+    note: "the Austronesian languages of Melanesia (bar some of western
+           New Guinea), Micronesia (bar Chamorro, Palauan and Yapese's
+           disputed case) and Polynesia — some 500 languages (Lynch,
+           Ross & Crowley 2002). No ISO 639-5 code; Wiktionary poz-oce.
+           Wiktionary's intermediate Central-Eastern Oceanic (poz-occ,
+           parenting both Micronesian and Central Pacific) is a
+           Pawley-style grouping not universally accepted; Glottolog sets
+           both directly under Oceanic, as does this registry"
+
+  poz-pcc:
+    name: Central Pacific
+    kind: family
+    parent: poz-oce
+    glottocode: cent2060
+    stages:
+      pro: {name: Proto-Central Pacific, mode: reconstructed, ord: 5,
+            wikt: poz-pcc-pro}
+    note: "Fijian, Rotuman and Polynesian (Pawley 1972; Geraghty 1983).
+           A linkage, not a clean tree node — Glottolog's 'Central Pacific
+           linkage': the subgroup arose by diversification of a dialect
+           chain across Fiji, so internal edges cross-cut. Geraghty's
+           Tokalau Fijian (Eastern Fijian + Polynesian against Western
+           Fijian + Rotuman) is Glottolog's next level down; it stays
+           prose here, and fj, rtm and poz-pol all parent this node"
+
+  poz-pol:
+    name: Polynesian
+    kind: family
+    parent: poz-pcc
+    glottocode: poly1242
+    stages:
+      pro: {name: Proto-Polynesian, mode: reconstructed, ord: 5, wikt: poz-pol-pro,
+            note: "the POLLEX tradition (Biggs; Greenhill & Clark 2011's
+                   POLLEX-Online: 5,724 reconstructions over 67 languages);
+                   the speech of the Tonga–Samoa homeland after the
+                   Lapita settlement of West Polynesia (c. 800 BCE)"}
+    note: "the textbook subgroup (Pawley 1966; Green 1966; Marck 2000):
+           a primary split into Tongic (Tongan, Niuean — unminted as a
+           node, to parents here) and Nuclear Polynesian (poz-pnp).
+           Wiktionary poz-pol; no ISO 639-5 code"
+
+  poz-pnp:
+    name: Nuclear Polynesian
+    kind: family
+    parent: poz-pol
+    glottocode: nucl1485
+    stages:
+      pro: {name: Proto-Nuclear Polynesian, mode: reconstructed, ord: 5,
+            wikt: poz-pnp-pro}
+    note: "Pawley 1966: everything Polynesian but Tongic — the
+           Samoic-Outlier languages (Samoan, Tokelauan, Tuvaluan, the
+           Polynesian Outliers of Melanesia and Micronesia) and East
+           Polynesian. The Samoic-Outlier grouping is weaker than East
+           Polynesian (Glottolog's Ellicean and Northern Outlier nodes
+           re-cut it); sm parents here directly for that reason"
+
+  poz-pep:
+    name: East Polynesian
+    kind: family
+    parent: poz-pnp
+    glottocode: east2449
+    stages:
+      pro: {name: Proto-Eastern Polynesian, mode: reconstructed, ord: 5,
+            wikt: poz-pep-pro}
+    note: "Green 1966: Rapa Nui as the first offshoot, then Central
+           Eastern Polynesian splitting into Marquesic (Marquesan,
+           Hawaiian, Mangarevan) and Tahitic (Tahitian, the Cook Islands
+           languages, Māori); the settlement of the eastern Pacific
+           (Hawaiʻi, Aotearoa, Rapa Nui) after c. 1000 CE on the current
+           radiocarbon chronology. Marquesic and Tahitic are themselves
+           debated in detail (Marck 2000; Walworth 2014 on Marquesic) and
+           stay prose; Wiktionary poz-pep parents its leaves here too"
+
+  poz-mic:
+    name: Micronesian
+    kind: family
+    parent: poz-oce
+    glottocode: micr1243
+    stages:
+      pro: {name: Proto-Micronesian, mode: reconstructed, ord: 5, wikt: poz-mic-pro,
+            note: "Bender et al. 2003 (Proto-Micronesian reconstructions,
+                   Oceanic Linguistics 42); Jackson 1983"}
+    note: "the Oceanic languages of the Carolines, Marshalls, Kiribati
+           and Kosrae (Nuclear Micronesian) — NOT the geographic
+           Micronesia: Chamorro and Palauan are separate
+           Malayo-Polynesian branches, and Yapese's Oceanic placement is
+           disputed. Kosraean is the first split (Bender et al. 2003);
+           Nauruan's inclusion is debated (Glottolog pairs it with
+           Kosraean). Wiktionary sets the node under Central-Eastern
+           Oceanic (poz-occ); this registry under Oceanic (see poz-oce)"
+
+  mi:
+    name: Māori
+    parent: poz-pep
+    glottocode: maor1246
+    note: "ISO 639-1 (639-3 mri aliases here). East Polynesian, Tahitic
+           (Glottolog: Maoric, with the Cook Islands languages close
+           kin); the language of Aotearoa New Zealand. Written from the
+           missions: Kendall's A korao no New Zealand (1815, the first
+           Māori book) and the Lee–Kendall Grammar (Cambridge, 1820,
+           worked out with Hongi Hika and Waikato), which fixed the
+           orthography; the CMS press at Paihia (Colenso, 1835), the NT
+           (1837) and the Bible (1868); Williams's dictionary (1844,
+           1852); Grey's Ko nga moteatea (1853); the Māori-language
+           newspapers (niupepa, 1842–1933). Early prints write w for wh
+           and carry no macrons — period orthography, not error.
+           Consumers: the archive.org mission-print shelf (Grey 1853,
+           Kendall 1815, the 1841 Kawenata Hou and 1868 Paipera Tapu),
+           the niupepa corpus (asked)"
+
+  haw:
+    name: Hawaiian
+    parent: poz-pep
+    glottocode: hawa1245
+    note: "East Polynesian, Marquesic (with Marquesan and Mangarevan;
+           Glottolog's 'East Polynesian Proximal'). No ISO 639-1 code.
+           Written from the ABCFM mission (arrived 1820): the first
+           printing 1822, the alphabet fixed in 1826 (five vowels and h k
+           l m n p w), Ka Baibala Hemolele (1839; revised 1868), and a
+           native-language newspaper press from 1834 (Ka Lama Hawaii).
+           The ʻokina and kahakō of the modern Pukui–Elbert spelling are
+           20th-c.; period prints lack both, an honest period orthography.
+           Consumers: eBible haw1868 (31,102 verses, the 1868 revision
+           in its own spelling), the 1837 hymnal on the mission-print
+           shelf; the WOLD Hawaiian vocabulary shelf already rides the
+           bare code"
+
+  sm:
+    name: Samoan
+    parent: poz-pnp
+    glottocode: samo1305
+    note: "ISO 639-1 (639-3 smo aliases here). Nuclear Polynesian,
+           Samoic (Glottolog: Ellicean > Samoan-Tokelauan; the
+           Samoic-Outlier grouping is debated, so the edge stops at
+           poz-pnp). The LMS mission from 1830 (John Williams); O le
+           Feagaiga Fou (NT, 1849) and O le Tusi Paia (Bible; the 1887
+           revision is the shelf's print); Pratt's grammar and dictionary
+           (1862). Consumers: the archive.org mission-print shelf"
+
+  to:
+    name: Tongan
+    parent: poz-pol
+    glottocode: tong1325
+    note: "ISO 639-1 (639-3 ton aliases here). Tongic — with Niuean, the
+           branch that splits first from the rest of Polynesian (Pawley
+           1966); the Tongic node is unminted (Wiktionary poz-ton), the
+           edge reads to poz-pol. Wesleyan mission from 1826 (John
+           Thomas), its press from 1831; the 1862 Bible and Moulton's
+           1884 revision. Consumers: the archive.org mission-print shelf
+           (both Bibles); the modern Revised West text is out of period"
+
+  ty:
+    name: Tahitian
+    parent: poz-pep
+    glottocode: tahi1242
+    note: "ISO 639-1 (639-3 tah aliases here). East Polynesian, Tahitic
+           (Glottolog: Tahitian-Austral). The LMS mission from 1797 (the
+           Duff); Nott's Bible (completed 1835, printed 1838) and its
+           revisions; the Code Pomaré (1819). Tahitian was the mission
+           lingua franca of eastern Polynesia, which is why its loans
+           saturate Rapa Nui and Cook Islands texts. Consumers: the
+           archive.org mission-print shelf (the 1847 Bible, Te Faufaa
+           Api 1853 — the OCR's Cyrillic confusables fold at the
+           consumer's boundary)"
+
+  fj:
+    name: Fijian
+    parent: poz-pcc
+    glottocode: fiji1243
+    note: "ISO 639-1 (639-3 fij aliases here). Standard Fijian, on the
+           Bauan (Eastern Fijian) dialect; Central Pacific (Glottolog:
+           Tokalau Fijian > Eastern Fijian, i.e. nearer Polynesian than
+           Western Fijian is — Geraghty 1983; the edge stays at the
+           linkage). The Wesleyan missionaries Cross and Cargill (Lakeba,
+           1835) devised the orthography that still holds (c = /ð/, q =
+           /ŋɡ/, g = /ŋ/, b and d prenasalized); Hazlewood's dictionary
+           (1850). Consumers: the 1853 New Testament on the archive.org
+           mission-print shelf"
+
+  rar:
+    name: Rarotongan (Cook Islands Māori)
+    parent: poz-pep
+    glottocode: raro1241
+    note: "East Polynesian, Tahitic — Glottolog's 'Southern Cook Island
+           Maori'. No ISO 639-1 code. The LMS mission from 1823 (Papeiha,
+           then Williams and Buzacott), its orthography modelled on the
+           Tahitian mission's; the complete Bible, Biblia Tapu Ra (1851).
+           Consumers: that 1851 Bible on the archive.org mission-print
+           shelf"
+
+  rap:
+    name: Rapa Nui
+    parent: poz-pep
+    glottocode: rapa1244
+    note: "East Polynesian — the first offshoot (Green 1966; Glottolog's
+           Far East Polynesian). No ISO 639-1 code. Documented only from
+           the 1860s mission (Eyraud 1864) after the slave raids and
+           epidemics, and since then heavily Tahitianized. The rongorongo
+           tablets (some 25 objects) are undeciphered — that they write
+           Rapa Nui is the default assumption, not a demonstrated fact,
+           and a consumer filing them under rap makes that claim
+           (ISO 15924 Roro, unencoded in Unicode). Minted ahead of the
+           consumer: the CEIPP rongorongo code streams are asked, no
+           open running text exists"
+
+  rtm:
+    name: Rotuman
+    parent: poz-pcc
+    glottocode: rotu1241
+    note: "Central Pacific, its exact place disputed: Geraghty 1983 pairs
+           it with Western Fijian; Glottolog leaves it directly under the
+           linkage, as does this registry. Its lexicon carries
+           Polynesian loan strata (Biggs 1965) and its morphology the
+           well-known metathesizing phase alternation. No ISO 639-1
+           code. Churchward, Rotuman Grammar and Dictionary (1940) is
+           the standard description. Minted ahead of a consumer: the
+           Pacific survey found no open machine-readable premodern
+           Rotuman text (2026-11-02)"
+
+  ch:
+    name: Chamorro
+    parent: poz
+    glottocode: cham1312
+    note: "ISO 639-1 (639-3 cha aliases here). A Malayo-Polynesian
+           language of the Marianas OUTSIDE Oceanic and outside
+           Micronesian despite its geography — with Palauan, one of the
+           western-Pacific primary branches of Malayo-Polynesian (Blust;
+           Glottolog places it directly under MP); a closer link to the
+           Philippine languages has been proposed but is unsettled.
+           Spanish contact since the Jesuit mission of San Vitores (1668,
+           whose Lingua Mariana is the first grammar) re-shaped the
+           lexicon. Consumers: eBible cha1908 (the American Bible
+           Society's 1908 Gospels, Acts and Psalms)"
+
+  kos:
+    name: Kosraean
+    parent: poz-mic
+    glottocode: kosr1238
+    note: "Micronesian — the first split from the rest of Nuclear
+           Micronesian (Bender et al. 2003; Glottolog's Kosraean-Nauruan
+           pairing is the contested alternative). No ISO 639-1 code.
+           Written from the ABCFM mission (Benjamin Snow, 1852); Lee's
+           Kusaiean Reference Grammar (1975). Consumers: eBible kos1928
+           (Elizabeth Baldwin's Bible, 22,988 OT + 7,958 NT verses —
+           its editorial book introductions are separable apparatus)"
+
+  pon:
+    name: Pohnpeian
+    parent: poz-mic
+    glottocode: pohn1238
+    note: "Micronesian, Chuukic-Pohnpeic > Pohnpeic (with Mokilese and
+           Pingelapese; the intermediate nodes stay prose). No ISO 639-1
+           code. Written from the ABCFM mission (Gulick and Sturges,
+           1852); Rehg's Ponapean Reference Grammar (1981) and the 1970s
+           orthography standardization. Consumers: eBible pon1922 (the
+           old translation in its old alphabet — the respelled
+           new-alphabet text is out of scope as a modernization)"
+
   sit:
     name: Sino-Tibetan
     kind: family
