@@ -129,6 +129,18 @@ anchors:
   glg:
     name: Galician
     parent: roa-opt
+  pt:
+    name: Portuguese
+    parent: roa-opt
+    glottocode: port1283
+    note: "continues Old Galician-Portuguese after the 14th–15th-c.
+           divergence that leaves Galician (glg) its sibling under the
+           same parent. The held corpus is the early-modern literary
+           language (Camões — 69,812 passages via bdcamoes) plus
+           EEBO-era prints. Deliberately no pt:old stage: Old
+           Portuguese IS the roa-opt parent node, and a pre-1400 claim
+           belongs there"
+
 
   fro:
     name: Old French
@@ -204,6 +216,20 @@ anchors:
   osp:
     name: Old Spanish
     parent: roa
+  lad:
+    name: Ladino
+    parent: osp
+    glottocode: ladi1251
+    note: "Judeo-Spanish, the language the 1492 expulsion carried from
+           late-medieval Castile into the Ottoman world and North
+           Africa — parented on Old Spanish beside modern Spanish (es),
+           the pre-expulsion state they share; Glottolog gives it its
+           own languoid inside Castilic, while part of Hispanic
+           scholarship treats it as Spanish dialects (stated, not
+           resolved). Hebrew-script (Rashi, solitreo) and Latin-script
+           traditions both exist; the held corpus is Latin-script.
+           Consumer: 10,685 held passages (salom)"
+
 
   es:
     name: Spanish
@@ -435,6 +461,29 @@ anchors:
                           Restoration's settling orthography; the enm
                           band ends 1500 (ISO/MARC), this stage picks
                           up the seam"}
+  sco:
+    name: Scots
+    parent: enm
+    glottocode: scot1243
+    note: "the Germanic language of Lowland Scotland, continuing the
+           northern Middle English of the Anglo-Scandinavian burghs —
+           parented enm on the most-specific-attested rule; Glottolog
+           files it beside English under Anglic, and the
+           language-or-dialect question is political as much as
+           linguistic (stated, not resolved). Consumer: 95,685 held
+           passages of early-modern Scots printing (eebo-tcp); the
+           Older Scots dictionary layer is the waiting shelf"
+    stages:
+      old: {name: Older Scots, band: [1375, 1700], ord: 10,
+            band_note: "the Dictionary of the Older Scottish Tongue's own
+                        scope — Barbour's Brus (1375) to 1700; Early and
+                        Middle Scots are its conventional halves, left as
+                        prose",
+            note: "Barbour, Henryson, Dunbar, Gavin Douglas's Eneados,
+                   Lyndsay, the statutes and burgh records; the court
+                   norm until the Union of the Crowns turns print toward
+                   London English"}
+
 
   # ── The other Germanic ladders (the P59 ISO-parentage wave: ISO already
   # staged these — anchors mirror its Historical-type chains within the
@@ -611,6 +660,21 @@ anchors:
   ga:
     name: Irish
     parent: mga
+  gd:
+    name: Scottish Gaelic
+    parent: mga
+    glottocode: scot1245
+    note: "the Goidelic language of Scotland, continuing Middle Irish
+           through the Classical Gaelic literary norm (c. 1200–1700)
+           that Ireland and Scotland wrote in common — the vernacular
+           divergence shows from the Book of the Dean of Lismore
+           (c. 1512) and Carswell's 1567 liturgy, the first Gaelic
+           print. Parent mga as for Irish (ga), the shared
+           most-specific attested ancestor; Classical Gaelic itself
+           (ISO ghc) is recorded here and deliberately unminted — no
+           consumer separates it. Consumer: 10,198 held passages of
+           early-modern Gaelic printing (eebo-tcp)"
+
 
   owl:
     name: Old Welsh
@@ -1082,6 +1146,23 @@ anchors:
                     (akk-x-mbperi 'MB Peripheral', with an obperi sibling),
                     so consumers reach it as the stage/variety compound
                     akk:mb/peri"}
+  xeb:
+    name: Eblaite
+    parent: sem
+    glottocode: ebla1238
+    band: [-2450, -2250]
+    band_note: "the Palace G archives at Tell Mardikh/Ebla, 24th c. BCE,
+                to the palace's destruction; approximate"
+    note: "the East Semitic language of the Ebla archives (~1,800
+           published tablets: administration, chancery letters,
+           incantations, the bilingual lexical lists with Sumerian).
+           Beside Akkadian the only East Semitic language; whether it is
+           an independent branch (Huehnergard) or an Akkadian-adjacent
+           dialect continuum (Krebernik: 'very close to Akkadian') is
+           contested, stated not resolved — it parents sem directly,
+           beside akk, and an East Semitic node stays prose until a
+           third member needs it. Consumer: 53,682 held passages (cdli)"
+
 
   qca:
     name: Canaano-Akkadian
@@ -1363,6 +1444,37 @@ anchors:
   fa:
     name: Persian
     parent: pal
+    note: "New Persian, the Arabic-script continuation of Middle Persian —
+           until 2026-11 the registry's largest unstaged holding (2.8M
+           passages: the Ganjoor classical library, OpenITI's Persian
+           shelf, the Invisible East documents). Modern Persian is the
+           bare anchor's open end from the mid-19th c. (Qajar prose
+           reform, the Constitutional press); the Dari and Tajik
+           standards stay prose until a consumer separates them"
+    stages:
+      early: {name: Early New Persian, band: [800, 1200], ord: 10,
+              band_note: "Lazard (The Rise of the New Persian Language,
+                          Cambridge History of Iran IV) and Paul
+                          (Encyclopaedia Iranica, Persian Language i.
+                          Early New Persian): the 8th/9th-c. first
+                          monuments to the 12th-c. consolidation;
+                          approximate — some draw the close at 1100",
+              note: "the first Arabic-script monuments and the Samanid
+                     court language: Rudaki, Bal'ami's chronicle, the
+                     early Quran commentaries, Ferdowsi's Shahnameh;
+                     keeps the majhul vowels and the postvocalic ḏāl
+                     the classical norm later levels"}
+      cls: {name: Classical Persian, band: [1200, 1850], ord: 20,
+            wikt: fa-cls,
+            band_note: "conventional, approximate — the Seljuk–Mongol
+                        consolidation of the supra-regional norm to the
+                        Qajar-era turn toward modern prose; other
+                        schools close it at 1500 or run it to 1900",
+            note: "the remarkably stable literary standard of Nezami,
+                   ʿAṭṭār, Rumi, Saʿdi, Hafez and Jami, carried across
+                   Iran, Central Asia, the Caucasus and Mughal India;
+                   the bulk of the held Ganjoor and OpenITI material
+                   composes here, and the date-band inference stages it"}
 
   jpr:
     name: Judeo-Persian
@@ -3600,11 +3712,23 @@ anchors:
            with the longest record. It continues Old Georgian (oge) — PROSE,
            not an edge: the two are separate ISO codes, siblings under
            ccs-gzn. Middle Georgian (12th–18th c.: Rustaveli's Knight in
-           the Panther's Skin, the Kartlis Tskhovreba redactions) is
-           deliberately NOT staged — no consumer holds it (the TITUS Middle
-           Georgian corpora are the candidate). Consumers: 1,195 kaikki
-           descendant reflexes and 27 etymon edges; iip's 14 kat-coded
-           inscriptions"
+           the Panther's Skin, the Kartlis Tskhovreba redactions) was
+           deliberately unstaged until 2026-11, when the first consumer
+           was calendared (a Middle Georgian treebank in the UD v2.19
+           release; the TITUS Middle Georgian corpora wait behind it).
+           Consumers: 1,195 kaikki descendant reflexes and 27 etymon
+           edges; iip's 14 kat-coded inscriptions"
+    stages:
+      mid: {name: Middle Georgian, band: [1100, 1800], ord: 10,
+            band_note: "conventional, approximate — the close of the Old
+                        Georgian classical period to the 18th-c. reforms
+                        that open the modern literary language",
+            note: "the secular golden-age and later literature:
+                   Rustaveli's Knight in the Panther's Skin, the Kartlis
+                   Tskhovreba redactions, Sulkhan-Saba Orbeliani's
+                   dictionary and fables; Old Georgian is the SIBLING
+                   anchor oge, not a stage, so the Georgian record reads
+                   oge → ka:mid → bare ka"}
 
   # ── The StarLing branch-base wing (2026-10-07) ────────────────────────
   # The ALTAIC/CAUC/DRAV/SINTIB packages' 28 branch etymology bases
