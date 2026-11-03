@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-11-03, two pre-minted stages for the early-modern printing
+  intake. en:late Late Modern English [1700, 1900] (the conventional
+  tripartite cut — Görlach, Beal; the Cambridge History's 1776
+  alternative stated) ahead of the early American and 18th-c. TCP
+  collections whose imprints outrun en:early's 1700 ceiling; fr:cls
+  Classical French [1600, 1789] (préclassique/classique conventions
+  stated; frm's ISO ceiling makes 1600 the seam) onto the held French
+  drama corpus — 1,267 of 1,939 plays stage by date-band inference —
+  and the queued 1648–53 pamphlet corpus. Modern English and French
+  stay the bare anchors' open ends; no codemap rows needed.
+
 - 2026-11-02, the registry-scope review package (a census of the held
   catalog and the planned intake against the registry). **Stages:**
   fa:early Early New Persian [800, 1200] and fa:cls Classical Persian

@@ -157,6 +157,26 @@ anchors:
   fr:
     name: French
     parent: frm
+    stages:
+      cls: {name: Classical French, band: [1600, 1789], ord: 10,
+            band_note: "français préclassique/classique: the registry's
+                        frm ceiling (1600, ISO/MARC) makes 1600 the
+                        seam, though the préclassique–classique boundary
+                        is drawn variously (Malherbe's norm from 1605,
+                        the Académie 1635, Vaugelas's Remarques 1647;
+                        Combettes & Marchello-Nizia band préclassique
+                        c. 1550–1630); 1789 is the conventional close of
+                        the ancien-régime literary norm. Stated, not
+                        resolved; no préclassique split until a consumer
+                        needs one",
+            note: "the codified literary standard of the grand siècle
+                   and the Enlightenment — Corneille, Molière, Racine,
+                   the moralistes, Voltaire through Beaumarchais. Of
+                   1,939 held French plays, 1,267 sit wholly inside the
+                   band and stage by date-band inference the moment the
+                   stage exists; a queued mid-17th-c. pamphlet corpus
+                   (3,080 pieces, 1648–1653) lands squarely inside.
+                   Modern French stays the bare anchor's open end"}
 
   ro:
     name: Romanian
@@ -461,6 +481,25 @@ anchors:
                           Restoration's settling orthography; the enm
                           band ends 1500 (ISO/MARC), this stage picks
                           up the seam"}
+      late: {name: Late Modern English, band: [1700, 1900], ord: 20,
+             band_note: "the conventional tripartite Modern English cut
+                         (Görlach's Early Modern English 1500–1700;
+                         Beal's English in Modern Times 1700–1945): 1700
+                         marks the settled orthography and the close of
+                         the early-modern print canon. Stated, not
+                         resolved: the Cambridge History of the English
+                         Language cuts its volumes at 1776 instead, and
+                         the close is drawn variously at 1900, 1945 or
+                         the present",
+             note: "the standardizing language of the eighteenth and
+                    nineteenth centuries — prescriptive grammars (Lowth
+                    1762, Murray 1795), Johnson's Dictionary (1755), the
+                    novel's rise. Serves the early American and
+                    eighteenth-century printing waves whose imprint
+                    dates outrun en:early's ceiling; present-day English
+                    stays the bare anchor's open end, and the held
+                    modern translation layers (the library's apparatus
+                    English) deliberately stay bare"}
   sco:
     name: Scots
     parent: enm
