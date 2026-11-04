@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+- 2026-11-04, two stages from the recurring registry-scope review's
+  held-content audit. de:new New High German [1650, 1900] (Scherer's
+  Frühneuhochdeutsch ceiling at 1650 as carried by Besch/Wolf; capped
+  at 1900 on the en:late precedent) — the held German text archive's
+  4,916 dated post-1650 prints carried no stage at all; sv:run Runic
+  Swedish [800, 1225] (runsvenska, Wessén's periodization; the Younger
+  Futhark span, adjacent to sv:old) — 3,183 dated Viking-age Swedish
+  rune inscriptions sat bare between gmq:run's 800 ceiling and
+  fornsvenska's 1225 floor; taken as sv's earliest attested stage, the
+  anchor note's east/west fork deliberately still unminted. Modern
+  German and Swedish stay the bare anchors' open ends; no codemap rows
+  needed.
+
 - 2026-11-03, two pre-minted stages for the early-modern printing
   intake. en:late Late Modern English [1700, 1900] (the conventional
   tripartite cut — Görlach, Beal; the Cambridge History's 1776
