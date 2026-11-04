@@ -303,6 +303,10 @@ map:
   bra-Latn: "bra~latn" # romanized Braj (gretil-legacy — 3.9k, byte-censused)
   ron-Cyrl: "ro~cyrl"  # Romanian Cyrillic (the 1688 Bucharest Bible — 36.3k, byte-censused)
   msa-Arab: "ms~arab"  # Malay in Jawi (ms-wikisource — 5.1k, byte-censused)
+  jpn-Latn: "jpn~latn" # romanized Japanese (the Jesuit mission press transcriptions,
+                       # ~22.1k passages whose printed surface IS the Portuguese-based
+                       # romanization — not a transliteration tag; byte-censused at the
+                       # consuming adapter's full-file parse 2026-11-04)
   bra-Deva: "bra~deva"
   awa-Deva: "awa~deva"
   xct-Latn: "xct~latn"
