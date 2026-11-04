@@ -553,6 +553,19 @@ anchors:
                           gmh's ISO band stops ~1500, so ENHG texts ride
                           the de anchor; band per the Bochum reference
                           corpus (ReF) it was minted for"}
+      new: {name: New High German, band: [1650, 1900], ord: 20,
+            band_note: "the conventional Germanistik seam — Scherer's
+                        periodization ends Frühneuhochdeutsch at 1650
+                        (as carried by Besch and Wolf); capped at 1900
+                        like en:late so the modern language stays the
+                        bare anchor's open end",
+            note: "the standardized literary language from the
+                   grammarians (Schottelius 1663, Gottsched, Adelung)
+                   through Weimar classicism and the 19th-c. print
+                   mass. Consumers: the held 5,478-document German
+                   text archive, 4,916 of whose dated prints fall past
+                   1650 and so carried no stage at all; the 1652–1702
+                   Grand Tour travel journals band here too"}
 
   yi:
     name: Yiddish
@@ -2205,6 +2218,23 @@ anchors:
            does not split — a gmq:run-descended east/west fork is a
            future mint if a source ever needs the distinction"
     stages:
+      run: {name: Runic Swedish, band: [800, 1225], ord: 5,
+            band_note: "runsvenska by Swedish philological convention
+                        (Wessén's periodization), approximate — the
+                        Younger Futhark span from the Viking Age to
+                        fornsvenska's floor, adjacent to sv:old with
+                        no gap",
+            note: "the Younger Futhark inscriptional language of the
+                   Swedish rune stones — Rök (c. 800) opens it, the
+                   11th-c. Uppland carving boom is its mass. Taken as
+                   sv's earliest attested stage rather than an East
+                   Norse fork: the consuming corpus tags these
+                   inscriptions sv, and a stage bands them by date
+                   without re-parenting — the anchor note's east/west
+                   fork stays a future mint. gmq:run keeps the Elder
+                   Futhark span below 800. Consumer: rundata (3,183
+                   dated Viking-age Swedish inscriptions, previously
+                   bare)"}
       old: {name: Old Swedish, band: [1225, 1526], ord: 10, wikt: gmq-osw,
             band_note: "conventional Swedish philology, approximate —
                         fornsvenska, Äldre Västgötalagen's era to the
