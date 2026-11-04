@@ -13,7 +13,10 @@
   fornsvenska's 1225 floor; taken as sv's earliest attested stage, the
   anchor note's east/west fork deliberately still unminted. Modern
   German and Swedish stay the bare anchors' open ends; no codemap rows
-  needed.
+  needed. **Codemap:** jpn-Latn → jpn~latn (the Jesuit mission press
+  prints — Feiqe no monogatari 1592, Esopo 1593, Contemptus Mundi 1596
+  — whose printed surface is the Portuguese-based romanization itself;
+  ~22.1k passages byte-censused at the consuming adapter's full parse).
 
 - 2026-11-03, two pre-minted stages for the early-modern printing
   intake. en:late Late Modern English [1700, 1900] (the conventional
