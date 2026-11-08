@@ -225,6 +225,8 @@ map:
   la-ecc:  lat/ecc
   la-ren:  lat:ren
   la-new:  lat:new
+  la-cla:  lat:cla      # Wiktionary Classical Latin — 84 held reflex rows
+  la-eme:  lat:med      # Wiktionary Early Medieval Latin, no stage of its own (see lat:med) — 252 held reflex rows
   itc-ola: lat:arch
 
   # Reconstructed proto-languages: the stage is pro, the machine truth is
