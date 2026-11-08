@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+- 2026-11-08, the registry-scope review's Latin and Persian package.
+  **fa:cls** widened to [1200, 1906]: the Constitutional Revolution
+  (1324 AH) is the standard watershed of modern Persian literature
+  (Kamshad; Balaÿ & Cuypers; Karimi-Hakkak) and verse held the classical
+  norm through the Bazgasht-e adabi; the earlier Qajar prose reform is
+  stated in the band_note. 9,517 held poems of 22 nineteenth-century
+  poets and six 1854–1871 works fall inside. **lat**: the six stages'
+  bands are unchanged; each now carries its philology and band
+  justification (Palmer, Löfstedt, Norberg, Stotz, Mantello & Rigg,
+  IJsewijn & Sacré), the med/ren seam stated as a period band over a
+  15th-c. diglossia of styles, the Carolingian split recorded as the
+  candidate seam. `wikt: la-cla` on lat:cla. **Codemap:** la-cla →
+  lat:cla (84 held reflex rows), la-eme → lat:med (252), the
+  Early Medieval label folding into its containing stage.
+
 - 2026-11-04, two stages from the recurring registry-scope review's
   held-content audit. de:new New High German [1650, 1900] (Scherer's
   Frühneuhochdeutsch ceiling at 1650 as carried by Besch/Wolf; capped
