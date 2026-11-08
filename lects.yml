@@ -4515,6 +4515,74 @@ anchors:
                    sermons (Müller's 1600–06), hymnals and the first
                    grammars (Stahl 1637, Gutslaff 1648). Corpus: none held"}
 
+  smi:
+    name: Sámi
+    kind: family
+    parent: urj
+    glottocode: saam1281
+    note: "Saamic (Wiktionary's family code smi): the Uralic branch of
+           Fennoscandia, nine living languages from South Sámi to Ter
+           Sámi. The conventional West (South, Ume, Pite, Lule, North)
+           vs East (Inari, Skolt, Akkala, Kildin, Ter) split stays
+           prose, the urj-fin contested-intermediates discipline; the
+           Finnic–Saamic tie likewise. The earliest Sámi printing is
+           Nicolaus Andreae's ABC book and missal (Stockholm 1619, a
+           southern mission idiom) — stated here because no single
+           daughter owns it. Consumers: the Norwegian national
+           library's Sámi cone (147 public-domain items censused
+           2026-11-08) rides the daughters below"
+    stages:
+      pro: {name: Proto-Samic, mode: reconstructed, ord: 5, wikt: smi-pro,
+            note: "the comparative-method ancestor (Korhonen 1981;
+                   Sammallahti, The Saami Languages, 1998); Wiktionary's
+                   reconstruction pages file here"}
+
+  sme:
+    name: North Sámi
+    parent: smi
+    glottocode: nort2671
+    wikt: se
+    note: "the largest Sámi language (Norway, Sweden, Finland; ~¾ of
+           all speakers). Written through three orthographic eras: the
+           Copenhagen mission's (Knud Leem's Lappisk Grammatica 1748
+           and dictionary 1768–81, the mission scriptures), the
+           Rask–Stockfleth line (Stockfleth's 1832 grammar and 1837
+           ABC — the latter a held nb-no item — through Friis's 1856
+           grammar, 1887 dictionary and the 1895 Bible, and Konrad
+           Nielsen's scholarly standard), and the common Nordic
+           orthography of 1979, the bare anchor's open end. No stages
+           until a consumer needs the orthographic eras as bands.
+           Consumers: nb-no 139 items (13 of them 18th-c.), censused
+           2026-11-08"
+
+  sma:
+    name: South Sámi
+    parent: smi
+    glottocode: sout2674
+    wikt: sma
+    note: "the southernmost Sámi language (Trøndelag, Jämtland,
+           Härjedalen), archaic within the family — no consonant
+           gradation, conservative vowel system (Bergsland,
+           Südlappisches Wörterbuch; Hasselbrink). The literary
+           language is young: mission-era southern prints (the 1619
+           Stockholm books and the 1755 'southern' NT tradition sit
+           closer to Ume Sámi and stay at the smi family note), the
+           modern orthography Bergsland's (approved 1978). Consumers:
+           nb-no 8 items (20th-c.), censused 2026-11-08"
+
+  smj:
+    name: Lule Sámi
+    parent: smi
+    glottocode: lule1254
+    wikt: smj
+    note: "the second-largest Sámi language (the Lule river valley,
+           Jokkmokk and Tysfjord), transitional between North and
+           South Sámi. Written from the Swedish mission's Lule-area
+           prints and Laestadius' 1840s tracts, through Wiklund's
+           grammar (1891) and the 1903 New Testament, to the 1983
+           orthography. Consumers: nb-no 4 items (20th-c.), censused
+           2026-11-08"
+
   # ── Basque: the European isolate. Parentless by the ecy/xht discipline;
   # the Aquitanian inscriptions of Roman Gaul are its acknowledged
   # ancestor-or-sister, recorded in prose until a consumer holds them ────
