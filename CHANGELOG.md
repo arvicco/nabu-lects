@@ -2,6 +2,37 @@
 
 ## Unreleased
 
+- 2026-11-08, the registry-scope review's Latin and Persian package.
+  **fa:cls** widened to [1200, 1906]: the Constitutional Revolution
+  (1324 AH) is the standard watershed of modern Persian literature
+  (Kamshad; Balaÿ & Cuypers; Karimi-Hakkak) and verse held the classical
+  norm through the Bazgasht-e adabi; the earlier Qajar prose reform is
+  stated in the band_note. 9,517 held poems of 22 nineteenth-century
+  poets and six 1854–1871 works fall inside. **lat**: the six stages'
+  bands are unchanged; each now carries its philology and band
+  justification (Palmer, Löfstedt, Norberg, Stotz, Mantello & Rigg,
+  IJsewijn & Sacré), the med/ren seam stated as a period band over a
+  15th-c. diglossia of styles, the Carolingian split recorded as the
+  candidate seam. `wikt: la-cla` on lat:cla. **Codemap:** la-cla →
+  lat:cla (84 held reflex rows), la-eme → lat:med (252), the
+  Early Medieval label folding into its containing stage.
+
+- 2026-11-08, the Sámi package and the MARC bibliographic aliases,
+  aggregated onto the review PR (the one-mint-PR rule). **smi** Sámi
+  family under urj (flat membership, West/East split in prose, the
+  contested-intermediates discipline) with Proto-Samic (smi-pro);
+  anchors **sme** North Sámi (the three orthographic eras — Leem,
+  Rask–Stockfleth–Friis, the 1979 common orthography — in the note,
+  no stages until a consumer needs them), **sma** South Sámi,
+  **smj** Lule Sámi, each with its attestation line and census.
+  **Codemap:** dut → nl, ice → isl, gre → el — the 639-2/B
+  bibliographic spellings on the wel/fre/ger precedent; gre's row
+  states the legacy-MARC caveat (ancient editions coded gre read grc
+  at parse time where the consumer knows the era). Consumer: the
+  Norwegian national library adapter (147 Sámi items censused
+  2026-11-08; its catalogue codes Dutch, Icelandic and Greek in the
+  bibliographic spellings).
+
 - 2026-11-04, two stages from the recurring registry-scope review's
   held-content audit. de:new New High German [1650, 1900] (Scherer's
   Frühneuhochdeutsch ceiling at 1650 as carried by Besch/Wolf; capped
