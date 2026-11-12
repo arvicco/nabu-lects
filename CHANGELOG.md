@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+- 2026-11-12, the Albanian package, pre-minted ahead of the TITUS Old
+  Albanian intake (the proactive-review discipline): **sqj** Albanoid
+  family node (parent ine; the branch name after Hyllested & Joseph
+  2022 — the Illyrian hypothesis recorded as prose, never an edge)
+  with the sqj-pro reconstruction rung; **sq** Albanian anchor
+  (glottocode alba1267, band open from the 1462 baptismal formula;
+  aln/als deliberately unmapped — the Gheg/Tosk claim rides the
+  variety axis when content needs it); **sq:old** Old Albanian
+  [1462, 1800] (the altalbanisch span of Schumacher & Matzinger;
+  Buzuku 1555, Budi, Bardhi 1635, Bogdani 1685, Matrënga 1592).
+  **Codemap:** sqi → sq (macrolanguage /T) and alb → sq (639-2/B
+  bibliographic twin), joining the alias suite.
+
 - 2026-11-08, the registry-scope review's Latin and Persian package.
   **fa:cls** widened to [1200, 1906]: the Constitutional Revolution
   (1324 AH) is the standard watershed of modern Persian literature
