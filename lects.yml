@@ -4435,6 +4435,62 @@ anchors:
            reflexes resolve here (Mažiulis, Prūsų kalbos etimologijos
            žodynas, 1988–97)"
 
+  # ── Albanian: a primary Indo-European branch of one surviving language,
+  # the latest-attested major branch of the family (first record 1462).
+  # Pre-minted 2026-11-12 ahead of the TITUS Old Albanian intake
+  # (Buzuku, Blanchus, Bogdani).
+
+  sqj:
+    name: Albanoid
+    kind: family
+    parent: ine
+    note: "ISO 639-5 sqj (Albanian languages): the branch node. Albanian
+           constitutes its own primary Indo-European branch; the popular
+           Illyrian descent hypothesis is geographically natural but
+           linguistically unprovable (Illyrian is attested in names only),
+           and the closest possibly-related attested material is Messapic
+           (the 'Albanoid' grouping of Hyllested & Joseph 2022, whence the
+           node's name). The node exists for the reconstruction rung and
+           the descent edge, not as a classification claim beyond that."
+    stages:
+      pro: {name: Proto-Albanian, mode: reconstructed, ord: 5, wikt: sqj-pro}
+
+  sq:
+    name: Albanian
+    parent: sqj
+    glottocode: alba1267
+    band: [1462, null]
+    band_note: "from the first record (Pal Engjëlli's baptismal formula,
+                1462); open end"
+    note: "The sole survivor of its branch, attested later than any other
+           major Indo-European language: the 1462 baptismal formula (Gheg,
+           one sentence), von Harff's 1497 wordlist, then the print
+           tradition from Buzuku's Meshari (1555, a Gheg missal surviving
+           in one Vatican copy). Two dialect groups split along the
+           Shkumbin — Gheg (north; Buzuku, Budi, Bardhi, Bogdani) and Tosk
+           (south; first in Matrënga's 1592 catechism, an Arbëresh text);
+           the 1972 standard is Tosk-based. Its Latin loan strata (archaic
+           through Balkan Romance) make it load-bearing for Romance and
+           Balkan historical linguistics. ISO 639-3 members aln (Gheg) and
+           als (Tosk) are DELIBERATELY unmapped in the codemap — a
+           macrolanguage fold would erase the dialect claim a consumer
+           makes by using them; Gheg/Tosk ride the variety axis (sq/gheg,
+           sq/tosk) if content ever needs the split. Corpus: none held
+           yet; the TITUS Old Albanian texts are the queued first intake"
+    stages:
+      old: {name: Old Albanian, band: [1462, 1800], ord: 10,
+            band_note: "the early written tradition, from the 1462 formula
+                        through the 18th c. — the altalbanisch span of
+                        Schumacher & Matzinger (Die altalbanische Sprache);
+                        the 19th-c. Rilindja opens the modern literary
+                        period; approximate",
+            note: "the language of the 15th–18th-c. records and the
+                   Catholic north's print tradition (Buzuku 1555, Budi
+                   1618–21, Bardhi's Dictionarium latino-epiroticum 1635,
+                   Bogdani's Cuneus prophetarum 1685) plus the early
+                   Italo-Albanian texts (Matrënga 1592). No Wiktionary
+                   period code exists. Corpus: none held yet"}
+
   # ── Uralic. Glottolog (ural1272) lists the branches flat — Finnic, Saami,
   # Mordvinic, Mari, Permic, Hungarian, Mansi, Khanty, Samoyedic; the
   # intermediate Finno-Ugric / Finno-Permic / Finno-Volgaic groupings are
