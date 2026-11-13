@@ -2,6 +2,50 @@
 
 ## Unreleased
 
+- 2026-11-13, the big registry sitting: the full accrued lect-scope
+  agenda plus a library-wide census of unanchored codes (document,
+  dictionary-shelf and reflex grain, each volume dated in its node's
+  note). **Ancient epigraphic anchors:** xrr Raetic (parentless
+  beside ett, the Tyrsenian prose discipline; 112 TIR documents),
+  cms Messapic (parent ine, its own branch; 591 ceipom documents),
+  xmr Meroitic (parentless, Rilly's NES case as prose; 13
+  elephantine documents), xcr Carian + xlc Lycian (ine-ana, the
+  Luwic company). **amh** Amharic (parent sem beside gez — not a
+  gez descendant; 365 held manuscripts). **hu** Hungarian (parent
+  urj; stages hu:anc ősmagyar [–, 896] reconstructed and hu:old
+  ómagyar [896, 1526] wikt ohu, after Kiss & Pusztai). **ota**
+  Ottoman Turkish [1299, 1928] (parent trk, Oghuz — deliberately
+  NOT under otk; the largest unanchored historical code in the etym
+  layer, 8,556 reflex lines). **Historical Romance/Germanic/
+  Iranian:** xno Anglo-Norman, pcd Picard, nrf Norman (all parent
+  fro), dlm Dalmatian [1300, 1898], srd Sardinian (both parent
+  roa), frk Frankish (parent gmw:pro beside odt), nrn Norn
+  [850, 1850] (parent non), xco Chorasmian [-100, 1400] (parent
+  iir:pro beside sog/kho/xbc). **The comparative-dictionary
+  protos:** map:pro Proto-Austronesian and poz:pro
+  Proto-Malayo-Polynesian (Blust's ACD levels; the subgroup-proto
+  depth RULING recorded on poz:pro — upstream's internal skeleton,
+  PWMP/PCEMP-grade, stays display-only), sio Siouan family +
+  sio:pro Proto-Siouan (Rankin et al. 2015; the registry's first
+  American family node). **The Micronesian daughters** the
+  mcd/tlopo shelves lean on: chk, woe, puw, cal, gil, mah
+  (poz-mic), yap (poz-oce, placement disputed), pau (poz,
+  non-Oceanic), niu (poz-pol, Tongic); the dialect-chain long tail
+  stays bare by the modern-variety design. **Re-band:** dum Middle
+  Dutch [1050, 1350] → [1050, 1500] (the handbook convention; 14 of
+  15 held dum titles sat outside the ISO band — a containment
+  defect). **Note refreshes:** et/et:old (vakk live since
+  2026-10-21). **Codemap:** the 639-1 mirror wave (la, sa, cu, zh,
+  pi, he, km — tens of thousands of wiktextract reflex lines),
+  hun → hu, ohu → hu:old, fry → fy, ell → el, the proto rows
+  urj-pro/map-pro/poz-pro/sio-pro, and twelve byte-censused
+  script-suffix rows (ara-Syrc Garshuni, kaw-Bali/ban-Bali/
+  sas-Bali, jav-Java/sun-Java, ecy-Latn, hbo-Grek …); the deviant
+  artifact-claim tags (egy-Egyd, -Ital-x-) stay per-collection per
+  the standing rule. Author sigla (PIE, WOT, EAH, LAH) ruled
+  collection knowledge — consumer-side overrides, never universal
+  rows.
+
 - 2026-11-13, the Dutch early-modern stage, minted by the lect-scope
   review after two Dutch print masses landed bare: **nl:early** Early
   Modern Dutch (Vroegnieuwnederlands), band [1500, 1700] by the
