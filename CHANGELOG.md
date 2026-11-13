@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-11-13, the Dutch early-modern stage, minted by the lect-scope
+  review after two Dutch print masses landed bare: **nl:early** Early
+  Modern Dutch (Vroegnieuwnederlands), band [1500, 1700] by the
+  handbook periodization (van der Wal & van Bree) — from the Middle
+  Dutch ceiling to the post-Statenbijbel consolidation; carried with
+  a line note on the nl anchor recording the odt → dum → nl descent
+  and the ca.-1700 modern divide. First consumers: the 17th-century
+  newspaper press (6,664 issues from 1618) and the early slice of the
+  Dutch literature library (3,614 works), both staged by date-band
+  inference on the consuming side.
+
 - 2026-11-12, the Albanian package, pre-minted ahead of the TITUS Old
   Albanian intake (the proactive-review discipline): **sqj** Albanoid
   family node (parent ine; the branch name after Hyllested & Joseph
