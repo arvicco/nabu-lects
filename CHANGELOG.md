@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- 2026-11-14, the jav-Java row repaired out of the universal map: the
+  post-rebuild byte guard measured the consuming collection's jv~java
+  claim 100% Latin (the held Javanese-Wikisource pages are
+  transliterations), so the row violated the script-suffix suite's
+  surface-honest rule — it joins egy-Egyd in the deviant
+  artifact-claim class, handled per-collection on the consumer side.
+  sun-Java stays: its claim was not contradicted by the same guard.
+
 - 2026-11-13, the big registry sitting: the full accrued lect-scope
   agenda plus a library-wide census of unanchored codes (document,
   dictionary-shelf and reflex grain, each volume dated in its node's
