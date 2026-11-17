@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-11-16, the Hebrew-wave anchors: jrb Judeo-Arabic (parent ara;
+  the ISO 639-3 macrolanguage, deliberately unsplit across its
+  regional varieties; Blau 1999, Hary 1992) for the Princeton Geniza
+  documentary corpus (4,068 of 7,669 edition documents tagged
+  Judaeo-Arabic, censused at adoption), and smp Samaritan Hebrew
+  (parent hbo, glottocode sama1313; Ben-Hayyim 2000, Tal & Florentin
+  2010/2024, Schorch editio maior) for the CACCHT Samaritan
+  Pentateuch Text-Fabric edition (5 books / 114,891 words). Bare
+  anchors, no stages; ISO smp is Samaritan HEBREW — sam (Samaritan
+  Aramaic) stays an unminted candidate.
+
 - 2026-11-14, the jav-Java row repaired out of the universal map: the
   post-rebuild byte guard measured the consuming collection's jv~java
   claim 100% Latin (the held Javanese-Wikisource pages are
