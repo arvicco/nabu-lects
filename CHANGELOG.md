@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- 2026-11-21, roro Rongorongo added to the scripts table: ISO 15924
+  Roro (620), unencoded in Unicode, the undeciphered Easter Island
+  glyph system (~26 inscribed objects, Barthel sigla). Minted for
+  the artifact-script field of the CEIPP transliteration corpus
+  (Barthel numeric codes, surface ~latn), whose codes-only ingest
+  was granted 2026-11-18; the rap anchor's existing note already
+  carries the language-attribution caveat.
+
 - 2026-11-16, the Hebrew-wave anchors: jrb Judeo-Arabic (parent ara;
   the ISO 639-3 macrolanguage, deliberately unsplit across its
   regional varieties; Blau 1999, Hary 1992) for the Princeton Geniza
