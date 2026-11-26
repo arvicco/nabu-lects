@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- 2026-11-26, the Middle English stages: enm:m1 [1150, 1250], enm:m2
+  [1250, 1350], enm:m3 [1350, 1420] and enm:m4 [1420, 1500] — the
+  Helsinki Corpus sub-periodization (Rissanen; Kytö's Manual 1991/96)
+  that the Penn-Helsinki Parsed Corpus of Middle English adopted and
+  the Parsed Corpus of Middle English Poetry carries (halving M1/M2
+  into a/b bands, kept as consumer metadata). Minted for PCMEP, whose
+  57 poems (c. 1150–1420) sat on bare enm though every file names its
+  band. Composition date is the stage claim (the M23/M34 codes' first
+  digit); 1100–1150 stays bare enm. Dialect varieties deliberately
+  not minted (stated on the anchor).
+
 - 2026-11-21, roro Rongorongo added to the scripts table: ISO 15924
   Roro (620), unencoded in Unicode, the undeciphered Easter Island
   glyph system (~26 inscribed objects, Barthel sigla). Minted for
