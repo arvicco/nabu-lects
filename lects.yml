@@ -2535,10 +2535,26 @@ anchors:
                 720s–730s) and the Yenisei epitaphs, to the Uyghur
                 khaganate's fall"
     note: "the earliest attested Turkic: the runiform ('Orkhon
-           script') inscriptional language. Consumers: kaikki extract
-           (505 senses) + a CC0 UD treebank seed; no open runiform
-           corpus exists yet (bitig.kz down at survey — censused
-           2026-09-28)"
+           script') inscriptional language of the Second Türk
+           khaganate and its Uyghur successor. Attestation: the
+           central Orkhon stelae — the Tonyukuk inscription (c.
+           716–726, the minister's own memorial), the Kül Tigin
+           inscription (732) and the Bilge Kagan inscription (735),
+           the latter two with Chinese faces that fix their dates —
+           beside the Uyghur-khaganate stelae (Šine Usu, 750s) and
+           the marginal corpus: the Yenisei epitaphs of the Kyrgyz
+           (several hundred short funerary texts, dating disputed,
+           conventionally 8th–10th c., so their tail runs past the
+           band) and the scattered Altai, Talas and Mongolian finds;
+           over 500 runiform inscriptions are known in all (Tekin, A
+           Grammar of Orkhon Turkic, 1968; Erdal, A Grammar of Old
+           Turkic, 2004). Digital editions: the Uppsala Database of
+           Turkic Runiform Inscriptions (Károly & Rentzsch, eds.;
+           preliminary, 23 inscriptions at survey) and the runiform
+           strand of the Frankfurt VATEC corpus. Consumers: kaikki
+           extract (505 senses) + a CC0 UD treebank seed (bitig.kz
+           down at survey — censused 2026-09-28; the digital editions
+           re-surveyed 2026-11-27)"
 
   oui:
     name: Old Uyghur
@@ -2551,9 +2567,17 @@ anchors:
            continuation — Uyghur script (Sogdian-derived), plus
            Manichaean, Brahmi and runiform strands. Descent edge otk
            per the literary-continuum reading (the enm←ang shape).
-           Consumers: kaikki extract (632 senses) + the Wilkens
-           dictionary; the corpus (VATEC) is ask-gated (censused
-           2026-09-28)"
+           Attestation: the Turfan and Dunhuang manuscript finds —
+           Manichaean texts (the Xuastvanift confession), the
+           Buddhist translation literature from Tocharian, Chinese
+           and Sanskrit (Maitrisimit, the Altun Yaruq
+           Suvarṇaprabhāsa), and the civil and legal documents of
+           the 10th–14th c.; the pre-Islamic corpus is digitized as
+           the Frankfurt VATEC (Vorislamische alttürkische Texte:
+           Elektronisches Corpus; Erdal, Gippert, Röhrborn, Zieme et
+           al.), the reference Old Uyghur text corpus. Consumers:
+           kaikki extract (632 senses) + the Wilkens dictionary;
+           VATEC is ask-gated (censused 2026-09-28)"
 
   xqa:
     name: Karakhanid
