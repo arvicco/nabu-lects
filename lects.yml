@@ -2592,15 +2592,49 @@ anchors:
            2026-09-28); minted now so the ladder reads whole and
            kaikki's DLT-derived otk entries have their context"
 
+  zkh:
+    name: Khwarezmian Turkic
+    parent: xqa
+    band: [1250, 1400]
+    band_note: "the Golden Horde and Khwarezm literary horizon,
+                approximate: the 13th-c. interlinear Qurʾān
+                translations through Rabghūzī (1310), Quṭb (1341–42),
+                Khwārazmī (1353) and the Nahj al-farādīs (1358), to
+                the Timurid rise of Chagatai"
+    note: "ISO 639-3 zkh (reference name Khorezmian; historical) —
+           the TURKIC literary language of Khwarezm and the Golden
+           Horde, never to be confused with xco Chorasmian, the
+           Iranian language of the same oasis. A Karakhanid-based
+           Islamic literary norm in Arabic script carrying growing
+           Oghuz and Kipchak elements, it is the transitional link
+           between Karakhanid and Chagatai (Eckmann, 'Das
+           Chwarezmtürkische', Philologiae Turcicae Fundamenta I,
+           1959; Boeschoten & Vandamme in Johanson & Csató, The
+           Turkic Languages, 1998) — hence the xqa edge, and chg's
+           edge now runs through it (Wiktionary files zkh in Karluk
+           with ancestor xqa, and chg with ancestor zkh). Main
+           witnesses: Rabghūzī's Qiṣaṣ al-anbiyāʾ (1310), Quṭb's
+           Khusraw u Shīrīn (1341–42), Khwārazmī's Muḥabbatnāma
+           (1353), Maḥmūd b. ʿAlī's Nahj al-farādīs (1358), the
+           Muʿīn al-murīd, and the interlinear Qurʾān glosses. No
+           glottocode: Glottolog's khwa1238 'Khwarezmian' is the
+           Iranian xco, so none is stated. Consumers: the Uppsala
+           database of Middle Turkic manuscripts (Károly & Németh,
+           eds.), whose Khwarezmian Turkic manuscripts (2 at survey,
+           2026-11-27) are not yet ingested"
+
   chg:
     name: Chagatai
-    parent: xqa
+    parent: zkh
     band: [1400, 1920]
     band_note: "Nawāʾī's classical age through the late 'Turki' of
                 Central Asian chanceries and the Jarring-collection
                 manuscripts, approximate"
     note: "the great Perso-Arabic-script literary language of Central
-           Asia, continuing the Karakhanid tradition. The consuming
+           Asia, continuing the Karakhanid tradition through its
+           Khwarezmian Turkic stage (edge refined from xqa to zkh
+           2026-11-27, the most-specific-ancestor rule; the walk
+           still reaches xqa and otk). The consuming
            ATMO manuscripts (18th–20th c. Eastern 'Turki') sit at its
            late edge — the honest-coarse chg claim, with any finer
            late-Turki node a future call. Consumers: ATMO TEI + kaikki
