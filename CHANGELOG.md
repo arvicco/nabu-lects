@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- 2026-11-27, three nodes for the historical treebanks of Universal
+  Dependencies 2.19: pra:aso Ashokan Prakrit [-268, -232] (the
+  edicts as a dated stage of the Prakrit collective — several
+  regional dialects, so no member code fits); sv:early Early Modern
+  Swedish [1526, 1732] (äldre nysvenska, the 1526 New Testament to
+  Dalin's Argus, adjacent to sv:old); and the uk orthography
+  zhelekh (Zhelekhivka, the Galician phonetic spelling of
+  1886-1920s). Each treebank sat on its bare anchor.
+
 - 2026-11-26, the Middle English stages: enm:m1 [1150, 1250], enm:m2
   [1250, 1350], enm:m3 [1350, 1420] and enm:m4 [1420, 1500] — the
   Helsinki Corpus sub-periodization (Rissanen; Kytö's Manual 1991/96)
