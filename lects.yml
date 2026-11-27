@@ -2512,7 +2512,8 @@ anchors:
             note: "pre-1946 printings"}
 
   # ── The Turkic ladder (ISO 639-5 family + the literary-continuum
-  # chain: Old Turkic → Old Uyghur / Karakhanid → Chagatai) ─────────────────
+  # chain: Old Turkic → Old Uyghur / Karakhanid → Khwarezmian → Chagatai;
+  # Ottoman on its own Oghuz edge; the Kipchak branch below) ─────────────
 
   trk:
     name: Turkic
@@ -2522,9 +2523,11 @@ anchors:
             note: "Common Turkic + Oghur/Bulgar reconstructions. Corpus:
                    starling-turcet (2,017 etymologies, EDAL's Turkic branch
                    base)"}
-    note: "ISO 639-5. Family node only — modern Turkic languages stay
+    note: "ISO 639-5. Family node — modern Turkic languages stay
            unminted until consumers arrive; the historical literary
-           ladder below is what the library holds"
+           ladder below is what the library holds, with the Kipchak
+           branch (trk-kip) minted 2026-11-27 for its Cuman and
+           Karaim manuscript consumers"
 
   otk:
     name: Old Turkic
