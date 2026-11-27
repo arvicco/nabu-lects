@@ -2661,6 +2661,126 @@ anchors:
            single largest unanchored historical code in the held etym
            layer (censused 2026-11-13)"
 
+  # ── Kipchak (Northwest Turkic): the family node, its Ponto-Caspian
+  # subgroup, and the historical and Hebrew-script members ────────────────
+
+  trk-kip:
+    name: Kipchak
+    kind: family
+    parent: trk
+    glottocode: kipc1239
+    note: "established Wiktionary family code (no ISO 639-5 code):
+           Johanson's Northwest Turkic, the Kipchak languages of the
+           western steppe, the Volga–Urals and the Caucasus — Tatar
+           and Bashkir (Kipchak-Bulgar), Kazakh, Karakalpak and Nogai
+           (Kipchak-Nogai), Kyrgyz (Kyrgyz-Kipchak, by Wiktionary's
+           and Glottolog's reading) and the Ponto-Caspian group
+           (trk-kcu), beside the historical Cuman/Kipchak of the
+           medieval steppe and Mamluk Egypt (qwm). The parent edge
+           reads trk directly: the Common Turkic intermediate
+           (Wiktionary trk-cmn, Glottolog comm1245 — everything but
+           Oghur) is real but unminted, the otk/ota edges' standing
+           discipline (Johanson, 'The history of Turkic', in Johanson
+           & Csató, The Turkic Languages, 1998). Glottolog kipc1239
+           (Kipchak, under its Kipchak-Turkestan node) matches the
+           Wiktionary scope member for member. Only the members the
+           consuming sources need are minted (2026-11-27)"
+
+  trk-kcu:
+    name: Kipchak-Cuman
+    kind: family
+    parent: trk-kip
+    glottocode: west1472
+    note: "established Wiktionary family code (alias Ponto-Caspian;
+           no ISO 639-5 code): the western Kipchak languages named
+           after the Cuman of the Pontic steppe — Karaim (kdr),
+           Krymchak, Crimean Tatar (its northern steppe dialects),
+           Urum, Karachay-Balkar and Kumyk (Baskakov's Kipchak-
+           Polovtsian; Johanson's West Kipchak). Glottolog west1472
+           (West Kipchak) holds exactly these six; its intermediate
+           Northwest Kipchak node is not modeled. qwm itself is NOT
+           under this node — its code's scope reaches Mamluk and
+           Armeno-Kipchak beyond the Ponto-Caspian group, so it
+           parents trk-kip (Wiktionary's placement too)"
+
+  qwm:
+    name: Cuman (Kipchak)
+    parent: trk-kip
+    glottocode: cuma1241
+    band: [1245, 1700]
+    band_note: "the written record, approximate: the Mamluk Arabic–
+                Kipchak glossary of the Houtsma codex (dated 1245)
+                and the Codex Cumanicus (its Interpreter's part dated
+                1303) through the Armeno-Kipchak chancery and court
+                records of the 16th–17th c.; the language's last
+                Hungarian remnants (the Cuman Lord's Prayer) trail
+                into the 18th c. outside the band"
+    note: "ISO 639-3 qwm (reference name Kuman (Russia); extinct) —
+           the language of the Cumans/Qıpčaq (Polovtsy) of the
+           11th–13th-c. Pontic–Caspian steppe and its written
+           continuations; Wiktionary's canonical name for the code is
+           Kipchak and its scope takes in all three historical
+           strands: (1) the Codex Cumanicus (Venice, Biblioteca
+           Marciana, Cod. Lat. Z. 549) — a Latin-script Cuman
+           glossary and missionary text collection from the Crimean
+           Genoese and Franciscan milieu, the Italian
+           'Interpreter's Book' dated 1303 and the German
+           'Missionaries' Book' with its riddles, hymns and
+           catechetical texts of the 14th c. (editions: Kuun 1880;
+           Grønbech's facsimile 1936 and Komanisches Wörterbuch
+           1942; Drimba 2000); (2) Mamluk Kipchak, the
+           Arabic-script grammars and glossaries written for the
+           Kipchak military elite of Egypt and Syria (the Houtsma
+           glossary 1245; Abū Ḥayyān's Kitāb al-idrāk li-lisān
+           al-atrāk, 1312/13); (3) Armeno-Kipchak, the Armenian-script
+           records of the Armenian communities of Kamianets-Podilskyi
+           and Lviv (16th–17th c.). Kipchak in classification
+           (Johanson 1998): the eponym of the Kipchak-Cuman group,
+           whose members continue its dialects, but the edge stays
+           at trk-kip since the code spans more than that group
+           (trk-kcu's note). Glottolog files cuma1241 as a dialect
+           under Crimean Tatar within West Kipchak — a narrower
+           reading kept as the crosswalk only. Consumers: Kuun's
+           1880 Codex Cumanicus edition and the Cuman rows of two
+           Lexibank wordlists (2026-11-27)"
+
+  kdr:
+    name: Karaim
+    parent: trk-kcu
+    glottocode: kara1464
+    band: [1648, null]
+    band_note: "the written record, approximate: the oldest known
+                Karaim manuscript (JSul.III.02, an East Karaim
+                translation of the Former Prophets, Ruth, Esther and
+                Proverbs, created 1648–1687 — Németh 2016) and the
+                first West Karaim text of 1671; open — Northwest
+                (Trakai) Karaim is still spoken"
+    note: "the Kipchak Turkic language of the Karaite Jews of Crimea,
+           Lithuania and Galicia–Volhynia, written in Hebrew script
+           until the 20th c. (Latin and Cyrillic after). Three
+           varieties: Northwest (Trakai/Vilnius, the only living
+           one), Southwest (Halych/Lutsk, last fluent speaker d.
+           2003) and East (Crimean, largely assimilated to Crimean
+           Tatar) —
+           deliberately not minted as varieties until a consumer
+           tags them. Its literature is above all Bible translation
+           in a common tradition shared across the communities,
+           plus the piyyut interpretations, letters and community
+           records (Németh, Middle Western Karaim, 2020; Csató &
+           Nathan, Spoken Karaim, 2002). The field's Middle vs Modern
+           Karaim divide (the pre-19th-c. sources vs the 19th–20th-c.
+           language) is real but its close is drawn differently
+           across the literature (Németh's Middle Western Karaim
+           edition stops before 1800; the Uppsala Middle Turkic
+           database's frame runs to 1917), so no stage is minted —
+           the bare anchor is the honest claim, a future kdr:mid
+           the shape if a dated grid settles. Consumers: the
+           Uppsala database of Middle Turkic manuscripts (Károly &
+           Németh, eds.; the KaraimBIBLE project's contribution),
+           whose Middle Karaim manuscripts (12 at survey, e.g.
+           ADub.III.73, the 1720 Torah and Haftarah) are not yet
+           ingested (2026-11-27)"
+
   # ── Mongolic and Tungusic (ISO 639-5 families, one anchor each) ───────────
 
   xgn:
