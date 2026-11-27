@@ -2644,12 +2644,13 @@ anchors:
     name: Ottoman Turkish
     parent: trk
     glottocode: otto1234
-    band: [1299, 1928]
-    band_note: "the conventional dynastic span to the alphabet reform:
-                from the beylik's rise (the Old Anatolian Turkish of
-                the 13th–15th c. is conventionally folded into the
-                code's early edge) to the 1928 Latin-script law that
-                closes the Perso-Arabic written tradition"
+    band: [1200, 1928]
+    band_note: "the Anatolian Oghuz written tradition to the alphabet
+                reform: from the earliest Old Anatolian Turkish texts
+                (13th c., now the ota:old stage; the band opened at the
+                beylik's rise, 1299, until that stage was minted
+                2026-11-27) to the 1928 Latin-script law that closes
+                the Perso-Arabic written tradition"
     note: "the Perso-Arabic-script literary and chancery language of
            the Ottoman state — OGHUZ Turkic, continuing Old Anatolian
            Turkish, NOT the otk Orkhon lineage (Kerslake in Johanson &
@@ -2659,7 +2660,34 @@ anchors:
            strata over a Turkic frame. Consumers: the UD Ottoman
            treebank (5 docs) + 8,556 Wiktionary etymology lines — the
            single largest unanchored historical code in the held etym
-           layer (censused 2026-11-13)"
+           layer (censused 2026-11-13). Periodization (Kerslake;
+           Doerfer's Altosmanisch): Old Anatolian Turkish, 13th–15th
+           c. (staged below — Wiktionary codes it trk-oat, ota's
+           ancestor); Middle Ottoman, 16th–18th c.; New Ottoman,
+           19th c. to 1928 — the later two unminted, no consuming
+           code or source tagging them, so post-1500 text stays bare
+           ota"
+    stages:
+      old: {name: Old Anatolian Turkish, band: [1200, 1500], ord: 10,
+            wikt: trk-oat,
+            band_note: "13th–15th c., approximate: from the first
+                        Anatolian Oghuz texts (Sultan Veled's Turkish
+                        verses, 1277–1301; the Seljuk-era poets) to
+                        the conventional c. 1500 close, when the
+                        classical Ottoman written norm is established",
+            note: "Eski Anadolu Türkçesi, the Oghuz literary language
+                   of Seljuk and beylik Anatolia in Arabic script,
+                   before the Ottoman norm absorbed it: Yunus Emre
+                   (d. c. 1320), Âşık Paşa's Garībnāme (1330),
+                   Gülşehrī, Ahmedī's İskendernāme (c. 1390), Şeyhī,
+                   the translation literature commissioned by the
+                   beyliks, and the early Ottoman chronicles. Mostly
+                   Turkic in lexicon beside the later Persianized
+                   norm; Wiktionary's trk-oat (a full language code
+                   there, ancestor of ota, descended from Early
+                   Oghuz trk-eog) lands here — a stage of the
+                   continuing Anatolian Oghuz lineage, the ohu → hu:old
+                   shape"}
 
   # ── Kipchak (Northwest Turkic): the family node, its Ponto-Caspian
   # subgroup, and the historical and Hebrew-script members ────────────────
