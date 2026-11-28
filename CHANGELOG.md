@@ -2,6 +2,25 @@
 
 ## Unreleased
 
+- 2026-11-27, the Turkic wave for the Middle Turkic manuscript and
+  Cuman sources: the Kipchak family node trk-kip (Wiktionary code,
+  Glottolog kipc1239; parent trk, the Common Turkic intermediate kept
+  as prose) and its Ponto-Caspian subgroup trk-kcu Kipchak-Cuman
+  (west1472); qwm Cuman (Kipchak) [1245, 1700] (parent trk-kip — the
+  code's scope reaches Mamluk and Armeno-Kipchak beyond trk-kcu; the
+  Codex Cumanicus, Kuun 1880, its consuming edition); kdr Karaim
+  [1648, open] (parent trk-kcu; the Middle/Modern Karaim divide kept
+  as prose, its close drawn differently across the literature, so no
+  stage); zkh Khwarezmian Turkic [1250, 1400] (parent xqa, the
+  Karakhanid→Chagatai transitional norm — chg's edge refined from xqa
+  to zkh, the walk unchanged above it); and ota:old Old Anatolian
+  Turkish [1200, 1500] with the codemap row trk-oat → ota:old (the
+  ohu → hu:old shape; the ota anchor band opens at 1200 to cover it).
+  The otk and oui notes now carry their attestation: the dated Orkhon
+  stelae (Tonyukuk c. 716–726, Kül Tigin 732, Bilge Kagan 735), the
+  Yenisei epitaphs, the Uppsala runiform database, and the Frankfurt
+  VATEC corpus.
+
 - 2026-11-27, three nodes for the historical treebanks of Universal
   Dependencies 2.19: pra:aso Ashokan Prakrit [-268, -232] (the
   edicts as a dated stage of the Prakrit collective — several
